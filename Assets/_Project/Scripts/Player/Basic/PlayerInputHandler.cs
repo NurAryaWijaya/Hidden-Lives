@@ -10,6 +10,9 @@ public class PlayerInputHandler : MonoBehaviour
     public bool InteractPressed { get; private set; }
     public bool DropPressed { get; private set; }
 
+    // Dialogue
+    public bool DialogueNextPressed { get; private set; }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         MoveInput = context.ReadValue<Vector2>();
@@ -34,9 +37,19 @@ public class PlayerInputHandler : MonoBehaviour
             DropPressed = true;
     }
 
+    // Dialogue
+    public void OnDialogueNext(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            DialogueNextPressed = true;
+        }
+    }
+
     public void ConsumeInput()
     {
         InteractPressed = false;
         DropPressed = false;
+        DialogueNextPressed = false;
     }
 }

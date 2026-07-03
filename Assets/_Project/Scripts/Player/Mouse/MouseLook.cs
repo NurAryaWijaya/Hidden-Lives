@@ -1,3 +1,4 @@
+﻿using Game.Dialogue;
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
@@ -7,10 +8,16 @@ public class MouseLook : MonoBehaviour
 
     private PlayerInputHandler inputHandler;
     private float pitch;
+    private bool isInDialogue;
 
     private void Awake()
     {
         inputHandler = GetComponent<PlayerInputHandler>();
+
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.OnDialogueModeChanged += SetDialogueMode;
+        }
     }
 
     private void Start()
@@ -19,8 +26,23 @@ public class MouseLook : MonoBehaviour
         Cursor.visible = false;
     }
 
+    private void OnDisable()
+    {
+        if (DialogueManager.Instance != null)
+            DialogueManager.Instance.OnDialogueModeChanged -= SetDialogueMode;
+    }
+
     private void Update()
     {
+        if (GameStateManager.Instance.IsState(GameState.Dialogue))
+        {
+            LookAtDialogueTarget();
+            return;
+        }
+
+        if (GameStateManager.Instance.IsState(GameState.Dialogue))
+            return;
+
         Vector2 look = inputHandler.LookInput;
 
         float mouseX = look.x * sensitivity;
@@ -33,5 +55,41 @@ public class MouseLook : MonoBehaviour
 
         cameraPivot.localRotation =
             Quaternion.Euler(pitch, 0f, 0f);
+    }
+
+    private void LookAtDialogueTarget()
+    {
+        
+        Transform target = DialogueManager.Instance?.CurrentFocusPoint;
+        if (target == null) return;
+
+        Vector3 dir = target.position - cameraPivot.position;
+
+        if (dir.sqrMagnitude < 0.001f)
+            return;
+
+        Quaternion lookRot = Quaternion.LookRotation(dir);
+
+        transform.rotation = Quaternion.Slerp(
+            transform.rotation,
+            Quaternion.Euler(0f, lookRot.eulerAngles.y, 0f),
+            Time.deltaTime * 6f
+        );
+
+        cameraPivot.rotation = Quaternion.Slerp(
+            cameraPivot.rotation,
+            lookRot,
+            Time.deltaTime * 6f
+        );
+    }
+
+    private void SetDialogueMode(bool value)
+    {
+        isInDialogue = value;
+
+        if (value)
+        {
+            pitch = cameraPivot.localEulerAngles.x;
+        }
     }
 }

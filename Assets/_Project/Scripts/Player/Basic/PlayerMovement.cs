@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(Vector2 input)
     {
+        if (!GameStateManager.Instance.IsState(GameState.Exploration))
+            return;
+
         Vector3 moveDirection =
             transform.forward * input.y +
             transform.right * input.x;

@@ -237,13 +237,53 @@ MonoBehaviour:
     m_ActionId: 10b46fea-2e61-4986-a23c-bc38f6be9ffc
     m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8523741779476179572}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d2764df4-13df-4e8b-b3b0-a9c847cfe433
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8523741779476179572}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnDrop
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 851e9d63-4c9b-499d-84ac-4b51724d83c8
     m_ActionName: 'Player/Drop[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8523741779476179572}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnDialogueNext
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bef34f2e-0c3a-4b4e-a078-f8ddd7ad69a9
+    m_ActionName: 'Player/DialogueNext[/Mouse/leftButton,/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -343,7 +383,7 @@ MonoBehaviour:
   interactMask:
     serializedVersion: 2
     m_Bits: 64
-  interactDistance: 3
+  detectDistance: 4
 --- !u!114 &743436163822269657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCarry
   holdPoint: {fileID: 8858997816168781010}
-  playerCollider: {fileID: 0}
+  playerCollider: {fileID: 7127560292595016067}
 --- !u!1 &1580490811330024967
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +569,7 @@ Transform:
   m_GameObject: {fileID: 7768777656544254651}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.21100006, y: -0.288, z: 0.2810003}
+  m_LocalPosition: {x: 0.5, y: -0.25, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

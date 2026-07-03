@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Game.Dialogue;
 
 [RequireComponent(typeof(PlayerCarry))]
 public class PlayerInteractor : MonoBehaviour
@@ -172,6 +173,17 @@ public class PlayerInteractor : MonoBehaviour
 
     private void HandleInput()
     {
+        if (GameStateManager.Instance.IsState(GameState.Dialogue))
+        {
+            if (inputHandler.DialogueNextPressed)
+            {
+                DialogueManager.Instance.ContinueDialogue();
+            }
+
+            inputHandler.ConsumeInput();
+            return;
+        }
+
         if (inputHandler.InteractPressed)
         {
             interactTarget?.Interact(this);
