@@ -23,19 +23,20 @@ namespace Game.Flow.Editor
 
         public void SetStart(FlowPortView port)
         {
-            Vector2 world =
-                port.LocalToWorld(
-                    port.contentRect.center);
+            //Debug.Log(parent.name);
+            Debug.Log(parent == null ? "NULL" : $"Parent = {parent.GetType().Name}");
 
-            startPosition =
-                parent.WorldToLocal(world);
+            startPosition = port.GetLocalCenter(parent);
 
             MarkDirtyRepaint();
         }
 
         public void SetEnd(Vector2 position)
         {
+            //Debug.Log(parent.name);
+
             endPosition = position;
+
             MarkDirtyRepaint();
         }
 

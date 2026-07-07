@@ -15,7 +15,7 @@ MonoBehaviour:
   nodeId: Test1
   displayName: Start middle
   isCheckpoint: 0
-  editorPosition: {x: 486.3333, y: 381.1111}
+  editorPosition: {x: 485, y: 382}
   editorSize: {x: 220, y: 90}
   message: hahaha
   duration: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
   chapterIndex: 1
   displayName: Chapter 1
   description: Ini Hanya Test
-  startNode: {fileID: -5049607520621591393}
+  startNode: {fileID: 2304932751158603491}
   nodes:
   - {fileID: 11400000, guid: 55ee96edc21ff1144b496167767c9d1a, type: 2}
   - {fileID: 11400000, guid: 49a9bd84d73ab194e8702e36989cff41, type: 2}
@@ -43,6 +43,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d91dbe39c9e294649ba661b0fe958e56, type: 2}
   - {fileID: -5049607520621591393}
   - {fileID: 3600142924527693829}
+  - {fileID: 2304932751158603491}
+--- !u!114 &2304932751158603491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: Start Test
+  displayName: StartNode
+  isCheckpoint: 0
+  editorPosition: {x: -580.3951, y: 86.87654}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 11400000, guid: 55ee96edc21ff1144b496167767c9d1a, type: 2}
 --- !u!114 &3600142924527693829
 MonoBehaviour:
   m_ObjectHideFlags: 0

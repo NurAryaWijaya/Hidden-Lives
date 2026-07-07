@@ -40,7 +40,7 @@ namespace Game.Flow.Editor
 
         // Menu
         private Vector2 contextMenuPosition;
-        public event Action<Vector2> CreateTestNodeRequested;
+        public event Action<Type, Vector2> CreateNodeRequested;
         public event Action NodeDeleted;
 
         public FlowViewTransform ViewTransform => viewTransform;
@@ -220,6 +220,7 @@ namespace Game.Flow.Editor
 
         private void OnMouseMove(MouseMoveEvent evt)
         {
+
             currentMousePosition = evt.mousePosition;
 
             if (isPanning)
@@ -236,7 +237,9 @@ namespace Game.Flow.Editor
             if (draggingPort != null)
             {
                 Vector2 localPosition =
-                    connectionLayer.WorldToLocal(evt.mousePosition);
+                    this.ChangeCoordinatesTo(
+                        connectionLayer,
+                        evt.mousePosition);
 
                 UpdateConnection(localPosition);
             }
@@ -269,12 +272,14 @@ namespace Game.Flow.Editor
             GenericMenu menu = new GenericMenu();
 
             menu.AddItem(
-                new GUIContent("Create Node/Test Flow Node"),
+                new GUIContent("Create Node/Start"),
                 false,
-                () =>
-                {
-                    CreateTestNodeRequested?.Invoke(contextMenuPosition);
-                });
+                () => CreateNodeRequested?.Invoke(typeof(StartNode), contextMenuPosition));
+
+            menu.AddItem(
+                new GUIContent("Create Node/Test"),
+                false,
+                () => CreateNodeRequested?.Invoke(typeof(TestFlowNode), contextMenuPosition));
 
             menu.ShowAsContext();
 
@@ -360,10 +365,9 @@ namespace Game.Flow.Editor
             if (draggingPort == null)
                 return;
 
-            Vector2 canvasPosition =
-                ScreenToCanvasPosition(mousePosition);
+            mousePosition -= new Vector2(worldBound.x, worldBound.y);
 
-            previewConnection.SetEnd(canvasPosition);
+            previewConnection.SetEnd(mousePosition);
         }
 
         public void EndConnection()
@@ -403,12 +407,14 @@ namespace Game.Flow.Editor
             Debug.Log(
                 $"{fromPort.Owner.Node.name} -> {toPort.Owner.Node.name}");
 
-            if (fromPort.Owner.Node is TestFlowNode fromNode)
+            if (fromPort.Owner.Node is IFlowOutput output)
             {
-                fromNode.SetNextNode(toPort.Owner.Node);
+                output.SetOutput(
+                    fromPort.Index,
+                    toPort.Owner.Node);
 
 #if UNITY_EDITOR
-                UnityEditor.EditorUtility.SetDirty(fromNode);
+                UnityEditor.EditorUtility.SetDirty(fromPort.Owner.Node);
 #endif
 
                 BuildConnections();

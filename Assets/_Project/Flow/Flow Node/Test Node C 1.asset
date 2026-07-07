@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
   m_Name: Test Node C 1
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: test4
+  nodeId: test423
   displayName: Alternative Ending
   isCheckpoint: 0
   editorPosition: {x: 877.625, y: 267.68753}

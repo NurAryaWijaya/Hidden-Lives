@@ -2,6 +2,7 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
+using System;
 
 namespace Game.Flow.Editor
 {
@@ -21,7 +22,7 @@ namespace Game.Flow.Editor
         {
             canvas = new FlowCanvas();
 
-            canvas.CreateTestNodeRequested += CreateTestNode;
+            canvas.CreateNodeRequested += CreateNode;
 
             canvas.NodeDeleted += RefreshGraph;
 
@@ -105,22 +106,19 @@ namespace Game.Flow.Editor
             rootVisualElement.Add(toolbar);
         }
 
-        private void CreateTestNode(Vector2 position)
+        private void CreateNode(Type nodeType, Vector2 position)
         {
             if (currentGraph == null)
                 return;
 
-            // Membuat node baru
-            TestFlowNode node = CreateInstance<TestFlowNode>();
+            FlowNode node = CreateInstance(nodeType) as FlowNode;
 
-            node.name = "Test Flow Node";
+            node.name = nodeType.Name;
 
             node.SetEditorPosition(position);
 
-            // Menambahkan node ke FlowGraph
             currentGraph.AddNode(node);
 
-            // Menjadikan node sebagai sub asset dari graph
             AssetDatabase.AddObjectToAsset(node, currentGraph);
 
             EditorUtility.SetDirty(node);
