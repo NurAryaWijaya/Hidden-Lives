@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: Test Node C 1
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: test4
+  displayName: Alternative Ending
+  isCheckpoint: 0
+  editorPosition: {x: 877.625, y: 267.68753}
+  editorSize: {x: 220, y: 90}
+  message: alternative End
+  duration: 2
+  nextNode: {fileID: 3600142924527693829, guid: 90f1ba558daf8244b953f4c7b46b469c, type: 2}
