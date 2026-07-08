@@ -1,3 +1,4 @@
+using Game.Flow;
 using Unity.Multiplayer.PlayMode;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public enum CarryState
 }
 
 [RequireComponent(typeof(Rigidbody))]
-public class PickupInteractable : Interactable
+public class PickupInteractable : Interactable, IFlowActivatable
 {
     [Header("Pickup")]
 
@@ -23,6 +24,8 @@ public class PickupInteractable : Interactable
     private InteractableType interactableType;
     [SerializeField]
     private bool canBeRetrieved = true;
+    [SerializeField]
+    private bool interactionEnabled;
 
     public bool CanBeRetrieved => canBeRetrieved;
     public InteractableType Type => interactableType;
@@ -129,7 +132,18 @@ public class PickupInteractable : Interactable
 
     public override bool CanInteract(PlayerInteractor player)
     {
-        return !IsPickedUp;
+        return interactionEnabled &&
+               !IsPickedUp;
+    }
+
+    public void Activate()
+    {
+        interactionEnabled = true;
+    }
+
+    public void Deactivate()
+    {
+        interactionEnabled = false;
     }
 
     private void SetLayerRecursively(Transform root, int layer)

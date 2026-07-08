@@ -173,7 +173,7 @@ public class PlayerInteractor : MonoBehaviour
 
     private void HandleInput()
     {
-        if (GameStateManager.Instance.IsState(GameState.Dialogue))
+        if (!GameStateManager.Instance.IsState(GameState.Exploration))
         {
             if (inputHandler.DialogueNextPressed)
             {

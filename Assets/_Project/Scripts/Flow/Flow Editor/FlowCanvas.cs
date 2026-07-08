@@ -277,6 +277,31 @@ namespace Game.Flow.Editor
                 () => CreateNodeRequested?.Invoke(typeof(StartNode), contextMenuPosition));
 
             menu.AddItem(
+                new GUIContent("Create Node/Activation"),
+                false,
+                () => CreateNodeRequested?.Invoke(typeof(ActivationNode), contextMenuPosition));
+
+            menu.AddItem(
+                new GUIContent("Create Node/Monologue"),
+                false,
+                () => CreateNodeRequested?.Invoke(typeof(MonologueNode), contextMenuPosition));
+
+            menu.AddItem(
+                new GUIContent("Create Node/Dialogue"),
+                false,
+                () => CreateNodeRequested?.Invoke(typeof(DialogueFlowNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Wait"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(WaitEventNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Branch"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(BranchNode), contextMenuPosition));
+
+            menu.AddItem(
                 new GUIContent("Create Node/Test"),
                 false,
                 () => CreateNodeRequested?.Invoke(typeof(TestFlowNode), contextMenuPosition));

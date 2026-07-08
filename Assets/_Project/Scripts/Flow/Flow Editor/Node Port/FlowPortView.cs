@@ -25,7 +25,6 @@ namespace Game.Flow.Editor
         public int Index { get; }
 
         public event Action<FlowPortView> DragStarted;
-        //public event Action<FlowPortView> DragEnded;
 
         public FlowPortView(
             FlowNodeView owner,

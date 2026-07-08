@@ -1,22 +1,2 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Test Node B
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: test2
-  displayName: Middle Node
-  isCheckpoint: 0
-  editorPosition: {x: 214.18748, y: 217.62502}
-  editorSize: {x: 220, y: 90}
-  message: Middle
-  duration: 2
-  nextNode: {fileID: 11400000, guid: 15d22b9bcfa4fda46a58f39e90824c72, type: 2}

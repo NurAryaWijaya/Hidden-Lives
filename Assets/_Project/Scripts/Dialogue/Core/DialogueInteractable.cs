@@ -1,13 +1,17 @@
 using UnityEngine;
 using Game.Dialogue;
+using Game.Flow;
 
 namespace Game.Dialogue
 {
-    public class DialogueInteractable : Interactable
+    public class DialogueInteractable : Interactable, IFlowActivatable
     {
         [Header("Dialogue")]
         [SerializeField] private DialogueData dialogueData;
         [SerializeField] private Transform headFocusPoint;
+
+        [SerializeField]
+        private bool interactionDialogueEnabled;
 
         private int interactableLayer;
         private int heldLayer;
@@ -41,6 +45,21 @@ namespace Game.Dialogue
             {
                 SetLayerRecursively(child, layer);
             }
+        }
+
+        public override bool CanInteract(PlayerInteractor player)
+        {
+            return interactionDialogueEnabled && base.CanInteract(player);
+        }
+
+        public void Activate()
+        {
+            interactionDialogueEnabled = true;
+        }
+
+        public void Deactivate()
+        {
+            interactionDialogueEnabled = false;
         }
     }
 }

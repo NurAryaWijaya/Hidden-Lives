@@ -1,12 +1,18 @@
+using Game.Flow;
 using UnityEngine;
 
 public class PlaceInteractable : Interactable
 {
     [Header("Placement")]
-    [SerializeField] private InteractableType acceptedType;
-    [SerializeField] private Transform placePoint;
+    [SerializeField] 
+    private InteractableType acceptedType;
 
+    [SerializeField] 
+    private Transform placePoint;
     private PickupInteractable placedObject;
+
+    [SerializeField]
+    private string PlacementId;
     public bool HasObject => placedObject != null;
 
     public override void Interact(PlayerInteractor player)
@@ -44,6 +50,9 @@ public class PlaceInteractable : Interactable
         placedObject = item;
 
         item.OnPlace(placePoint, this);
+
+        // Contoh task Cmplater untuk WaitEventNode
+        FlowEventManager.Instance.Raise(PlacementId);
 
         return true;
     }

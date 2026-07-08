@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5049607520621591393
+--- !u!114 &-5565324781149167555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,16 +10,74 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Start middle
+  m_Name: TestFlowNode
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: Test1
-  displayName: Start middle
+  nodeId: 5f36ee16-bf56-406b-9c73-14aded8625db
+  displayName: TestFlowNode
   isCheckpoint: 0
-  editorPosition: {x: 485, y: 382}
+  editorPosition: {x: 1609.4443, y: 398.1112}
   editorSize: {x: 220, y: 90}
-  message: hahaha
+  nextNode: {fileID: 1172188746894793415}
+  message: False
+  duration: 3
+--- !u!114 &-2996508182095855771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: b2d4adfc-f2a7-4019-802b-f19b0c8625be
+  displayName: StartNode
+  isCheckpoint: 0
+  editorPosition: {x: -95.999985, y: 256}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 2423749413530961225}
+--- !u!114 &-1653045087141003957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: f039928d-7e25-414d-8306-cba3df0c8431
+  displayName: TestFlowNode
+  isCheckpoint: 0
+  editorPosition: {x: 2808.6665, y: 176.22224}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 0}
+  message: End Pick Up
   duration: 1
-  nextNode: {fileID: 11400000, guid: d91dbe39c9e294649ba661b0fe958e56, type: 2}
+--- !u!114 &-1087850580515461306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 21032d84-e1a5-4083-8d0c-7ccaa8ccdcee
+  displayName: ActivationNode
+  isCheckpoint: 0
+  editorPosition: {x: 2006, y: 168.55557}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 3238983557238548743}
+  flowId: PickUpInteraksiotnId
+  activate: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,16 +93,20 @@ MonoBehaviour:
   chapterIndex: 1
   displayName: Chapter 1
   description: Ini Hanya Test
-  startNode: {fileID: 2304932751158603491}
+  startNode: {fileID: -2996508182095855771}
   nodes:
-  - {fileID: 11400000, guid: 55ee96edc21ff1144b496167767c9d1a, type: 2}
-  - {fileID: 11400000, guid: 49a9bd84d73ab194e8702e36989cff41, type: 2}
-  - {fileID: 11400000, guid: 15d22b9bcfa4fda46a58f39e90824c72, type: 2}
-  - {fileID: 11400000, guid: d91dbe39c9e294649ba661b0fe958e56, type: 2}
-  - {fileID: -5049607520621591393}
-  - {fileID: 3600142924527693829}
-  - {fileID: 2304932751158603491}
---- !u!114 &2304932751158603491
+  - {fileID: -2996508182095855771}
+  - {fileID: 2423749413530961225}
+  - {fileID: 6353347026741007092}
+  - {fileID: 1593343371411847977}
+  - {fileID: 4574140491643581033}
+  - {fileID: -5565324781149167555}
+  - {fileID: -1087850580515461306}
+  - {fileID: 3238983557238548743}
+  - {fileID: -1653045087141003957}
+  - {fileID: 1172188746894793415}
+  - {fileID: 4503532918344607874}
+--- !u!114 &1172188746894793415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,16 +115,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
-  m_Name: StartNode
-  m_EditorClassIdentifier: Assembly-CSharp::StartNode
-  nodeId: Start Test
-  displayName: StartNode
+  m_Script: {fileID: 11500000, guid: 1d5b2b2f15accf842ad7b506d1929394, type: 3}
+  m_Name: DialogueFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueFlowNode
+  nodeId: 7fe70bda-4e7a-4f81-b0c8-683f45f6e6a5
+  displayName: DialogueFlowNode
   isCheckpoint: 0
-  editorPosition: {x: -580.3951, y: 86.87654}
+  editorPosition: {x: 2007.1112, y: 407.1111}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: 11400000, guid: 55ee96edc21ff1144b496167767c9d1a, type: 2}
---- !u!114 &3600142924527693829
+  nextNode: {fileID: 4503532918344607874}
+  flowId: DialogueTest1
+--- !u!114 &1593343371411847977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bb9546964aa3645aab8642c3850cd5, type: 3}
+  m_Name: BranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::BranchNode
+  nodeId: 20c4b258-2eab-4ba1-9a7d-10f335bb5c0c
+  displayName: BranchNode
+  isCheckpoint: 0
+  editorPosition: {x: 1198.6666, y: 258.66666}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 4574140491643581033}
+  trueNode: {fileID: 4574140491643581033}
+  falseNode: {fileID: -5565324781149167555}
+  trueText: True
+  falseText: False
+--- !u!114 &2423749413530961225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,13 +157,91 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Halo
+  m_Name: TestFlowNode
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: Test16
-  displayName: Halo
+  nodeId: 2a5b8f04-3222-4fae-b40b-b6fee96ae82d
+  displayName: TestFlowNode
   isCheckpoint: 0
-  editorPosition: {x: 1150.875, y: 132.62505}
+  editorPosition: {x: 269, y: 256.75}
   editorSize: {x: 220, y: 90}
-  message: 
-  duration: 1
+  nextNode: {fileID: 6353347026741007092}
+  message: Ini Test pertama
+  duration: 3
+--- !u!114 &3238983557238548743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 86d42c04-9d0c-4646-9193-baad77bf0c0d
+  displayName: WaitEventNode
+  isCheckpoint: 0
+  editorPosition: {x: 2415.2346, y: 170}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: -1653045087141003957}
+  eventId: TaskCompleted
+--- !u!114 &4503532918344607874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: d460479b-4cc1-4633-8ba2-1cd61e8a2afc
+  displayName: TestFlowNode
+  isCheckpoint: 0
+  editorPosition: {x: 2384.5554, y: 410.11115}
+  editorSize: {x: 220, y: 90}
   nextNode: {fileID: 0}
+  message: End Dialogue
+  duration: 1
+--- !u!114 &4574140491643581033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: 5bb1521e-a146-4968-9073-cbe6e10fe16f
+  displayName: TestFlowNode
+  isCheckpoint: 0
+  editorPosition: {x: 1615.6666, y: 167.11111}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: -1087850580515461306}
+  message: True
+  duration: 5
+--- !u!114 &6353347026741007092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd8c2cfe019c73459574a6d87b8fa25, type: 3}
+  m_Name: MonologueNode
+  m_EditorClassIdentifier: Assembly-CSharp::MonologueNode
+  nodeId: 820007d2-b1b7-49b1-9b42-62b3ef5b2ab9
+  displayName: MonologueNode
+  isCheckpoint: 0
+  editorPosition: {x: 654.33325, y: 254.77777}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 1593343371411847977}
+  dialogueData: {fileID: 11400000, guid: bd1a11d7033b7ef45bec17fd0e3e8f05, type: 2}

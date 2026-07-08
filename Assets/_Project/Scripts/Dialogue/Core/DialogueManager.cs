@@ -54,6 +54,12 @@ namespace Game.Dialogue
             DialogueNodeChanged?.Invoke(firstNode);
         }
 
+        // Monolog
+        public void StartDialogue(DialogueData dialogueData)
+        {
+            StartDialogue(dialogueData, null);
+        }
+
         public void ContinueDialogue()
         {
             if (!IsDialogueRunning)
@@ -86,9 +92,10 @@ namespace Game.Dialogue
             OnDialogueModeChanged?.Invoke(false);
             DialogueEnded?.Invoke();
 
-            GameStateManager.Instance.SetState(GameState.Exploration);
+            if (GameStateManager.Instance.IsState(GameState.Dialogue))
+            {
+                GameStateManager.Instance.SetState(GameState.Exploration);
+            }
         }
-
-
     }
 }

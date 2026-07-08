@@ -6,7 +6,8 @@ public enum GameState
     Exploration,
     Dialogue,
     Pause,
-    Cutscene
+    Cutscene,
+    Branch
 }
 
 public class GameStateManager : MonoBehaviour

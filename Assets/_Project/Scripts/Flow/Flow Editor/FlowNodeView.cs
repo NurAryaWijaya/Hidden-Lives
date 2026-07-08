@@ -40,27 +40,18 @@ namespace Game.Flow.Editor
 
             Add(InputPort);
 
-            if (node is IFlowOutput output)
+            for (int i = 0; i < node.OutputCount; i++)
             {
-                int count = output.GetOutputs().Count();
+                FlowPortView port = new FlowPortView(
+                    this,
+                    FlowPortType.Output,
+                    i);
 
-                // Jika belum ada output sama sekali,
-                // tetap buat satu port untuk testing.
-                if (count == 0)
-                    count = 1;
+                OutputPorts.Add(port);
 
-                for (int i = 0; i < count; i++)
-                {
-                    FlowPortView port = new FlowPortView(
-                        this,
-                        FlowPortType.Output,
-                        i);
-
-                    OutputPorts.Add(port);
-
-                    Add(port);
-                }
+                Add(port);
             }
+
 
             // Layout
             style.position = Position.Absolute;

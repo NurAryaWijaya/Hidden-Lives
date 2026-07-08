@@ -9,7 +9,7 @@ using UnityEditor;
 
 namespace Game.Flow
 {
-    public abstract class FlowNode : ScriptableObject
+    public abstract class FlowNode : ScriptableObject, IFlowOutput
     {
         [Header("Node Info")]
         [SerializeField]
@@ -26,6 +26,11 @@ namespace Game.Flow
 
         [SerializeField]
         private Vector2 editorSize = new(220, 90);
+
+        [SerializeField]
+        protected FlowNode nextNode;
+
+        public virtual int OutputCount => 1;
 
         public string NodeType => GetType().Name;
 
@@ -83,6 +88,28 @@ namespace Game.Flow
         protected void Complete()
         {
             Complete(null);
+        }
+        public virtual IEnumerable<FlowNode> GetOutputs()
+        {
+            if (nextNode != null)
+                yield return nextNode;
+        }
+
+        public virtual void SetOutput(int index, FlowNode node)
+        {
+            if (index == 0)
+                nextNode = node;
+        }
+
+        public virtual void RemoveOutput(FlowNode node)
+        {
+            if (nextNode == node)
+                nextNode = null;
+        }
+
+        public virtual string GetOutputName(int index)
+        {
+            return "Next";
         }
 
 #if UNITY_EDITOR
