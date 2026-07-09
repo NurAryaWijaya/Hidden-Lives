@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Game.Flow
 {
@@ -10,6 +11,11 @@ namespace Game.Flow
         private readonly Dictionary<string, FlowComponent> registry =
             new Dictionary<string, FlowComponent>();
 
+        private void Start()
+        {
+            BuildRegistry();
+        }
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -19,17 +25,13 @@ namespace Game.Flow
             }
 
             Instance = this;
-
-            BuildRegistry();
         }
 
         private void BuildRegistry()
         {
             registry.Clear();
 
-            FlowComponent[] components =
-                FindObjectsByType<FlowComponent>(
-                    FindObjectsSortMode.None);
+            FlowComponent[] components = FindObjectsByType<FlowComponent>(FindObjectsSortMode.None);
 
             foreach (FlowComponent component in components)
             {
@@ -51,6 +53,7 @@ namespace Game.Flow
 
                 registry.Add(component.Id, component);
             }
+            Debug.Log($"FlowRegistry : {registry.Count} component(s) loaded.");
         }
 
         public FlowComponent Get(string id)
@@ -77,6 +80,27 @@ namespace Game.Flow
             }
 
             return default;
+        }
+
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            BuildRegistry();
+        }
+
+        //Gar bisa dipanggil siste lain
+        public void Refresh()
+        {
+            BuildRegistry();
         }
     }
 }

@@ -6,7 +6,6 @@ namespace Game.Flow
     {
         [SerializeField]
         private string id;
-
         public string Id => id;
     }
 }

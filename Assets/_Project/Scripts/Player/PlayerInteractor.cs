@@ -6,13 +6,13 @@ using Game.Dialogue;
 public class PlayerInteractor : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Camera playerCamera;
     [SerializeField] private PlayerInputHandler inputHandler;
 
     [Header("Interaction")]
     [SerializeField] private LayerMask interactMask;
     [SerializeField] private float detectDistance = 4f;
 
+    private Camera playerCamera;
     private readonly Collider[] overlapResults = new Collider[32];
 
     // Objek dalam radius detect
@@ -35,6 +35,8 @@ public class PlayerInteractor : MonoBehaviour
     private void Awake()
     {
         PlayerCarry = GetComponent<PlayerCarry>();
+
+        playerCamera = Camera.main;
     }
 
     private void Update()

@@ -19,9 +19,6 @@ namespace Game.Flow
         private string displayName;
 
         [SerializeField]
-        private bool isCheckpoint;
-
-        [SerializeField]
         private Vector2 editorPosition;
 
         [SerializeField]
@@ -36,16 +33,16 @@ namespace Game.Flow
 
         public string NodeId => nodeId;
         public string DisplayName => displayName;
-        public bool IsCheckpoint => isCheckpoint;
         public Vector2 EditorPosition => editorPosition;
 
         // Dipanggil ketika node mulai dijalankan.
         public abstract void Enter();
 
         // Dipanggil jika node perlu dihentikan secara paksa.
-        public virtual void Exit()
-        {
+        public virtual void Exit() { 
+
         }
+
 
         // Event ketika node selesai.
         // FlowManager akan mendengarkan event ini.

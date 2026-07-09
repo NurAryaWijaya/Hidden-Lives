@@ -10,6 +10,7 @@ namespace Game.Flow
         public event Action<FlowGraph> FlowStarted;
         public event Action<FlowNode> FlowNodeChanged;
         public event Action FlowEnded;
+        public event Action GraphFinished;
 
         public FlowGraph CurrentGraph { get; private set; }
 
@@ -90,6 +91,12 @@ namespace Game.Flow
 
         private void HandleNodeCompleted(FlowNode nextNode)
         {
+            if (nextNode == null)
+            {
+                FinishGraph();
+                return;
+            }
+
             GoTo(nextNode);
         }
 
@@ -105,6 +112,15 @@ namespace Game.Flow
             CurrentGraph = null;
 
             FlowEnded?.Invoke();
+        }
+
+        private void FinishGraph()
+        {
+            CurrentNode = null;
+
+            GraphFinished?.Invoke();
+
+            Debug.Log("Flow Graph Finished");
         }
     }
 }

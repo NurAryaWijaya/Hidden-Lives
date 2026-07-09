@@ -302,6 +302,21 @@ namespace Game.Flow.Editor
                () => CreateNodeRequested?.Invoke(typeof(BranchNode), contextMenuPosition));
 
             menu.AddItem(
+               new GUIContent("Create Node/Load Scene"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(LoadSceneNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Cut Scene"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(CutsceneNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/End"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(EndNode), contextMenuPosition));
+
+            menu.AddItem(
                 new GUIContent("Create Node/Test"),
                 false,
                 () => CreateNodeRequested?.Invoke(typeof(TestFlowNode), contextMenuPosition));

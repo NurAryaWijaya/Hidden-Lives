@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (!GameStateManager.Instance.IsState(GameState.Exploration))
+            return;
+
         movement.Move(
             inputHandler.MoveInput
         );

@@ -40,9 +40,9 @@ public class MouseLook : MonoBehaviour
             return;
         }
 
-        if (GameStateManager.Instance.IsState(GameState.Branch))        
+        if (!GameStateManager.Instance.IsState(GameState.Exploration))
             return;
-        
+
         Vector2 look = inputHandler.LookInput;
 
         float mouseX = look.x * sensitivity;
