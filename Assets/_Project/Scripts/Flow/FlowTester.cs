@@ -10,11 +10,16 @@ namespace Game.Flow
         [SerializeField]
         private Vector2 editorPosition;
 
+        private bool IsStarted;
+
         public Vector2 EditorPosition => editorPosition;
 
         private void Start()
         {
-            FlowManager.Instance.StartFlow(graph);
+            if (!IsStarted)
+                FlowManager.Instance.StartFlow(graph);
+
+            IsStarted = true;
         }
 
 #if UNITY_EDITOR

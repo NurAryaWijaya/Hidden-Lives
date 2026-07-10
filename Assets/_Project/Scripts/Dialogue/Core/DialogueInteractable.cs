@@ -55,6 +55,7 @@ namespace Game.Dialogue
         public void Activate()
         {
             interactionDialogueEnabled = true;
+            SetLayerRecursively(transform, interactableLayer);
         }
 
         public void Deactivate()

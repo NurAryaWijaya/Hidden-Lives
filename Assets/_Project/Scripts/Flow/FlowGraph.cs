@@ -13,6 +13,9 @@ namespace Game.Flow
         private int chapterIndex;
 
         [SerializeField]
+        private string graphId;
+
+        [SerializeField]
         private string displayName;
 
         [TextArea]
@@ -30,6 +33,8 @@ namespace Game.Flow
         public string DisplayName => displayName;
 
         public string Description => description;
+
+        public string GraphId => graphId;
 
         public FlowNode StartNode => startNode;
 

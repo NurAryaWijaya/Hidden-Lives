@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6219285119259266234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bb9546964aa3645aab8642c3850cd5, type: 3}
+  m_Name: BranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::BranchNode
+  nodeId: 364d6c23-3bb9-44ed-8bcd-f4f5358251b8
+  displayName: BranchNode
+  editorPosition: {x: 1091.7499, y: 300}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 0}
+  trueNode: {fileID: 2233686405139286015}
+  falseNode: {fileID: -3681267800977029959}
+  trueText: True
+  falseText: False
+--- !u!114 &-3681267800977029959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: d939acd8-d710-4a8e-8c14-46feb8cce933
+  displayName: TestFlowNode
+  editorPosition: {x: 1519, y: 421.71426}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 1812491291348435558}
+  message: Ini False
+  duration: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
+  m_Name: TestGraph2
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
+  chapterIndex: 0
+  graphId: 
+  displayName: 
+  description: 
+  startNode: {fileID: 436777076829474813}
+  nodes:
+  - {fileID: 436777076829474813}
+  - {fileID: 6572064811909701971}
+  - {fileID: -6219285119259266234}
+  - {fileID: 2233686405139286015}
+  - {fileID: -3681267800977029959}
+  - {fileID: 1812491291348435558}
+--- !u!114 &436777076829474813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: StartNodeTest2
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: 036385a8-b21d-49eb-bf7e-6b22822adc6c
+  displayName: StartNodeTest2
+  editorPosition: {x: 423.3333, y: 294.16666}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 6572064811909701971}
+--- !u!114 &1812491291348435558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6cecf5edda68943ba5a122a2d6f7f1, type: 3}
+  m_Name: EndNode
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  nodeId: 9cf31d00-5874-4a94-9069-eb93a6ea1515
+  displayName: EndNode
+  editorPosition: {x: 1910.1428, y: 419.99997}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 0}
+--- !u!114 &2233686405139286015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb09179511b274f9b4def14bf156e6, type: 3}
+  m_Name: NextGraphNode
+  m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
+  nodeId: e97db611-4b29-4060-9d9c-87aef076e27c
+  displayName: NextGraphNode
+  editorPosition: {x: 1502.75, y: 212.74995}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 0}
+  nextGraph: {fileID: 11400000, guid: 90f1ba558daf8244b953f4c7b46b469c, type: 2}
+--- !u!114 &6572064811909701971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: ab7105cd-f936-4f59-97da-de515a3a5313
+  displayName: TestFlowNode
+  editorPosition: {x: 735, y: 293.16666}
+  editorSize: {x: 100, y: 10}
+  nextNode: {fileID: -6219285119259266234}
+  message: Ini Pindah Graph
+  duration: 1

@@ -36,11 +36,41 @@ namespace Game.Flow
                 return;
             }
 
+            if (CurrentNode != null)
+            {
+                CurrentNode.Completed -= HandleNodeCompleted;
+                CurrentNode.Exit();
+
+                CurrentNode = null;
+            }
+
             CurrentGraph = graph;
 
             FlowStarted?.Invoke(graph);
 
             GoTo(graph.StartNode);
+        }
+        public void StartFlow(FlowGraph graph,FlowNode startNode)
+        {
+            if (graph == null)
+            {
+                Debug.LogError("Cannot start Flow. Graph is null.");
+                return;
+            }
+
+            if (CurrentNode != null)
+            {
+                CurrentNode.Completed -= HandleNodeCompleted;
+                CurrentNode.Exit();
+
+                CurrentNode = null;
+            }
+
+            CurrentGraph = graph;
+
+            FlowStarted?.Invoke(graph);
+
+            GoTo(startNode);
         }
 
         // Berpindah ke FlowNode berikutnya.
