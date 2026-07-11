@@ -4,11 +4,10 @@ namespace Game.Flow
     public class CheckpointInfo
     {
         public string CheckpointId;
-
         public string SceneName;
-
         public string GraphId;
-
         public string NodeId;
+
+        public WorldStateSnapshot Snapshot;
     }
 }

@@ -140,25 +140,68 @@ namespace Game.Flow
                 component.gameObject.SetActive(state.Active);
             }
 
-            TimelineCutsceneController[] cutscenes =
-                FindObjectsByType<TimelineCutsceneController>(
-                FindObjectsInactive.Include,
-                FindObjectsSortMode.None);
-
-            foreach (TimelineCutsceneController cutscene in cutscenes)
-            {
-                if (IsCutsceneCompleted(cutscene.Id))
-                {
-                    cutscene.RestoreCompleted();
-                }
-            }
-
             SpawnManager.Instance.Restore();
+            RestoreCompletedCutscenes();
         }
 
         #endregion
+
+        public WorldStateSnapshot CreateSnapshot()
+        {
+            WorldStateSnapshot snapshot = new();
+
+            foreach ((string id, WorldState state) in states)
+            {
+                snapshot.States.Add(id, new WorldState
+                {
+                    Active = state.Active,
+                    Destroyed = state.Destroyed,
+                    Spawned = state.Spawned,
+                    Completed = state.Completed
+                });
+            }
+
+            snapshot.CompletedCutscenes.UnionWith(completedCutscenes);
+
+            return snapshot;
+        }
+
+        public void RestoreSnapshot(WorldStateSnapshot snapshot)
+        {
+            states.Clear();
+            completedCutscenes.Clear();
+
+            if (snapshot == null)
+                return;
+
+            foreach ((string id, WorldState state) in snapshot.States)
+            {
+                states.Add(id, new WorldState
+                {
+                    Active = state.Active,
+                    Destroyed = state.Destroyed,
+                    Spawned = state.Spawned,
+                    Completed = state.Completed
+                });
+            }
+
+            completedCutscenes.UnionWith(snapshot.CompletedCutscenes);
+        }
+
+        private void RestoreCompletedCutscenes()
+        {
+            TimelineCutsceneController[] cutscenes =
+                FindObjectsByType<TimelineCutsceneController>(
+                    FindObjectsInactive.Include,
+                    FindObjectsSortMode.None);
+
+            foreach (TimelineCutsceneController controller in cutscenes)
+            {
+                if (!IsCutsceneCompleted(controller.Id))
+                    continue;
+
+                controller.RestoreCompleted();
+            }
+        }
     }
 }
-
-
-//WorldStateManager.Instance.SetCompleted(doorId);

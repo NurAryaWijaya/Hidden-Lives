@@ -39,7 +39,9 @@ namespace Game.Flow
                 CheckpointId = checkpointId,
                 SceneName = sceneName,
                 GraphId = graph.GraphId,
-                NodeId = node.NodeId
+                NodeId = node.NodeId,
+
+                Snapshot = WorldStateManager.Instance.CreateSnapshot()
             };
 
             checkpoints[checkpointId] = info;
@@ -132,7 +134,10 @@ namespace Game.Flow
                 return;
             }
 
+            WorldStateManager.Instance.RestoreSnapshot(pendingCheckpoint.Snapshot);
+
             WorldStateManager.Instance.Apply();
+
             FlowManager.Instance.StartFlow(graph, node);
 
             pendingCheckpoint = null;
