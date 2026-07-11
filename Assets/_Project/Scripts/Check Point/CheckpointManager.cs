@@ -132,6 +132,7 @@ namespace Game.Flow
                 return;
             }
 
+            WorldStateManager.Instance.Apply();
             FlowManager.Instance.StartFlow(graph, node);
 
             pendingCheckpoint = null;

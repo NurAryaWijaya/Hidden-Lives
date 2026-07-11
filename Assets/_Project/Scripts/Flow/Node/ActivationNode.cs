@@ -25,9 +25,15 @@ public class ActivationNode : FlowNode
         }
 
         if (activate)
+        {
             target.Activate();
+            WorldStateManager.Instance.SetActive(flowId, true);
+        }
         else
+        {
             target.Deactivate();
+            WorldStateManager.Instance.SetActive(flowId, true);
+        }
 
         Complete(nextNode);
     }

@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: TestGraph2
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
   chapterIndex: 0
-  graphId: 
+  graphId: Graph2
   displayName: 
   description: 
   startNode: {fileID: 436777076829474813}

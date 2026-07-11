@@ -10,12 +10,17 @@ public class CutsceneNode : FlowNode
 
     public override void Enter()
     {
+        if (WorldStateManager.Instance.IsCutsceneCompleted(flowId))
+        {
+            Complete(nextNode);
+            return;
+        }
+
         controller = FlowRegistry.Instance.Get<TimelineCutsceneController>(flowId);
 
         if (controller == null)
         {
             Debug.LogWarning($"Timeline Cutscene '{flowId}' tidak ditemukan.");
-
             Complete(nextNode);
             return;
         }
@@ -30,6 +35,8 @@ public class CutsceneNode : FlowNode
     private void HandleFinished()
     {
         controller.Finished -= HandleFinished;
+
+        WorldStateManager.Instance.CompleteCutscene(flowId);
 
         GameStateManager.Instance.SetState(GameState.Exploration);
 

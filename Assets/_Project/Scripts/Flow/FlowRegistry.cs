@@ -11,11 +11,6 @@ namespace Game.Flow
         private readonly Dictionary<string, FlowComponent> registry =
             new Dictionary<string, FlowComponent>();
 
-        private void Start()
-        {
-            BuildRegistry();
-        }
-
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -31,7 +26,7 @@ namespace Game.Flow
         {
             registry.Clear();
 
-            FlowComponent[] components = FindObjectsByType<FlowComponent>(FindObjectsSortMode.None);
+            FlowComponent[] components = FindObjectsByType<FlowComponent>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
             foreach (FlowComponent component in components)
             {
@@ -73,13 +68,19 @@ namespace Game.Flow
             if (!registry.TryGetValue(id, out FlowComponent flowComponent))
                 return default;
 
-            foreach (var component in flowComponent.GetComponents<MonoBehaviour>())
+            // Object sudah dihancurkan
+            if (flowComponent == null)
             {
-                if (component is T target)
-                    return target;
+                registry.Remove(id);
+                return default;
             }
 
-            return default;
+            return flowComponent.GetComponent<T>();
+        }
+
+        public void Unregister(string id)
+        {
+            registry.Remove(id);
         }
 
         private void OnEnable()

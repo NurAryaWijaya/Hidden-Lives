@@ -317,6 +317,26 @@ namespace Game.Flow.Editor
                () => CreateNodeRequested?.Invoke(typeof(AudioNode), contextMenuPosition));
 
             menu.AddItem(
+               new GUIContent("Create Node/Spawn"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(SpawnNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Destroy Spawn"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(DestroySpawnNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Destroy"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(DestroyNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Move"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(MoveNode), contextMenuPosition));
+
+            menu.AddItem(
                new GUIContent("Create Node/Checkpoint"),
                false,
                () => CreateNodeRequested?.Invoke(typeof(CheckpointNode), contextMenuPosition));

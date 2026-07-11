@@ -42,4 +42,15 @@ public class PlayerMovement : MonoBehaviour
             horizontalMove * Time.deltaTime
         );
     }
+
+    public void Teleport(Vector3 position, Quaternion rotation)
+    {
+        controller.enabled = false;
+
+        transform.SetPositionAndRotation(position, rotation);
+
+        verticalVelocity = 0f;
+
+        controller.enabled = true;
+    }
 }

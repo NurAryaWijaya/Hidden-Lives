@@ -58,6 +58,22 @@ public class TimelineCutsceneController : FlowComponent
         director.Stop();
     }
 
+    public void RestoreCompleted()
+    {
+        if (director == null)
+            return;
+
+        director.time = director.duration;
+
+        // Evaluasi semua track ke frame terakhir
+        director.Evaluate();
+
+        // Pastikan tidak sedang play
+        director.Stop();
+
+        IsPlaying = false;
+    }
+
     private void HandleTimelineStopped(PlayableDirector director)
     {
         if (!IsPlaying)

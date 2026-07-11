@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 4169743033755963934}
   - component: {fileID: 3550484235188415815}
   - component: {fileID: 1528169851013167416}
+  - component: {fileID: 7573283078007322854}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -373,6 +374,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCarry
   holdPoint: {fileID: 9216631100964180343}
   playerCollider: {fileID: 5683650213087728204}
+--- !u!114 &7573283078007322854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884540841051976755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59736aa140639646b766fbdd68ed50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowComponent
+  id: PlayerPrefab
 --- !u!1 &2883652008680133886
 GameObject:
   m_ObjectHideFlags: 0

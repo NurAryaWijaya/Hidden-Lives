@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8330572049959749228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4434671798ca149a391f5aeae18ddd, type: 3}
+  m_Name: SpawnNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.SpawnNode
+  nodeId: c5518c51-af0f-4674-bd1b-eba077ab6544
+  displayName: SpawnNode
+  editorPosition: {x: 625.1429, y: 500.28577}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 1593343371411847977}
+  spawnId: DoorSpawnTest
+  prefab: {fileID: 4511639261633325990, guid: d0ab4e26f942b244f860e85396f3ab90, type: 3}
+  position: {x: 0, y: 1, z: 0}
+  rotation: {x: -90, y: 0, z: 0}
+  parent: {fileID: 0}
 --- !u!114 &-7991063800181598463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,7 +36,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
   nodeId: 14dc1a8a-916c-4d42-b156-b62e4b482243
   displayName: AudioNode
-  editorPosition: {x: 2478.5918, y: 505.59192}
+  editorPosition: {x: 2297.616, y: 438.75436}
   editorSize: {x: 220, y: 90}
   nextNode: {fileID: 4503532918344607874}
   channel: 0
@@ -90,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StartNode
   nodeId: b2d4adfc-f2a7-4019-802b-f19b0c8625be
   displayName: StartNode
-  editorPosition: {x: -444.3878, y: 240.83673}
+  editorPosition: {x: -564.60345, y: 240.86983}
   editorSize: {x: 220, y: 90}
   nextNode: {fileID: 4531344399730385539}
 --- !u!114 &-1653045087141003957
@@ -112,6 +134,26 @@ MonoBehaviour:
   nextNode: {fileID: 6627983669375615069}
   message: End Pick Up
   duration: 1
+--- !u!114 &-1477908814081550354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: be0b05c2-29b3-47ce-93b1-61dac2de5b2a
+  displayName: MoveNode
+  editorPosition: {x: 2834.0532, y: 601.95856}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 4972224950662133557}
+  flowId: PlayerPrefab
+  position: {x: 0, y: 0, z: 30.58}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &-1087850580515461306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +186,7 @@ MonoBehaviour:
   m_Name: Chapter 1
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
   chapterIndex: 1
-  graphId: 
+  graphId: Graph1
   displayName: Chapter 1
   description: Ini Hanya Test
   startNode: {fileID: -2996508182095855771}
@@ -170,6 +212,12 @@ MonoBehaviour:
   - {fileID: 98042880308869837}
   - {fileID: 4531344399730385539}
   - {fileID: 766753654591413792}
+  - {fileID: -1477908814081550354}
+  - {fileID: 2923168821822161094}
+  - {fileID: 2111653142131555206}
+  - {fileID: 5206348976404083097}
+  - {fileID: -8330572049959749228}
+  - {fileID: 7538077672213284148}
 --- !u!114 &98042880308869837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
   nodeId: f9a94b68-2f40-411f-9a1a-ccd703eb5b8c
   displayName: NextGraphNode
-  editorPosition: {x: 3470, y: 421.0408}
+  editorPosition: {x: 4691.6323, y: 506.79593}
   editorSize: {x: 220, y: 90}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: dfd3bbd2f2704344a906c2007dab68b7, type: 2}
@@ -220,9 +268,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
   nodeId: 3c0577de-412e-4cd5-8e7f-dc38079a407c
   displayName: CheckpointNode
-  editorPosition: {x: 2178.204, y: 706.57135}
+  editorPosition: {x: 3244.4375, y: 790}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: -7991063800181598463}
+  nextNode: {fileID: 2923168821822161094}
   checkpointId: TesCheckpoint2
 --- !u!114 &1172188746894793415
 MonoBehaviour:
@@ -238,9 +286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueFlowNode
   nodeId: 7fe70bda-4e7a-4f81-b0c8-683f45f6e6a5
   displayName: DialogueFlowNode
-  editorPosition: {x: 1871.6327, y: 433.40808}
+  editorPosition: {x: 1796.5714, y: 749.71423}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: 766753654591413792}
+  nextNode: {fileID: -7991063800181598463}
   flowId: DialogueTest1
 --- !u!114 &1593343371411847977
 MonoBehaviour:
@@ -263,6 +311,25 @@ MonoBehaviour:
   falseNode: {fileID: 7047423082936074290}
   trueText: True
   falseText: False
+--- !u!114 &2111653142131555206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: 9412565c-4f92-4ab7-a688-364292f2705f
+  displayName: TestFlowNode
+  editorPosition: {x: 4027.4443, y: 690.3334}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 5206348976404083097}
+  message: Ini habis move2
+  duration: 5
 --- !u!114 &2423749413530961225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,6 +349,26 @@ MonoBehaviour:
   nextNode: {fileID: 6353347026741007092}
   message: Ini Test Checkpoint  pertama
   duration: 3
+--- !u!114 &2923168821822161094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: 71f80156-3a0b-42a4-9a6a-506b99c0dad3
+  displayName: MoveNode
+  editorPosition: {x: 3654.2222, y: 726.44446}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 2111653142131555206}
+  flowId: PlayerPrefab
+  position: {x: 0, y: 0, z: -12.83}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &3238983557238548743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,9 +401,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
   nodeId: d460479b-4cc1-4633-8ba2-1cd61e8a2afc
   displayName: TestFlowNode
-  editorPosition: {x: 2742, y: 380.36737}
+  editorPosition: {x: 2505.7776, y: 624.889}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: 4972224950662133557}
+  nextNode: {fileID: -1477908814081550354}
   message: Ini Test Checkpoint kedua
   duration: 1
 --- !u!114 &4531344399730385539
@@ -370,10 +457,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
   nodeId: d1950f51-eafc-42f3-b8d7-48a41a2b59c8
   displayName: CutsceneNode
-  editorPosition: {x: 3086.2249, y: 416.64493}
+  editorPosition: {x: 2877.157, y: 879}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: 98042880308869837}
+  nextNode: {fileID: 766753654591413792}
   flowId: IntroCutscene
+--- !u!114 &5206348976404083097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: DestroyNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: 11883e23-1dfb-4dd0-a7d3-7312ee285475
+  displayName: DestroyNode
+  editorPosition: {x: 4321.8887, y: 875.4444}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 7538077672213284148}
+  flowId: TestBox
 --- !u!114 &6353347026741007092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,9 +493,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonologueNode
   nodeId: 820007d2-b1b7-49b1-9b42-62b3ef5b2ab9
   displayName: MonologueNode
-  editorPosition: {x: 654.33325, y: 254.77777}
+  editorPosition: {x: 147.57146, y: 595}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: 1593343371411847977}
+  nextNode: {fileID: -8330572049959749228}
   dialogueData: {fileID: 11400000, guid: bd1a11d7033b7ef45bec17fd0e3e8f05, type: 2}
 --- !u!114 &6627983669375615069
 MonoBehaviour:
@@ -424,10 +529,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
   nodeId: 28a99d68-fd78-4823-9f7b-934c387ea6ac
   displayName: AudioNode
-  editorPosition: {x: 1341, y: 403.11765}
+  editorPosition: {x: 1288.449, y: 452.61224}
   editorSize: {x: 220, y: 90}
   nextNode: {fileID: -5565324781149167555}
   channel: 0
   action: 0
   clip: {fileID: 8300000, guid: df2724c21fa1062459320f47728e6c1d, type: 3}
   loop: 1
+--- !u!114 &7538077672213284148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878ed93d0ade9414a910721678c1dfd4, type: 3}
+  m_Name: DestroySpawnNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroySpawnNode
+  nodeId: 32b2f89d-c3fc-447c-87c9-d804776e196b
+  displayName: DestroySpawnNode
+  editorPosition: {x: 4613.111, y: 765.0028}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 98042880308869837}
+  spawnId: DoorSpawnTest
