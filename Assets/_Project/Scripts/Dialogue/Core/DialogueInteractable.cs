@@ -1,14 +1,16 @@
-using UnityEngine;
-using Game.Dialogue;
 using Game.Flow;
+using Game.Localization;
+using UnityEngine;
 
 namespace Game.Dialogue
 {
     public class DialogueInteractable : Interactable, IFlowActivatable
     {
-        [Header("Dialogue")]
-        [SerializeField] private DialogueData dialogueData;
-        [SerializeField] private Transform headFocusPoint;
+        [SerializeField]
+        private LocalizedDialogueData dialogue;
+
+        [SerializeField]
+        private Transform headFocusPoint;
 
         [SerializeField]
         private bool interactionDialogueEnabled;
@@ -26,7 +28,9 @@ namespace Game.Dialogue
 
         public override void Interact(PlayerInteractor player)
         {
-            if (dialogueData == null)
+            DialogueData data = dialogue.GetDialogue();
+
+            if (data == null)
             {
                 Debug.LogWarning($"{name} tidak memiliki DialogueData.");
                 return;
@@ -34,7 +38,9 @@ namespace Game.Dialogue
 
             SetLayerRecursively(transform, heldLayer);
 
-            DialogueManager.Instance.StartDialogue(dialogueData, headFocusPoint);
+            DialogueManager.Instance.StartDialogue(
+                data,
+                headFocusPoint);
         }
 
         private void SetLayerRecursively(Transform root, int layer)
@@ -49,7 +55,8 @@ namespace Game.Dialogue
 
         public override bool CanInteract(PlayerInteractor player)
         {
-            return interactionDialogueEnabled && base.CanInteract(player);
+            return interactionDialogueEnabled &&
+                   base.CanInteract(player);
         }
 
         public void Activate()

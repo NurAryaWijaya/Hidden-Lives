@@ -112,9 +112,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StartNode
   nodeId: b2d4adfc-f2a7-4019-802b-f19b0c8625be
   displayName: StartNode
-  editorPosition: {x: -564.60345, y: 240.86983}
+  editorPosition: {x: -989.7732, y: 229.45578}
   editorSize: {x: 220, y: 90}
-  nextNode: {fileID: 4531344399730385539}
+  nextNode: {fileID: 7895104854686874153}
 --- !u!114 &-1653045087141003957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +218,7 @@ MonoBehaviour:
   - {fileID: 5206348976404083097}
   - {fileID: -8330572049959749228}
   - {fileID: 7538077672213284148}
+  - {fileID: 7895104854686874153}
 --- !u!114 &98042880308869837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +497,7 @@ MonoBehaviour:
   editorPosition: {x: 147.57146, y: 595}
   editorSize: {x: 220, y: 90}
   nextNode: {fileID: -8330572049959749228}
-  dialogueData: {fileID: 11400000, guid: bd1a11d7033b7ef45bec17fd0e3e8f05, type: 2}
+  dialogue: {fileID: 11400000, guid: 49de0efeedcd9a5419b1361d25e97bae, type: 2}
 --- !u!114 &6627983669375615069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,3 +555,21 @@ MonoBehaviour:
   editorSize: {x: 220, y: 90}
   nextNode: {fileID: 98042880308869837}
   spawnId: DoorSpawnTest
+--- !u!114 &7895104854686874153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: df151cb5-4cce-4f10-9340-5e9669e540e0
+  displayName: LoadSceneNode
+  editorPosition: {x: -583.2857, y: 244.09525}
+  editorSize: {x: 220, y: 90}
+  nextNode: {fileID: 4531344399730385539}
+  sceneName: Testing
