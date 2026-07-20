@@ -1,0 +1,868 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8861202241100492310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Stove Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 03aaa555-2419-45f1-8cde-5d6c3b713781
+  displayName: Stove Activation
+  description: Menonaktifkan Kompor
+  editorPosition: {x: 4926.6665, y: 533.6667}
+  nextNode: {fileID: 7072726501693957250}
+  flowId: Stove1
+  activate: 0
+--- !u!114 &-8685113063785912599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Take Fried Rice
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 270b360f-d0c3-42bd-8377-0648eb53fb76
+  displayName: Wait Until Player Take Fried Rice
+  description: Menunggu pemain samapai mengambil nasi goreng dengan piring
+  editorPosition: {x: 13694.059, y: 968.0554}
+  nextNode: {fileID: -7440574586940109826}
+  eventId: Take_With_Plate
+--- !u!114 &-8555829835640714948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: Destory Cobek
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: 55bb4cee-5c3a-48fa-b0e3-8db06e2b2366
+  displayName: Destory Cobek
+  description: Menghapus cobek dari dunia
+  editorPosition: {x: 7512, y: 607}
+  nextNode: {fileID: -7319410878511566715}
+  flowId: Cobek
+--- !u!114 &-8068000782563303803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: bb350f33-55f0-4f10-99de-5a261daf0074
+  displayName: WaitEventNode
+  description: Menunggu pemain menyalakan kompor
+  editorPosition: {x: 10236, y: 496.7755}
+  nextNode: {fileID: -6849713339836580100}
+  eventId: Stove_On
+--- !u!114 &-7440574586940109826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb09179511b274f9b4def14bf156e6, type: 3}
+  m_Name: NextGraphNode
+  m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
+  nodeId: 30933e72-70ee-4a2e-bb80-5e9745eb4f5e
+  displayName: NextGraphNode
+  description: 
+  editorPosition: {x: 14045, y: 401.33334}
+  nextNode: {fileID: 0}
+  nextGraph: {fileID: 11400000, guid: 0d42b135f00db0a418bdb652df28af3f, type: 2}
+--- !u!114 &-7319410878511566715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4434671798ca149a391f5aeae18ddd, type: 3}
+  m_Name: Cobek Cpawn
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.SpawnNode
+  nodeId: 15931782-4e75-4ad0-847e-528e9924cd13
+  displayName: Cobek Cpawn
+  description: Menspawn cobek dengan bumbu halus
+  editorPosition: {x: 7802.222, y: 809.66675}
+  nextNode: {fileID: 276854473664532871}
+  spawnId: Cobek_Pick_Upable
+  prefab: {fileID: 8596114156385589079, guid: 12793328f31daff4ab082d5bb3292b48, type: 3}
+  position: {x: -5.659, y: 0.991, z: -3.391}
+  rotation: {x: 0, y: 0, z: 0}
+  parent: {fileID: 0}
+--- !u!114 &-7253503566355286920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: Play Audio Cook(Prototype)
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: 287f5388-e81c-496c-9a48-06b6c0e5a1fe
+  displayName: Play Audio Cook(Prototype)
+  description: 
+  editorPosition: {x: 4218.1113, y: 334.6667}
+  nextNode: {fileID: 2390458075732127263}
+  message: Play Audio
+  duration: 0.5
+--- !u!114 &-6849713339836580100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Stove Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: fdfce601-0b44-49d6-aa36-af56ecc29fb3
+  displayName: Stove Activation
+  description: 
+  editorPosition: {x: 10382.408, y: 654.9467}
+  nextNode: {fileID: -707936875726576151}
+  flowId: Stove1
+  activate: 0
+--- !u!114 &-5736914840282668154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4434671798ca149a391f5aeae18ddd, type: 3}
+  m_Name: Wok Spawn
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.SpawnNode
+  nodeId: 21ddb8c3-311d-4fc4-a469-e20097db4c84
+  displayName: Wok Spawn
+  description: Menspawn Wok ke atas Stove
+  editorPosition: {x: 8853.777, y: 866.8889}
+  nextNode: {fileID: 4034287414627871857}
+  spawnId: Wok2
+  prefab: {fileID: 2333665451251977982, guid: 93502752dfeff8f47a0bcfe0dad40368, type: 3}
+  position: {x: -5.4059, y: 1.369, z: -1.0673}
+  rotation: {x: 0, y: 0, z: 0}
+  parent: {fileID: 0}
+--- !u!114 &-5689979775128584537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Cobek Held Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: f9efdb3e-380f-4969-a447-0fb04d5d9325
+  displayName: Cobek Held Activation
+  description: Mengaktifkan Pegangan Cobek
+  editorPosition: {x: 6535, y: 523.8265}
+  nextNode: {fileID: -5212070808069986067}
+  flowId: Cobek_Held
+  activate: 1
+--- !u!114 &-5567515935726660256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Stove Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 4b1036a9-e6e9-433c-a7ce-e1c2d7537f4c
+  displayName: Stove Activation
+  description: Menyalakan lagi interaksi stove
+  editorPosition: {x: 12493.51, y: 986.6399}
+  nextNode: {fileID: 2586158108749773240}
+  flowId: Stove1
+  activate: 1
+--- !u!114 &-5212070808069986067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Cobek Held Wait To Interact
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 3d28fc10-d387-429a-940d-7a8c3e232930
+  displayName: Cobek Held Wait To Interact
+  description: Menunggu pemain menginteraksi pegangan cobek untuk memulai Cutscene
+  editorPosition: {x: 6808, y: 400}
+  nextNode: {fileID: 5112918850757408644}
+  eventId: Cobek_Held_Interacted
+--- !u!114 &-4631914391508793269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Put Seasioning
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: d4d3547e-8606-4255-83b6-b56971260b2f
+  displayName: Wait Until Player Put Seasioning
+  description: Menuggu pemain menaruh bumbu
+  editorPosition: {x: 9308.449, y: 870.61224}
+  nextNode: {fileID: 1805228118221190331}
+  eventId: Seasoning_Added
+--- !u!114 &-4622154221338395547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Stove Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 71eb4e3d-b1c6-41b7-869e-5885875b3c67
+  displayName: Stove Activation
+  description: Menonaktifkan Stove
+  editorPosition: {x: 13065.054, y: 974.7101}
+  nextNode: {fileID: 2471005905609721354}
+  flowId: Stove1
+  activate: 1
+--- !u!114 &-3337012277080359653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: 'Wok Actovation '
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: b7a230b5-8f0e-42f6-adb3-c8b41af047b0
+  displayName: 'Wok Actovation '
+  description: 
+  editorPosition: {x: 9765.515, y: 512.06506}
+  nextNode: {fileID: 5257985325100390620}
+  flowId: Wok2
+  activate: 0
+--- !u!114 &-1223400207578659409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Pick Up All Object
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: dcbb3522-9247-4a37-a93b-60be7b3c4875
+  displayName: Wait Until Player Pick Up All Object
+  description: Menunggu Pemain Meletakan semua bahan bumbu nasi goreng
+  editorPosition: {x: 6261.617, y: 399.60495}
+  nextNode: {fileID: -5689979775128584537}
+  eventId: Fried_Rice_Seasoning
+--- !u!114 &-707936875726576151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Wok Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 84e5b7b7-53c9-4953-b88c-87c3f22c26ae
+  displayName: Wok Activation
+  description: 
+  editorPosition: {x: 10637.184, y: 497.40842}
+  nextNode: {fileID: 6190904462338594238}
+  flowId: Wok2
+  activate: 1
+--- !u!114 &-320514263383231925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Put All Equipment
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 410d9199-d556-467c-a69b-e5a1f3b13c37
+  displayName: Wait Until Player Put All Equipment
+  description: Menuggu pemain menaruh kecap, yang artinya semua bahan ditambahkan
+  editorPosition: {x: 11815.333, y: 874.44446}
+  nextNode: {fileID: 513985438502517357}
+  eventId: All_Added
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
+  m_Name: MakeFriedRice
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
+  chapterIndex: 0
+  graphId: Fried_Rice_Task_Graph
+  displayName: FiredRiceTaskGraph
+  description: Graph Task Membuat Nasi Goreng
+  startNode: {fileID: 8372727854662173702}
+  nodes:
+  - {fileID: 8372727854662173702}
+  - {fileID: 2390458075732127263}
+  - {fileID: -8861202241100492310}
+  - {fileID: 3719740241201633188}
+  - {fileID: 6909064707642069634}
+  - {fileID: -1223400207578659409}
+  - {fileID: -5689979775128584537}
+  - {fileID: -5212070808069986067}
+  - {fileID: 374444725192268598}
+  - {fileID: 5112918850757408644}
+  - {fileID: -8555829835640714948}
+  - {fileID: 276854473664532871}
+  - {fileID: 7887374195993826739}
+  - {fileID: 9199911962749465781}
+  - {fileID: 4034287414627871857}
+  - {fileID: 5058117538481505500}
+  - {fileID: -7319410878511566715}
+  - {fileID: -5736914840282668154}
+  - {fileID: 1805228118221190331}
+  - {fileID: -7253503566355286920}
+  - {fileID: 6190904462338594238}
+  - {fileID: -4631914391508793269}
+  - {fileID: 3963126809707808288}
+  - {fileID: 8354682196838456144}
+  - {fileID: 2081362482030477202}
+  - {fileID: 4960879770615620125}
+  - {fileID: 8216450135233248240}
+  - {fileID: -320514263383231925}
+  - {fileID: 5257985325100390620}
+  - {fileID: -8068000782563303803}
+  - {fileID: -6849713339836580100}
+  - {fileID: -3337012277080359653}
+  - {fileID: -707936875726576151}
+  - {fileID: 7072726501693957250}
+  - {fileID: 5474143772804414664}
+  - {fileID: 3197096318989868012}
+  - {fileID: 513985438502517357}
+  - {fileID: -5567515935726660256}
+  - {fileID: -4622154221338395547}
+  - {fileID: 2586158108749773240}
+  - {fileID: 2471005905609721354}
+  - {fileID: -8685113063785912599}
+  - {fileID: -7440574586940109826}
+--- !u!114 &276854473664532871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Wok Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 309ee94b-0ecd-4382-8114-bc89b7d4627e
+  displayName: Wok Activation
+  description: Mengaktifakan Wok
+  editorPosition: {x: 8140, y: 731}
+  nextNode: {fileID: 9199911962749465781}
+  flowId: Wok1
+  activate: 1
+--- !u!114 &374444725192268598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: Cutscene(Prototype)
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: 067dac19-cece-4c5e-a44e-39cc8be76933
+  displayName: Cutscene(Prototype)
+  description: Ini Baru Prototype
+  editorPosition: {x: 7249, y: 500}
+  nextNode: {fileID: -8555829835640714948}
+  message: Memulai Cutscene Menumbuk
+  duration: 2
+--- !u!114 &513985438502517357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 597bb27c-c213-449c-ad41-eabc3ca44c03
+  displayName: WaitEventNode
+  description: Memasak selesai, nasi goreng siap dihidangkan
+  editorPosition: {x: 12147.89, y: 874.22437}
+  nextNode: {fileID: -5567515935726660256}
+  eventId: FriedRice_Ready
+--- !u!114 &1805228118221190331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Oil Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: f24b3f80-9b39-4bb7-97d1-73ca22e626a9
+  displayName: Oil Activation
+  description: Mengaktifkan minyal
+  editorPosition: {x: 9511.184, y: 741.6326}
+  nextNode: {fileID: 3963126809707808288}
+  flowId: Oil1
+  activate: 1
+--- !u!114 &2081362482030477202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Wait Until Player Put Rice
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: dab21d1a-72fd-417b-805f-db3b9b79cd20
+  displayName: Wait Until Player Put Rice
+  description: Mwngaktifkan nasi
+  editorPosition: {x: 11123, y: 708.7778}
+  nextNode: {fileID: 4960879770615620125}
+  flowId: Rice_Bowl1
+  activate: 1
+--- !u!114 &2390458075732127263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Cobek Held Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 9e2ab766-cf00-41c0-af4a-b7c5b316e567
+  displayName: Cobek Held Activation
+  description: Menonaktifkan Penganan Cobek
+  editorPosition: {x: 4476.6665, y: 524.44446}
+  nextNode: {fileID: 7887374195993826739}
+  flowId: Cobek_Held
+  activate: 0
+--- !u!114 &2471005905609721354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Plate Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 09aa7fc4-769e-4786-ac86-ff9e01718fb1
+  displayName: Plate Activation
+  description: Mengaktifkan Piring
+  editorPosition: {x: 13388.814, y: 1100}
+  nextNode: {fileID: -8685113063785912599}
+  flowId: Plate1
+  activate: 1
+--- !u!114 &2586158108749773240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wat Unti Player Ge Off Stove
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: d1a4fe48-0efa-46f0-9a6a-6f1b14b44fa1
+  displayName: Wat Unti Player Ge Off Stove
+  description: Menunggu pemain mematikan kompor
+  editorPosition: {x: 12782.882, y: 852.75146}
+  nextNode: {fileID: -4622154221338395547}
+  eventId: Stove_Off
+--- !u!114 &3197096318989868012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Plate Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 38485903-1c3e-4d86-aea5-7986b17371b3
+  displayName: Plate Activation
+  description: 
+  editorPosition: {x: 5368.3667, y: 544}
+  nextNode: {fileID: 5474143772804414664}
+  flowId: Plate1
+  activate: 0
+--- !u!114 &3719740241201633188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Soy Souce Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 52192427-5205-4e07-8892-ce59b4d42022
+  displayName: Soy Souce Activation
+  description: Menonaktifkan Kecap
+  editorPosition: {x: 5815.1113, y: 542.6666}
+  nextNode: {fileID: 6909064707642069634}
+  flowId: Soy_Souce1
+  activate: 0
+--- !u!114 &3963126809707808288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Put Oil
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: fdd3398f-ef15-478e-a7f3-f7cae527da89
+  displayName: Wait Until Player Put Oil
+  description: Menunggu pemain menaruh minyak
+  editorPosition: {x: 9717.816, y: 863.9796}
+  nextNode: {fileID: -3337012277080359653}
+  eventId: Oil_Added
+--- !u!114 &4034287414627871857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Cobek Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 420cf050-96de-4faa-a4b7-6dc6153eaeba
+  displayName: Cobek Activation
+  description: Mengaktivasi Cobek yang sudah ada bumbunya
+  editorPosition: {x: 9075.429, y: 723.7755}
+  nextNode: {fileID: -4631914391508793269}
+  flowId: Cobek_Pick_Upable
+  activate: 1
+--- !u!114 &4960879770615620125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Put Rice
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 57d1dc99-4802-4e34-a3f9-add3f71f09ab
+  displayName: Wait Until Player Put Rice
+  description: Menuggu pemain menaruh nasi
+  editorPosition: {x: 11321.223, y: 880.3333}
+  nextNode: {fileID: 8216450135233248240}
+  eventId: Rice_Added
+--- !u!114 &5058117538481505500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: Wok Destroy
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: 72fc37fd-c47d-4e37-aa4d-e5b211246200
+  displayName: Wok Destroy
+  description: Menghapus Wok dari Scene
+  editorPosition: {x: 8632, y: 731}
+  nextNode: {fileID: -5736914840282668154}
+  flowId: Wok1
+--- !u!114 &5112918850757408644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: Cobek Held Destroy
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: ab204602-bd30-45d5-ad74-fa9666504e80
+  displayName: Cobek Held Destroy
+  description: Menghapus Pegangan Cobek dari scene
+  editorPosition: {x: 7010, y: 603}
+  nextNode: {fileID: 374444725192268598}
+  flowId: Cobek_Held
+--- !u!114 &5257985325100390620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Stove Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: bbdf43c9-6489-4e73-ac03-e7888ac34c31
+  displayName: Stove Activation
+  description: 
+  editorPosition: {x: 9962.551, y: 354.7551}
+  nextNode: {fileID: -8068000782563303803}
+  flowId: Stove1
+  activate: 1
+--- !u!114 &5474143772804414664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Egg Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 16376e42-3a44-42ab-8451-3b214d279f4b
+  displayName: Egg Activation
+  description: 
+  editorPosition: {x: 5591.8887, y: 720.3333}
+  nextNode: {fileID: 3719740241201633188}
+  flowId: Egg1
+  activate: 0
+--- !u!114 &6190904462338594238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Egg Actiavtion
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 1bf1d114-b6d0-41fd-9e81-7530732bce8e
+  displayName: Egg Actiavtion
+  description: Mengaktifkan Telur
+  editorPosition: {x: 10739.333, y: 721.44446}
+  nextNode: {fileID: 8354682196838456144}
+  flowId: Egg1
+  activate: 1
+--- !u!114 &6909064707642069634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Oil Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 769ad9f3-f75f-4942-8384-6a031db328d3
+  displayName: Oil Activation
+  description: Menonaktifakn Minyak
+  editorPosition: {x: 6038.8887, y: 720.11115}
+  nextNode: {fileID: -1223400207578659409}
+  flowId: Oil1
+  activate: 0
+--- !u!114 &7072726501693957250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Rice Bowl Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: cc6f6b6c-f25e-42ec-b94f-0bbfc9ea4027
+  displayName: Rice Bowl Activation
+  description: 
+  editorPosition: {x: 5127.778, y: 726.1111}
+  nextNode: {fileID: 3197096318989868012}
+  flowId: Rice_Bowl1
+  activate: 0
+--- !u!114 &7887374195993826739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Wok Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: cce56daa-2d49-462d-b4a3-1974a452c51b
+  displayName: Wok Activation
+  description: Menonaktifkan Wok Interacable
+  editorPosition: {x: 4705.5557, y: 719.8889}
+  nextNode: {fileID: -8861202241100492310}
+  flowId: Wok1
+  activate: 0
+--- !u!114 &8216450135233248240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Soy Souce Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 022a5d9e-b996-4efa-8785-8de18b427cd6
+  displayName: Soy Souce Activation
+  description: Mengaktifkan Kecap
+  editorPosition: {x: 11582.333, y: 732.1111}
+  nextNode: {fileID: -320514263383231925}
+  flowId: Soy_Souce1
+  activate: 1
+--- !u!114 &8354682196838456144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Put Egg
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 8d84cbc9-1300-4f95-ae0c-d1d89f39cc8d
+  displayName: Wait Until Player Put Egg
+  description: Menunggu pemain menaruh telur
+  editorPosition: {x: 10942.223, y: 892.55554}
+  nextNode: {fileID: 2081362482030477202}
+  eventId: Egg_Added
+--- !u!114 &8372727854662173702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: Start Make Fired Rice
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: 2d7e625c-f3fb-4d5a-935c-57dd07cca9cb
+  displayName: Start Make Fired Rice
+  description: Memulai Task Membuat Nasi goreng
+  editorPosition: {x: 3895.111, y: 529.8889}
+  nextNode: {fileID: -7253503566355286920}
+--- !u!114 &9199911962749465781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Interact Wok
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: a98b89af-7434-4a7d-8ecc-99c0ec3c410f
+  displayName: Wait Until Player Interact Wok
+  description: Menunggu Wok Di interaksi
+  editorPosition: {x: 8387.875, y: 541}
+  nextNode: {fileID: 5058117538481505500}
+  eventId: Wok_Interacted

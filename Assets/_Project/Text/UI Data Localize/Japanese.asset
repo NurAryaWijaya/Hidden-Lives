@@ -21,3 +21,7 @@ MonoBehaviour:
     Value: "\u8A2D\u5B9A"
   - Key: ui_exit
     Value: "\u7D42\u4E86"
+  - Key: N_Phone_Taken
+    Value: "\u96FB\u8A71\u306F\u3059\u3067\u306B\u53D6\u3089\u308C\u307E\u3057\u305F\u3002"
+  - Key: Make_Fried_Rice_Notification
+    Value: "\u30C1\u30E3\u30FC\u30CF\u30F3\u3092\u4F5C\u308B"

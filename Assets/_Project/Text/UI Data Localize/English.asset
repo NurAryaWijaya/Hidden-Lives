@@ -21,3 +21,7 @@ MonoBehaviour:
     Value: Setting
   - Key: ui_exit
     Value: Exit
+  - Key: N_Phone_Taken
+    Value: Phone has been taken
+  - Key: Make_Fried_Rice_Notification
+    Value: Make Fried Rice

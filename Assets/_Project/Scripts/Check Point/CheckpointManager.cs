@@ -1,3 +1,4 @@
+using Game.Audio;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,7 +30,8 @@ namespace Game.Flow
             string checkpointId,
             string sceneName,
             FlowGraph graph,
-            FlowNode node)
+            FlowNode node,
+            bool save = true)
         {
             if (string.IsNullOrWhiteSpace(checkpointId))
                 return;
@@ -49,6 +51,16 @@ namespace Game.Flow
             CheckpointUnlocked?.Invoke(checkpointId);
 
             Debug.Log($"Checkpoint '{checkpointId}' unlocked.");
+        }
+
+        public void Register(CheckpointInfo info)
+        {
+            if (info == null)
+                return;
+
+            checkpoints[info.CheckpointId] = info;
+
+            CheckpointUnlocked?.Invoke(info.CheckpointId);
         }
 
         public bool IsUnlocked(string checkpointId)
@@ -135,6 +147,8 @@ namespace Game.Flow
             }
 
             WorldStateManager.Instance.RestoreSnapshot(pendingCheckpoint.Snapshot);
+
+            SpawnManager.Instance.RegisterGraph(graph);
 
             WorldStateManager.Instance.Apply();
 

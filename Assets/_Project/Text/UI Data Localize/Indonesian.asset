@@ -21,3 +21,7 @@ MonoBehaviour:
     Value: Pengaturan
   - Key: ui_exit
     Value: Keluar
+  - Key: N_Phone_Taken
+    Value: Ponsel sudah diambil.
+  - Key: Make_Fried_Rice_Notification
+    Value: Buat Nasi Goreng

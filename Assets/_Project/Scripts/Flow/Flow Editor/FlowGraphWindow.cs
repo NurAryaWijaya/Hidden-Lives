@@ -77,6 +77,8 @@ namespace Game.Flow.Editor
             }
 
             canvas.BuildConnections();
+
+            canvas.FrameStartNode();
         }
 
         public void RefreshGraph()

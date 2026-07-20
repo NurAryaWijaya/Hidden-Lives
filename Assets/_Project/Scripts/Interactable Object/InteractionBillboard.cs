@@ -46,6 +46,9 @@ public class InteractionBillboard : MonoBehaviour
         if (currentState == InteractionState.Dot)
             return;
 
+        if (!GameStateManager.Instance.IsState(GameState.Exploration))
+            return;
+
         currentState = InteractionState.Dot;
 
         dotIcon.SetActive(true);
@@ -55,6 +58,9 @@ public class InteractionBillboard : MonoBehaviour
     public void ShowKey()
     {
         if (currentState == InteractionState.Key)
+            return;
+
+        if (!GameStateManager.Instance.IsState(GameState.Exploration))
             return;
 
         currentState = InteractionState.Key;

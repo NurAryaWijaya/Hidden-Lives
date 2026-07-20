@@ -1,3 +1,4 @@
+using Game.Flow;
 using UnityEngine;
 
 namespace Game.UI
@@ -5,17 +6,12 @@ namespace Game.UI
     public class MainMenu : MonoBehaviour
     {
         [Header("Panels")]
-
-        [SerializeField]
-        private GameObject loadPanel;
-
         [SerializeField]
         private GameObject settingPanel;
 
-        public void OpenLoad()
+        private void Start()
         {
-            if (loadPanel != null)
-                loadPanel.SetActive(true);
+            SaveManager.Instance.Load();
         }
 
         public void OpenSettings()
@@ -31,6 +27,11 @@ namespace Game.UI
 #else
             Application.Quit();
 #endif
+        }
+
+        public void ResetProgress()
+        {
+            SaveManager.Instance.Delete();
         }
     }
 }

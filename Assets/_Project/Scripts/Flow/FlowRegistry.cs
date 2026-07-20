@@ -103,5 +103,22 @@ namespace Game.Flow
         {
             BuildRegistry();
         }
+
+        public void Register(FlowComponent component)
+        {
+            if (component == null)
+                return;
+
+            if (string.IsNullOrWhiteSpace(component.Id))
+                return;
+
+            if (registry.ContainsKey(component.Id))
+            {
+                Debug.LogWarning($"Flow Id '{component.Id}' sudah terdaftar.");
+                return;
+            }
+
+            registry.Add(component.Id, component);
+        }
     }
 }

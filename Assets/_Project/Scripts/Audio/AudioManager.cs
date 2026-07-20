@@ -9,6 +9,9 @@ namespace Game.Audio
         [Header("Sources")]
         [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioSource sfxSource;
+        [SerializeField] private AudioSource loopSfxSource;
+
+        public AudioSource LoopSource => loopSfxSource;
 
         private void Awake()
         {
@@ -22,6 +25,7 @@ namespace Game.Audio
 
             musicSource.playOnAwake = false;
             sfxSource.playOnAwake = false;
+            loopSfxSource.playOnAwake = false;
         }
 
         #region Music
@@ -67,6 +71,30 @@ namespace Game.Audio
                 return;
 
             sfxSource.PlayOneShot(clip);
+        }
+
+        #endregion
+
+        #region Loop SFX
+
+        public void PlayLoopSFX(AudioClip clip)
+        {
+            if (clip == null)
+                return;
+
+            if (loopSfxSource.clip == clip && loopSfxSource.isPlaying)
+                return;
+
+            loopSfxSource.Stop();
+            loopSfxSource.clip = clip;
+            loopSfxSource.loop = true;
+            loopSfxSource.Play();
+        }
+
+        public void StopLoopSFX()
+        {
+            loopSfxSource.Stop();
+            loopSfxSource.clip = null;
         }
 
         #endregion

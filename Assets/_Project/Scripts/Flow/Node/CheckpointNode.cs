@@ -16,6 +16,19 @@ namespace Game.Flow
                 FlowManager.Instance.CurrentGraph,
                 this);
 
+            CheckpointInfo info = new()
+            {
+                CheckpointId = checkpointId,
+                SceneName = SceneManager.GetActiveScene().name,
+                GraphId = FlowManager.Instance.CurrentGraph.GraphId,
+                NodeId = NodeId,
+                Snapshot = WorldStateManager.Instance.CreateSnapshot()
+            };
+
+            CheckpointManager.Instance.Register(info);
+
+            SaveManager.Instance.SaveCheckpoint(info);
+
             Complete(nextNode);
         }
     }

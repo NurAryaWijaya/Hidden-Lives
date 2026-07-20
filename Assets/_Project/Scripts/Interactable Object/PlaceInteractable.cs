@@ -1,4 +1,5 @@
 using Game.Flow;
+using System;
 using UnityEngine;
 
 public class PlaceInteractable : Interactable
@@ -14,6 +15,13 @@ public class PlaceInteractable : Interactable
     [SerializeField]
     private string PlacementId;
     public bool HasObject => placedObject != null;
+
+    public event Action<PlaceInteractable> OnObjectPlaced;
+    
+    
+    private PickupInteractable onPlacedObject;
+
+    public PickupInteractable OnPlacedObject => onPlacedObject;
 
     public override void Interact(PlayerInteractor player)
     {
@@ -53,6 +61,8 @@ public class PlaceInteractable : Interactable
 
         // Contoh task Cmplater untuk WaitEventNode
         FlowEventManager.Instance.Raise(PlacementId);
+
+        OnObjectPlaced?.Invoke(this);
 
         return true;
     }

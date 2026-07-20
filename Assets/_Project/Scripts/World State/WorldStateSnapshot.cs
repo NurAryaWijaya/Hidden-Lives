@@ -2,10 +2,19 @@ using System.Collections.Generic;
 
 namespace Game.Flow
 {
+    [System.Serializable]
+    public class WorldStateRecord
+    {
+        public string Id;
+
+        public WorldState State;
+    }
+
+    [System.Serializable]
     public class WorldStateSnapshot
     {
-        public Dictionary<string, WorldState> States = new();
+        public List<WorldStateRecord> States = new();
 
-        public HashSet<string> CompletedCutscenes = new();
+        public List<string> CompletedCutscenes = new();
     }
 }

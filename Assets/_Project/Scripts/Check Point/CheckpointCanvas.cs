@@ -68,6 +68,13 @@ namespace Game.Flow
             Cursor.visible = false;
         }
 
+        public void Back()
+        {
+            panel.SetActive(false);
+
+            GameStateManager.Instance.SetState(GameState.Pause);
+        }
+
         private void RefreshSlots()
         {
             foreach (CheckpointSlot slot in slots)

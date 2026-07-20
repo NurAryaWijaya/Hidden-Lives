@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Game.Flow
 {
@@ -33,40 +34,33 @@ namespace Game.Flow
                 return null;
             }
 
-            // Sudah pernah di-spawn
-            if (spawns.TryGetValue(spawnId, out SpawnInfo info))
-            {
-                if (info.Instance != null)
-                    return info.Instance;
-
-                info.Instance = Instantiate(
-                    info.Prefab,
-                    info.Position,
-                    info.Rotation,
-                    info.Parent);
-
-                return info.Instance;
-            }
-
-            GameObject instance = Instantiate(
+            Register(
+                spawnId,
                 prefab,
                 position,
                 rotation,
                 parent);
 
-            SpawnInfo spawnInfo = new()
+            SpawnInfo info = spawns[spawnId];
+
+            if (info.Instance != null)
+                return info.Instance;
+
+            info.Instance = Instantiate(
+                info.Prefab,
+                info.Position,
+                info.Rotation,
+                info.Parent);
+
+            FlowComponent[] flows =
+                 info.Instance.GetComponentsInChildren<FlowComponent>(true);
+
+            foreach (FlowComponent flow in flows)
             {
-                SpawnId = spawnId,
-                Prefab = prefab,
-                Position = position,
-                Rotation = rotation,
-                Parent = parent,
-                Instance = instance
-            };
+                FlowRegistry.Instance.Register(flow);
+            }
 
-            spawns.Add(spawnId, spawnInfo);
-
-            return instance;
+            return info.Instance;
         }
 
         public void Destroy(string spawnId)
@@ -132,15 +126,35 @@ namespace Game.Flow
             }
         }
 
-        public void Clear()
+        public void Register(
+            string spawnId,
+            GameObject prefab,
+            Vector3 position,
+            Quaternion rotation,
+            Transform parent)
         {
-            foreach (SpawnInfo info in spawns.Values)
-            {
-                if (info.Instance != null)
-                    Destroy(info.Instance);
-            }
+            if (spawns.ContainsKey(spawnId))
+                return;
 
-            spawns.Clear();
+            spawns.Add(spawnId, new SpawnInfo
+            {
+                SpawnId = spawnId,
+                Prefab = prefab,
+                Position = position,
+                Rotation = rotation,
+                Parent = parent
+            });
+        }
+
+        public void RegisterGraph(FlowGraph graph)
+        {
+            foreach (FlowNode node in graph.Nodes)
+            {
+                if (node is SpawnNode spawnNode)
+                {
+                    spawnNode.Register();
+                }
+            }
         }
     }
 }

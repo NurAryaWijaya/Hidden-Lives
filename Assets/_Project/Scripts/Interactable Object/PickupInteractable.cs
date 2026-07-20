@@ -2,12 +2,6 @@ using Game.Flow;
 using Unity.Multiplayer.PlayMode;
 using UnityEngine;
 
-public enum InteractableType
-{
-    None,
-    Testing,
-}
-
 public enum CarryState
 {
     World,
@@ -61,9 +55,10 @@ public class PickupInteractable : Interactable, IFlowActivatable
         player.PlayerCarry.Pickup(this);
     }
 
-    public void OnPickup(Transform holdPoint)
+    public virtual void OnPickup(Transform holdPoint)
     {
         SetLayerRecursively(transform, heldLayer);
+        SetCollidersEnabled(false);
 
         if (currentPlace != null)
         {
@@ -92,6 +87,7 @@ public class PickupInteractable : Interactable, IFlowActivatable
     public void OnDrop()
     {
         SetLayerRecursively(transform, interactableLayer);
+        SetCollidersEnabled(true);
 
         IsPickedUp = false;
 
@@ -103,9 +99,10 @@ public class PickupInteractable : Interactable, IFlowActivatable
         rb.angularVelocity = Vector3.zero;
     }
 
-    public void OnPlace(Transform placePoint, PlaceInteractable place)
+    public virtual void OnPlace(Transform placePoint, PlaceInteractable place)
     {
         SetLayerRecursively(transform, interactableLayer);
+        SetCollidersEnabled(true);
 
         currentPlace = place;
         IsPickedUp = false;
@@ -155,4 +152,14 @@ public class PickupInteractable : Interactable, IFlowActivatable
             SetLayerRecursively(child, layer);
         }
     }
+
+    private void SetCollidersEnabled(bool enabled)
+    {
+        foreach (var col in colliders)
+        {
+            col.enabled = enabled;
+        }
+    }
 }
+
+//Kalau mau overide contoh base.OnPlace(placePoint, place);

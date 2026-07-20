@@ -8,7 +8,8 @@ namespace Game.Flow
         public enum AudioChannel
         {
             Music,
-            SFX
+            SFX,
+            LoopSFX,
         }
 
         public enum AudioAction
@@ -40,6 +41,10 @@ namespace Game.Flow
 
                 case AudioChannel.SFX:
                     HandleSFX(manager);
+                    break;
+
+                case AudioChannel.LoopSFX:
+                    HandleLoop(manager);
                     break;
             }
 
@@ -80,6 +85,20 @@ namespace Game.Flow
                 case AudioAction.Stop:
                 case AudioAction.Pause:
                 case AudioAction.Resume:
+                    break;
+            }
+        }
+
+        private void HandleLoop(AudioManager manager)
+        {
+            switch (action)
+            {
+                case AudioAction.Play:
+                    manager.PlayLoopSFX(clip);
+                    break;
+
+                case AudioAction.Stop:
+                    manager.StopLoopSFX();
                     break;
             }
         }

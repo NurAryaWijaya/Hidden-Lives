@@ -25,6 +25,8 @@ namespace Game.Flow
             }
 
             Instance = this;
+
+            SaveManager.Instance.Load();
         }
 
         // Memulai FlowGraph.

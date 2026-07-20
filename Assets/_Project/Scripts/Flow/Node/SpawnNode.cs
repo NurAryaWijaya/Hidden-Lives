@@ -22,6 +22,8 @@ namespace Game.Flow
 
         public override void Enter()
         {
+            Register();
+
             SpawnManager.Instance.Spawn(
                 spawnId,
                 prefab,
@@ -32,6 +34,16 @@ namespace Game.Flow
             WorldStateManager.Instance.SetSpawned(spawnId);
 
             Complete(nextNode);
+        }
+
+        public void Register()
+        {
+            SpawnManager.Instance.Register(
+                spawnId,
+                prefab,
+                position,
+                Quaternion.Euler(rotation),
+                parent);
         }
     }
 }

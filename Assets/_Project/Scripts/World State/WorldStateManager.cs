@@ -152,16 +152,20 @@ namespace Game.Flow
 
             foreach ((string id, WorldState state) in states)
             {
-                snapshot.States.Add(id, new WorldState
+                snapshot.States.Add(new WorldStateRecord
                 {
-                    Active = state.Active,
-                    Destroyed = state.Destroyed,
-                    Spawned = state.Spawned,
-                    Completed = state.Completed
+                    Id = id,
+                    State = new WorldState
+                    {
+                        Active = state.Active,
+                        Destroyed = state.Destroyed,
+                        Spawned = state.Spawned,
+                        Completed = state.Completed
+                    }
                 });
             }
 
-            snapshot.CompletedCutscenes.UnionWith(completedCutscenes);
+            snapshot.CompletedCutscenes.AddRange(completedCutscenes);
 
             return snapshot;
         }
@@ -169,23 +173,18 @@ namespace Game.Flow
         public void RestoreSnapshot(WorldStateSnapshot snapshot)
         {
             states.Clear();
-            completedCutscenes.Clear();
 
-            if (snapshot == null)
-                return;
-
-            foreach ((string id, WorldState state) in snapshot.States)
+            foreach (WorldStateRecord record in snapshot.States)
             {
-                states.Add(id, new WorldState
-                {
-                    Active = state.Active,
-                    Destroyed = state.Destroyed,
-                    Spawned = state.Spawned,
-                    Completed = state.Completed
-                });
+                states.Add(record.Id, record.State);
             }
 
-            completedCutscenes.UnionWith(snapshot.CompletedCutscenes);
+            completedCutscenes.Clear();
+
+            foreach (string id in snapshot.CompletedCutscenes)
+            {
+                completedCutscenes.Add(id);
+            }
         }
 
         private void RestoreCompletedCutscenes()

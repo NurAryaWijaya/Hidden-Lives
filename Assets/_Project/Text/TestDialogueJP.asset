@@ -17,13 +17,13 @@ MonoBehaviour:
   nodes:
   - nodeID: intro_01
     speakerName: Guard
-    dialogueText: Japan
+    dialogueText: "\u96FB\u8A71\u306F\u3059\u3067\u306B\u53D6\u3089\u308C\u307E\u3057\u305F\u30021"
     nextNodeIndex: 1
   - nodeID: intro_02
     speakerName: Guard
-    dialogueText: Ajpa
+    dialogueText: "\u96FB\u8A71\u306F\u3059\u3067\u306B\u53D6\u3089\u308C\u307E\u3057\u305F\u30022"
     nextNodeIndex: 2
   - nodeID: intro_03
     speakerName: Guard
-    dialogueText: dafssaf
+    dialogueText: "\u96FB\u8A71\u306F\u3059\u3067\u306B\u53D6\u3089\u308C\u307E\u3057\u305F\u30023"
     nextNodeIndex: -1

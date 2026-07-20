@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 105227842310985141}
   - component: {fileID: 1208210531830048258}
   - component: {fileID: 7207593199402852891}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 8656629771960513055}
   - component: {fileID: 4227999506798636873}
   - component: {fileID: 7294605743669896692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,8 @@ GameObject:
   - component: {fileID: 5114620714244410040}
   - component: {fileID: 4593475756495487912}
   - component: {fileID: 1426951112655860147}
-  m_Layer: 0
+  - component: {fileID: 5536994895056112995}
+  m_Layer: 6
   m_Name: DoorFrame2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,4 +310,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59736aa140639646b766fbdd68ed50f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowComponent
-  id: DoorSpawnTest
+  id: DoorHouse2
+--- !u!114 &5536994895056112995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4511639261633325990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed3a4d25729ab848b45cedb3dc10ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorHouse2
+  interactionDistance: 2
+  openAngle: 90
+  openSpeed: 2

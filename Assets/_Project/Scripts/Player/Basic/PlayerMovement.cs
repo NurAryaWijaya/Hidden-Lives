@@ -9,15 +9,20 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private float verticalVelocity; //Gravity
 
+    private PlayerAnimation playerAnimation;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
+        playerAnimation = GetComponent<PlayerAnimation>();
     }
 
     public void Move(Vector2 input)
     {
         if (!GameStateManager.Instance.IsState(GameState.Exploration))
             return;
+
+        playerAnimation.UpdateMovement(input);
 
         Vector3 moveDirection =
             transform.forward * input.y +

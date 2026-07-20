@@ -15,14 +15,17 @@ namespace Game.Flow
         [SerializeField]
         private string nodeId;
 
+        [Tooltip("Nama yang ditampilkan di Flow Editor.")]
         [SerializeField]
         private string displayName;
 
+        [Tooltip("Catatan atau penjelasan fungsi node.")]
         [SerializeField]
-        private Vector2 editorPosition;
+        [TextArea(3, 6)]
+        private string description;
 
         [SerializeField]
-        private Vector2 editorSize = new(220, 90);
+        private Vector2 editorPosition;
 
         [SerializeField]
         protected FlowNode nextNode;

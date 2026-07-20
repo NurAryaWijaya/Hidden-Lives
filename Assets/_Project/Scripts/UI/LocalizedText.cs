@@ -7,6 +7,9 @@ namespace Game.Localization
     public class LocalizedText : MonoBehaviour
     {
         [SerializeField]
+        private bool useLocalizationKey = true;
+
+        [SerializeField]
         private string key;
 
         private TMP_Text textComponent;
@@ -41,11 +44,15 @@ namespace Game.Localization
 
             if (LocalizationManager.Instance.CurrentFont != null)
             {
-                textComponent.font = LocalizationManager.Instance.CurrentFont;
+                textComponent.font =
+                    LocalizationManager.Instance.CurrentFont;
             }
 
-            textComponent.text =
-                LocalizationManager.Instance.Get(key);
+            if (useLocalizationKey)
+            {
+                textComponent.text =
+                    LocalizationManager.Instance.Get(key);
+            }
         }
 
         private void Refresh(LocalizationLanguage language)

@@ -1,0 +1,392 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8161394582647353365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd8c2cfe019c73459574a6d87b8fa25, type: 3}
+  m_Name: Monolog Task Breakfast
+  m_EditorClassIdentifier: Assembly-CSharp::MonologueNode
+  nodeId: 721ca46d-ded1-4816-b5dd-cfa91704bd97
+  displayName: Monolog Task Breakfast
+  description: Monolog untuk membuat nasi goreng
+  editorPosition: {x: 3981.5264, y: 406.68423}
+  nextNode: {fileID: 2019398644089646181}
+  dialogue: {fileID: 11400000, guid: 49de0efeedcd9a5419b1361d25e97bae, type: 2}
+--- !u!114 &-6098710217043193416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Outdoor Light Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: d0b76b14-e6f0-4141-a01b-3d1d8ec7ab29
+  displayName: Outdoor Light Activation
+  description: mengaktifkan lampu balkon
+  editorPosition: {x: 1179.58, y: 531.21295}
+  nextNode: {fileID: -3944072731459267662}
+  flowId: Switch_Outdoor
+  activate: 1
+--- !u!114 &-5921434932025177945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Dinnign Room Light Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: d684f0b4-c484-46b6-b98b-02b2cb171a2f
+  displayName: Dinnign Room Light Activation
+  description: Menonaktifkan lampu ruang makan
+  editorPosition: {x: 990.17163, y: 395.88162}
+  nextNode: {fileID: -6098710217043193416}
+  flowId: Switch_Dinning
+  activate: 0
+--- !u!114 &-5003703763975770123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait For Player Take Phone
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: Wait_Phone_Taken
+  displayName: Wait For Player Take Phone
+  description: Menunggu pemain mengambil phone
+  editorPosition: {x: 2126.4731, y: 407.01184}
+  nextNode: {fileID: 6465592184100380171}
+  eventId: Phone_Taken
+--- !u!114 &-3944072731459267662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Familly Room Light Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 0fee8be1-2de0-4ad1-ab34-03e7347c7c0e
+  displayName: Familly Room Light Activation
+  description: menonaktifkan lampu ruang utama
+  editorPosition: {x: 1390.3018, y: 398.75143}
+  nextNode: {fileID: 2724308202995261164}
+  flowId: Switch_Familly
+  activate: 0
+--- !u!114 &-2891607747333258737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Door Closed
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: e72449c1-78ef-4201-bad4-2faae4d41d1a
+  displayName: Wait Door Closed
+  description: Menuggu Pemain menutup pintu kamr barulah bisa berganti task
+  editorPosition: {x: 3108.0415, y: 410.5918}
+  nextNode: {fileID: 7292416735489866413}
+  eventId: Door_Closed_After_Take_Phone
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
+  m_Name: Chapter 1
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
+  chapterIndex: 0
+  graphId: Chapter1
+  displayName: Chapter 1
+  description: Chepter 1 - Pengenalan kontrol, tokoh utama, dan lingkungan.
+  startNode: {fileID: 3399738198549701123}
+  nodes:
+  - {fileID: 3399738198549701123}
+  - {fileID: 2167709846528169808}
+  - {fileID: -5003703763975770123}
+  - {fileID: 6465592184100380171}
+  - {fileID: 2082255080416485074}
+  - {fileID: 3889978313986585746}
+  - {fileID: -2891607747333258737}
+  - {fileID: 7292416735489866413}
+  - {fileID: 2724308202995261164}
+  - {fileID: 1473546538671252850}
+  - {fileID: 3509195051695851452}
+  - {fileID: -5921434932025177945}
+  - {fileID: -6098710217043193416}
+  - {fileID: -3944072731459267662}
+  - {fileID: 8018680304042721277}
+  - {fileID: -8161394582647353365}
+  - {fileID: 2019398644089646181}
+  - {fileID: 5737392912320492993}
+  - {fileID: 47698871552310738}
+--- !u!114 &47698871552310738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: Ini Adalah Cutscene (Prototype)
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: 23bdc2c2-b588-4f3a-ac5d-029ca843ff36
+  displayName: Ini Adalah Cutscene (Prototype)
+  description: 
+  editorPosition: {x: 1811.4734, y: 195.86986}
+  nextNode: {fileID: -5003703763975770123}
+  message: Prototype Cut Scene
+  duration: 1
+--- !u!114 &1473546538671252850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Activation Door House 2
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 7b936cb3-a356-4dcd-b4bb-49ad30dd6d8a
+  displayName: Activation Door House 2
+  description: Setelah Phone diambil, node ini mengaktifkan pintu agar pemain sekarang
+    bisa keluar dari kamar
+  editorPosition: {x: 2864, y: 550.3669}
+  nextNode: {fileID: -2891607747333258737}
+  flowId: Door_House2
+  activate: 1
+--- !u!114 &2019398644089646181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c778292a7fcffa44b1baa8b86f4e193, type: 3}
+  m_Name: Fried Rice Notification
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.NotificationNode
+  nodeId: 6a60720a-4b08-41b5-86cf-44962c0ae2c8
+  displayName: Fried Rice Notification
+  description: Notifikasi perintah membuat nasi goreng
+  editorPosition: {x: 4284.7144, y: 294.76193}
+  nextNode: {fileID: 5737392912320492993}
+  localizationKey: Make_Fried_Rice_Notification
+  duration: 5
+--- !u!114 &2082255080416485074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cc3141d5fc81a42b218b18012f5396, type: 3}
+  m_Name: Wake Up Checkpoint
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
+  nodeId: WakeUp_Checkpoint
+  displayName: Wake Up Checkpoint
+  description: \Checkpoint pertama dengan nama "Wake Up"
+  editorPosition: {x: 659.0532, y: 181.46158}
+  nextNode: {fileID: 3509195051695851452}
+  checkpointId: CP_WakeUp
+--- !u!114 &2167709846528169808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: Load Scene House
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: Load_Scene_House_1
+  displayName: Load Scene House
+  description: Node ini menjadi awal dari start agar saat pemain menekan start, dia
+    meload dcene House
+  editorPosition: {x: 356.5625, y: 301}
+  nextNode: {fileID: 2082255080416485074}
+  sceneName: House
+--- !u!114 &2724308202995261164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Door House 2 Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: Door_House_2_Activation
+  displayName: Door House 2 Activation
+  description: Menonaktifkan pintu saat awal game agar pemain tidak bisa keluar dari
+    kamar sebelum mengambil phone
+  editorPosition: {x: 1593.432, y: 537.2899}
+  nextNode: {fileID: 47698871552310738}
+  flowId: Door_House2
+  activate: 0
+--- !u!114 &3399738198549701123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: Start Chapter 1
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: Start_Chapter1
+  displayName: Start Chapter 1
+  description: 
+  editorPosition: {x: -4.4375, y: 299}
+  nextNode: {fileID: 2167709846528169808}
+--- !u!114 &3509195051695851452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Kitchen Light Activation
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: a96be353-43f9-47d9-8196-610396aebff4
+  displayName: Kitchen Light Activation
+  description: Menonaktifkan lampu dapur
+  editorPosition: {x: 790.5799, y: 533.1184}
+  nextNode: {fileID: -5921434932025177945}
+  flowId: Switch_Kitchen
+  activate: 0
+--- !u!114 &3889978313986585746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c778292a7fcffa44b1baa8b86f4e193, type: 3}
+  m_Name: Notification Phone Taken
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.NotificationNode
+  nodeId: 2411506d-f223-4f1d-aed2-78ba4fc5edcd
+  displayName: Notification Phone Taken
+  description: Menampilkan Notifikasi Phone telah diambil
+  editorPosition: {x: 2626.8403, y: 408.8284}
+  nextNode: {fileID: 1473546538671252850}
+  localizationKey: N_Phone_Taken
+  duration: 5
+--- !u!114 &5737392912320492993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb09179511b274f9b4def14bf156e6, type: 3}
+  m_Name: Next Graph To Fired Rice
+  m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
+  nodeId: 34965e41-8e99-42bf-ab0b-e56d953811e1
+  displayName: Next Graph To Fired Rice
+  description: Melanjutkan Graph ke pembuatan Nasi goreng
+  editorPosition: {x: 4864.7515, y: 291.6568}
+  nextNode: {fileID: 0}
+  nextGraph: {fileID: 11400000, guid: 7f10337ede7aaaf4abe1b66156aa6dc2, type: 2}
+--- !u!114 &6465592184100380171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: Destroy Phone Object From Scene
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: Destroy_Phone
+  displayName: Destroy Phone Object From Scene
+  description: Menghapus Phone setelah diambil
+  editorPosition: {x: 2376.3965, y: 306.88165}
+  nextNode: {fileID: 3889978313986585746}
+  flowId: Phone_Taken
+--- !u!114 &7292416735489866413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: Destroy Auto Close Door
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: 7bafa22f-4b96-41bf-8cd8-aae2da15243a
+  displayName: Destroy Auto Close Door
+  description: Menghapus Trigger Auto Close Door di scene,
+  editorPosition: {x: 3364.4082, y: 309.63315}
+  nextNode: {fileID: 8018680304042721277}
+  flowId: Door_Auto_Trigger_1
+--- !u!114 &8018680304042721277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: Wait Until Player Turn On
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: b669d87f-6765-4384-9fa4-ebf9d94e3d61
+  displayName: Wait Until Player Turn On
+  description: Menunggu pemain menyalakan lampu dapur
+  editorPosition: {x: 3614.8367, y: 407.7784}
+  nextNode: {fileID: -8161394582647353365}
+  eventId: CH1_First_TurnOn_Kitchen_Light

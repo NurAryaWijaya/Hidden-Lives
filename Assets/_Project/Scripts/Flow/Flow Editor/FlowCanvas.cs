@@ -292,6 +292,11 @@ namespace Game.Flow.Editor
                 () => CreateNodeRequested?.Invoke(typeof(DialogueFlowNode), contextMenuPosition));
 
             menu.AddItem(
+                new GUIContent("Create Node/Notification"),
+                false,
+                () => CreateNodeRequested?.Invoke(typeof(NotificationNode), contextMenuPosition));
+
+            menu.AddItem(
                new GUIContent("Create Node/Wait"),
                false,
                () => CreateNodeRequested?.Invoke(typeof(WaitEventNode), contextMenuPosition));
@@ -408,15 +413,27 @@ namespace Game.Flow.Editor
         {
             float zoomSpeed = 0.1f;
 
-            if (evt.delta.y < 0)
-                viewTransform.Scale += zoomSpeed;
-            else
-                viewTransform.Scale -= zoomSpeed;
+            Vector2 mouse =
+                evt.localMousePosition;
 
-            viewTransform.Scale = Mathf.Clamp(
-                viewTransform.Scale,
-                0.25f,
-                2.5f);
+            Vector2 world =
+                ScreenToCanvasPosition(mouse);
+
+            float oldScale = viewTransform.Scale;
+
+            float newScale = oldScale;
+
+            if (evt.delta.y < 0)
+                newScale += zoomSpeed;
+            else
+                newScale -= zoomSpeed;
+
+            newScale = Mathf.Clamp(newScale, 0.25f, 2.5f);
+
+            viewTransform.Scale = newScale;
+
+            viewTransform.Position =
+                mouse - world * newScale;
 
             ApplyViewTransform();
 
@@ -525,6 +542,37 @@ namespace Game.Flow.Editor
             NodeDeleted?.Invoke();
 
             BuildConnections();
+        }
+
+        // View awal
+        private void FrameNode(FlowNode node)
+        {
+            if (node == null)
+                return;
+
+            if (!nodeMap.TryGetValue(node, out FlowNodeView nodeView))
+                return;
+
+            Vector2 center =
+                node.EditorPosition;
+
+            viewTransform.Scale = 1f;
+
+            viewTransform.Position =
+                new Vector2(
+                    layout.width * 0.5f,
+                    layout.height * 0.5f)
+                - center;
+
+            ApplyViewTransform();
+        }
+
+        public void FrameStartNode()
+        {
+            if (graph == null)
+                return;
+
+            FrameNode(graph.StartNode);
         }
     }
 }
