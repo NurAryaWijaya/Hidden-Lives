@@ -25,3 +25,31 @@ MonoBehaviour:
     Value: "\u96FB\u8A71\u306F\u3059\u3067\u306B\u53D6\u3089\u308C\u307E\u3057\u305F\u3002"
   - Key: Make_Fried_Rice_Notification
     Value: "\u30C1\u30E3\u30FC\u30CF\u30F3\u3092\u4F5C\u308B"
+  - Key: Group_Title
+    Value: "\u5927\u5B66\u540C\u7A93\u4F1A\u30B0\u30EB\u30FC\u30D7 2014/2015"
+  - Key: Alert_Branch
+    Value: "\u88FD\u54C1\u7248\u3067\u306F\u3001\u3055\u3089\u306B\u591A\u304F\u306E\u9078\u629E\u80A2\u304C\u9078\u3079\u308B\u3088\u3046\u306B\u306A\u308A\u307E\u3059\u3002"
+  - Key: CH1_Branch_T
+    Value: "\u540C\u7A93\u4F1A\u306B\u884C\u304F"
+  - Key: CH1_Branch_F
+    Value: "\u7121\u8996\u3059\u308B"
+  - Key: CH2_Breakfast1_T
+    Value: "\u3044\u3044\u3088"
+  - Key: CH2_Breakfast1_F
+    Value: "\u540C\u7A93\u4F1A\u306B\u884C\u304F"
+  - Key: HanaIntroBranch_T
+    Value: "\u58F0\u3092\u304B\u3051\u308B"
+  - Key: HanaIntroBranch_F
+    Value: "\u7121\u8996\u3059\u308B"
+  - Key: HanaHelp_T
+    Value: "\u5A18\u3092\u8FCE\u3048\u306B\u884C\u304F"
+  - Key: HanaHelp_F
+    Value: "\u4E00\u7DD2\u306B\u5915\u98EF\u3092\u98DF\u3079\u308B"
+  - Key: AlertCom_T
+    Value: "\u4ECA\u5EA7\u308B"
+  - Key: AlertCom_F
+    Value: "\u3042\u3068\u3067\u3044\u3044"
+  - Key: ConflictCH4_T
+    Value: "\u6B63\u76F4"
+  - Key: ConflictCH4_F
+    Value: "\u5618"

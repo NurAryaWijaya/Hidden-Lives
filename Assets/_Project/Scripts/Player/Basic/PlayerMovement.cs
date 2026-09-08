@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerAnimation playerAnimation;
 
+    public bool IsMoving { get; private set; }
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -21,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!GameStateManager.Instance.IsState(GameState.Exploration))
             return;
+
+        IsMoving = input.sqrMagnitude > 0.01f;
 
         playerAnimation.UpdateMovement(input);
 

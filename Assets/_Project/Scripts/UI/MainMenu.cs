@@ -11,6 +11,8 @@ namespace Game.UI
 
         private void Start()
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SaveManager.Instance.Load();
         }
 

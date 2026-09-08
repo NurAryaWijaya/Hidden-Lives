@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992e5373c94310047abd92e81b60cd23, type: 3}
+  m_Name: DB_MeetingRoom
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizedDialogueData
+  indonesian: {fileID: 11400000, guid: c696d90aea2d7bf45b26b4d95ae15203, type: 2}
+  english: {fileID: 11400000, guid: 796f11f67d9134c4c95e1585bcbe5a33, type: 2}
+  japanese: {fileID: 11400000, guid: 6d071684da8f5fa47b13306ac4bbef0d, type: 2}

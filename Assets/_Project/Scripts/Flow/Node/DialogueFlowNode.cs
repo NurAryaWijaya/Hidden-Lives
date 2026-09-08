@@ -2,6 +2,12 @@ using Game.Dialogue;
 using Game.Flow;
 using UnityEngine;
 
+public enum DialogueFlowMode
+{
+    ActivateOnly,
+    WaitUntilFinished
+}
+
 public class DialogueFlowNode : FlowNode
 {
     [SerializeField]

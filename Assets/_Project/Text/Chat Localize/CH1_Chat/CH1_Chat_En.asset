@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH1_Chat_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: CH1_Chat1
+    Value: Guys
+  - Key: CH1_Chat2
+    Value: How about a reunion?
+  - Key: CH1_Chat3
+    Value: It's been a while since we all got together.
+  - Key: CH1_Chat4
+    Value: I'm in!
+  - Key: CH1_Chat5
+    Value: When?
+  - Key: CH1_Chat6
+    Value: This afternoon sounds good.
+  - Key: CH1_Chat7
+    Value: 'What about everyone else? '
+  - Key: CH1_Chat8
+    Value: Alright, where should we meet?
+  - Key: CH1_Chat9
+    Value: Any suggestions for a place?

@@ -4,9 +4,9 @@ using Game.Flow;
 public class CutsceneNode : FlowNode
 {
     [SerializeField]
-    private string flowId;
+    protected string flowId;
 
-    private TimelineCutsceneController controller;
+    protected TimelineCutsceneController controller;
 
     public override void Enter()
     {
@@ -32,7 +32,7 @@ public class CutsceneNode : FlowNode
         GameStateManager.Instance.SetState(GameState.Cutscene);
     }
 
-    private void HandleFinished()
+    protected virtual void HandleFinished()
     {
         controller.Finished -= HandleFinished;
 

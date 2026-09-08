@@ -25,3 +25,31 @@ MonoBehaviour:
     Value: Ponsel sudah diambil.
   - Key: Make_Fried_Rice_Notification
     Value: Buat Nasi Goreng
+  - Key: Group_Title
+    Value: Grup Alumni Universitas 2014/2015
+  - Key: Alert_Branch
+    Value: Beberapa pilihan akan terbuka di versi rilis penuh
+  - Key: CH1_Branch_T
+    Value: Pergi ke Reuni
+  - Key: CH1_Branch_F
+    Value: Abaikan
+  - Key: CH2_Breakfast1_T
+    Value: Setuju
+  - Key: CH2_Breakfast1_F
+    Value: Pergi ke Reuni
+  - Key: HanaIntroBranch_T
+    Value: Menyapa
+  - Key: HanaIntroBranch_F
+    Value: Abaikan
+  - Key: HanaHelp_T
+    Value: Jemput Anak
+  - Key: HanaHelp_F
+    Value: Makan malam bersama
+  - Key: AlertCom_T
+    Value: Duduk sekarang
+  - Key: AlertCom_F
+    Value: Nanti dulu
+  - Key: ConflictCH4_T
+    Value: Jujur
+  - Key: ConflictCH4_F
+    Value: Berbohong

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8503606924459870955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: e3825aba-0c28-4e6a-8bb4-35bcb638d605
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 20084.611, y: 1096.2245}
+  nextNode: {fileID: 6063933726400786453}
+  sceneName: House
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
+  m_Name: 3A HanaRenoInCafe
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
+  chapterIndex: 4
+  graphId: HanaRenoInCafe
+  displayName: HanaRenoInCafe
+  description: 
+  startNode: {fileID: 2275646371098615823}
+  nodes:
+  - {fileID: 2275646371098615823}
+  - {fileID: 9187225497277670847}
+  - {fileID: 6063933726400786453}
+  - {fileID: -8503606924459870955}
+--- !u!114 &2275646371098615823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: 71eb6358-5b9d-41fe-b23f-0d4ca3137197
+  displayName: StartNode
+  description: 
+  editorPosition: {x: 19493.428, y: 1006.4082}
+  nextNode: {fileID: 9187225497277670847}
+--- !u!114 &6063933726400786453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb09179511b274f9b4def14bf156e6, type: 3}
+  m_Name: NextGraphNode
+  m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
+  nodeId: b16265b2-db50-4446-bd22-ab6669d35775
+  displayName: NextGraphNode
+  description: 
+  editorPosition: {x: 20418.592, y: 882.0204}
+  nextNode: {fileID: 0}
+  nextGraph: {fileID: 11400000, guid: 3457c77b86d68fd43839a5e279d6c930, type: 2}
+--- !u!114 &9187225497277670847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 704cb491-8a21-458f-b251-7f4ef3ca13ca
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 19817.877, y: 862.8889}
+  nextNode: {fileID: -8503606924459870955}
+  flowId: CS_RenoHanaCafe

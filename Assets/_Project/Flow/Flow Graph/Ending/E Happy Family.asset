@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6252607842560009356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: f065da8d-96af-4373-ac92-f68834e06212
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 1339, y: 473}
+  nextNode: {fileID: 1590268475890391663}
+  flowId: Switch_Dinning
+  activate: 1
+--- !u!114 &-5055479345139545348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 6289b886-82a2-4236-93fe-da341e9f6f3f
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 2260.6667, y: 231}
+  nextNode: {fileID: 5340111388660159195}
+  flowId: Ending_HappyFamily
+--- !u!114 &-3640548185072597722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: 53634186-7f50-47cd-a6cf-3ea4b691f2e4
+  displayName: StartNode
+  description: 
+  editorPosition: {x: 756.2501, y: 395}
+  nextNode: {fileID: 4425709251555485851}
+--- !u!114 &-375936784636630728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 54b2469b-5c49-4c0c-84e4-9f42ca7ca3ab
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 1908, y: 370}
+  nextNode: {fileID: -5055479345139545348}
+  flowId: Switch_Familly
+  activate: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
+  m_Name: E Happy Family
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
+  chapterIndex: 6
+  graphId: HappyFamily
+  displayName: Happy Family
+  description: 
+  startNode: {fileID: -3640548185072597722}
+  nodes:
+  - {fileID: -3640548185072597722}
+  - {fileID: 4425709251555485851}
+  - {fileID: -6252607842560009356}
+  - {fileID: 1590268475890391663}
+  - {fileID: -375936784636630728}
+  - {fileID: -5055479345139545348}
+  - {fileID: 5340111388660159195}
+--- !u!114 &1590268475890391663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 1744489a-30ba-4b2b-99d3-91971e0fa8fa
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 1622, y: 569}
+  nextNode: {fileID: -375936784636630728}
+  flowId: Switch_Outdoor
+  activate: 1
+--- !u!114 &4425709251555485851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 8bd9c213-c562-4288-a9ac-aa10df4fe3e4
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 1096, y: 303}
+  nextNode: {fileID: -6252607842560009356}
+  flowId: Switch_Kitchen
+  activate: 1
+--- !u!114 &5340111388660159195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6cecf5edda68943ba5a122a2d6f7f1, type: 3}
+  m_Name: EndNode
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  nodeId: d3f11e68-1806-4203-a169-f5f521394b5b
+  displayName: EndNode
+  description: 
+  editorPosition: {x: 2566.1836, y: 99.20411}
+  nextNode: {fileID: 0}

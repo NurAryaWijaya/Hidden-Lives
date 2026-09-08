@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992e5373c94310047abd92e81b60cd23, type: 3}
+  m_Name: DB_Laptop
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizedDialogueData
+  indonesian: {fileID: 11400000, guid: deb4bf99098694149aed7039a2db1b4f, type: 2}
+  english: {fileID: 11400000, guid: adde9430aee17e446ae831036256e550, type: 2}
+  japanese: {fileID: 11400000, guid: 3e08407ef16b97342b2aa159b50f58f9, type: 2}

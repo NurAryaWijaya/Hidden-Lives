@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992e5373c94310047abd92e81b60cd23, type: 3}
+  m_Name: Mn_OnHome
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizedDialogueData
+  indonesian: {fileID: 11400000, guid: 85bbe8d01bc447f47a3d1ae99d3d9ee2, type: 2}
+  english: {fileID: 11400000, guid: a3c766d453fec2c45a7d92d4bb0cfbb3, type: 2}
+  japanese: {fileID: 11400000, guid: 9b0a2acb2b7a0a34d93332850e71d135, type: 2}

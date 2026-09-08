@@ -17,11 +17,8 @@ public class PlaceInteractable : Interactable
     public bool HasObject => placedObject != null;
 
     public event Action<PlaceInteractable> OnObjectPlaced;
-    
-    
-    private PickupInteractable onPlacedObject;
 
-    public PickupInteractable OnPlacedObject => onPlacedObject;
+    public PickupInteractable OnPlacedObject => placedObject;
 
     public override void Interact(PlayerInteractor player)
     {

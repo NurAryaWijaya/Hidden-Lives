@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffcc08ff2fea8847b4217710d6db21a, type: 3}
+  m_Name: CH3A_Receptionist_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Dialogue.DialogueData
+  dialogueID: CH3A_Receptionist_En
+  startingNodeIndex: 0
+  nodes:
+  - nodeID: CH3A_Receptionist_01
+    speakerName: Receptionist
+    dialogueText: Good morning, Mr. Reno.
+    nextNodeIndex: 1
+  - nodeID: CH3A_Receptionist_02
+    speakerName: Reno
+    dialogueText: Morning.
+    nextNodeIndex: 2
+  - nodeID: CH3A_Receptionist_03
+    speakerName: Receptionist
+    dialogueText: How's the project going, sir? Is everything going smoothly?
+    nextNodeIndex: 3
+  - nodeID: CH3A_Receptionist_04
+    speakerName: Reno
+    dialogueText: Well... There are still a few problems.
+    nextNodeIndex: 4
+  - nodeID: CH3A_Receptionist_05
+    speakerName: Receptionist
+    dialogueText: Wow... Even though you worked overtime quite a lot last week.
+    nextNodeIndex: 5
+  - nodeID: CH3A_Receptionist_06
+    speakerName: Reno
+    dialogueText: That's right.
+    nextNodeIndex: 6
+  - nodeID: CH3A_Receptionist_07
+    speakerName: Receptionist
+    dialogueText: But as long as you still get your overtime pay, you're good, right?
+    nextNodeIndex: 7
+  - nodeID: CH3A_Receptionist_08
+    speakerName: Reno
+    dialogueText: Exactly. That's the important part, hahaha...
+    nextNodeIndex: 8
+  - nodeID: CH3A_Receptionist_09
+    speakerName: Receptionist
+    dialogueText: By the way, is it true that the new attraction area the boss had
+      built is already finished?
+    nextNodeIndex: 9
+  - nodeID: CH3A_Receptionist_10
+    speakerName: Reno
+    dialogueText: It should be. There was a meeting about it yesterday.
+    nextNodeIndex: 10
+  - nodeID: CH3A_Receptionist_11
+    speakerName: Receptionist
+    dialogueText: Then, which team will take over the attraction project?
+    nextNodeIndex: 11
+  - nodeID: CH3A_Receptionist_12
+    speakerName: Reno
+    dialogueText: I don't know. It looks like they're going to form a new team.
+    nextNodeIndex: 12
+  - nodeID: CH3A_Receptionist_13
+    speakerName: Receptionist
+    dialogueText: Oh... No wonder there's already a new employee here today.
+    nextNodeIndex: 13
+  - nodeID: CH3A_Receptionist_14
+    speakerName: Reno
+    dialogueText: A new employee?
+    nextNodeIndex: 14
+  - nodeID: CH3A_Receptionist_15
+    speakerName: Receptionist
+    dialogueText: Yeah, the one with red hair.
+    nextNodeIndex: 15
+  - nodeID: CH3A_Receptionist_16
+    speakerName: Receptionist
+    dialogueText: It looks like she's from the Quality Control department.
+    nextNodeIndex: 16
+  - nodeID: CH3A_Receptionist_17
+    speakerName: Reno
+    dialogueText: That makes sense. The new attraction needs to pass a quality inspection
+      before it can open.
+    nextNodeIndex: 17
+  - nodeID: CH3A_Receptionist_18
+    speakerName: Reno
+    dialogueText: Oh, right. I need to get back to work. See you later.
+    nextNodeIndex: 18
+  - nodeID: CH3A_Receptionist_19
+    speakerName: Receptionist
+    dialogueText: In that case, have a good day at work, Mr. Reno.
+    nextNodeIndex: 19

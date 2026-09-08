@@ -7,6 +7,7 @@ public class EndNode : FlowNode
 
     public override void Enter()
     {
+        SceneLoader.Instance.LoadScene("MainMenu");
         Complete(null);
     }
 }

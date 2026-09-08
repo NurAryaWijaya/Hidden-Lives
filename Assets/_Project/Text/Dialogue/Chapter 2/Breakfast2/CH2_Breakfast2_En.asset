@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH2_Breakfast2_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: CH2_Breakfast2_01
+    Value: "Isn\u2019t Rara coming home today?"
+  - Key: CH2_Breakfast2_02
+    Value: "Yeah. Actually, she really likes staying at Grandpa\u2019s."
+  - Key: CH2_Breakfast2_03
+    Value: But her school break is almost over.
+  - Key: CH2_Breakfast2_04
+    Value: And I really miss my little girl, too.
+  - Key: CH2_Breakfast2_05
+    Value: Me too. I think everyone loves her.
+  - Key: CH2_Breakfast2_06
+    Value: "She\u2019s such a sweet kid."
+  - Key: CH2_Breakfast2_07
+    Value: "Oh, right. I can\u2019t pick Rara up today."
+  - Key: CH2_Breakfast2_08
+    Value: "I\u2019ve got a lot of work to finish today."
+  - Key: CH2_Breakfast2_09
+    Value: Can you pick Rara up this afternoon?
+  - Key: CH2_Breakfast2_Agree
+    Value: "Okay, I\u2019ll pick her up"

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992e5373c94310047abd92e81b60cd23, type: 3}
+  m_Name: CH3A_Receptionst_Lz
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizedDialogueData
+  indonesian: {fileID: 11400000, guid: 47e7e1116a4df8c46863af298deb0f7b, type: 2}
+  english: {fileID: 11400000, guid: 080d130186cb5c84a92f001e57759ffd, type: 2}
+  japanese: {fileID: 11400000, guid: 9b5f92528da214b4e8838b0cca8ac4af, type: 2}

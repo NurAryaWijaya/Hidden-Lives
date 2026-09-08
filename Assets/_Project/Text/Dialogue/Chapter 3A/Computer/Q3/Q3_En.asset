@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: Q3_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: Q3
+    Value: What happens?
+  - Key: Q3_A
+    Value: The door opens
+  - Key: Q3_B
+    Value: The door remains locked
+  - Key: Q3_C
+    Value: The game ends immediately
+  - Key: Q3_D
+    Value: The player gets a second Key

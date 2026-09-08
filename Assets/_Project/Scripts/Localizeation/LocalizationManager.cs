@@ -114,6 +114,25 @@ namespace Game.Localization
         {
             LanguageChanged?.Invoke(currentLanguage);
         }
+
+        public string Get(
+    string key,
+    LocalizationDatabase indonesian,
+    LocalizationDatabase english,
+    LocalizationDatabase japanese)
+        {
+            LocalizationDatabase database = currentLanguage switch
+            {
+                LocalizationLanguage.English => english,
+                LocalizationLanguage.Japanese => japanese,
+                _ => indonesian
+            };
+
+            if (database == null)
+                return key;
+
+            return database.Get(key);
+        }
     }
 }
 

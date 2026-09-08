@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH2_Breakfast1_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: CH2_Breakfast1_01
+    Value: Morninggg.
+  - Key: CH2_Breakfast1_02
+    Value: "Morning, babe. You\u2019re up?"
+  - Key: CH2_Breakfast1_03
+    Value: Umm...
+  - Key: CH2_Breakfast1_04
+    Value: "I\u2019m still sleepy."
+  - Key: CH2_Breakfast1_05
+    Value: But you have work today.
+  - Key: CH2_Breakfast1_06
+    Value: "I\u2019m too lazy... I just wanna sleep all day."
+  - Key: CH2_Breakfast1_07
+    Value: Hahaha. To get you motivated, I already made your favorite spicy fried
+      rice.
+  - Key: CH2_Breakfast1_08
+    Value: "Come on, let\u2019s have breakfast first. Then get ready for work."
+  - Key: CH2_Breakfast1_09
+    Value: Hmm... okay.

@@ -312,9 +312,14 @@ namespace Game.Flow.Editor
                () => CreateNodeRequested?.Invoke(typeof(LoadSceneNode), contextMenuPosition));
 
             menu.AddItem(
-               new GUIContent("Create Node/Cut Scene"),
+               new GUIContent("Create Node/Cutscene"),
                false,
                () => CreateNodeRequested?.Invoke(typeof(CutsceneNode), contextMenuPosition));
+
+            menu.AddItem(
+               new GUIContent("Create Node/Cutscene Branch"),
+               false,
+               () => CreateNodeRequested?.Invoke(typeof(TimelineCutsceneBranchNode), contextMenuPosition));
 
             menu.AddItem(
                new GUIContent("Create Node/Audio"),

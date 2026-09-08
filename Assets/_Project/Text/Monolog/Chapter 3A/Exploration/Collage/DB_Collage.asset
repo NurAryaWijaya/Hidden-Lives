@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992e5373c94310047abd92e81b60cd23, type: 3}
+  m_Name: DB_Collage
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizedDialogueData
+  indonesian: {fileID: 11400000, guid: 561acfdb9598c6c4eb11b4ee5194a7af, type: 2}
+  english: {fileID: 11400000, guid: 25ad11783d75400438d96d9f5ff50357, type: 2}
+  japanese: {fileID: 11400000, guid: e695a649776f2df4bafe5753f5147c6e, type: 2}

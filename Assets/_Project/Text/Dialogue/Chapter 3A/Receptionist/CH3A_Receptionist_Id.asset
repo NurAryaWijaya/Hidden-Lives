@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffcc08ff2fea8847b4217710d6db21a, type: 3}
+  m_Name: CH3A_Receptionist_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Dialogue.DialogueData
+  dialogueID: CH3A_Receptionist_Id
+  startingNodeIndex: 0
+  nodes:
+  - nodeID: CH3A_Receptionist_01
+    speakerName: Resepsionis
+    dialogueText: Selamat pagi pak Reno
+    nextNodeIndex: 1
+  - nodeID: CH3A_Receptionist_02
+    speakerName: Reno
+    dialogueText: Pagi.
+    nextNodeIndex: 2
+  - nodeID: CH3A_Receptionist_03
+    speakerName: Resepsionis
+    dialogueText: Gimana proyeknya pak? apakah lancar?
+    nextNodeIndex: 3
+  - nodeID: CH3A_Receptionist_04
+    speakerName: Reno
+    dialogueText: Yahh.. Masih ada beberapa problem lah
+    nextNodeIndex: 4
+  - nodeID: CH3A_Receptionist_05
+    speakerName: Resepsionis
+    dialogueText: Wahh.. padahal minggu kemarin bapak sering lembur loh ya
+    nextNodeIndex: 5
+  - nodeID: CH3A_Receptionist_06
+    speakerName: Reno
+    dialogueText: Benar.
+    nextNodeIndex: 6
+  - nodeID: CH3A_Receptionist_07
+    speakerName: Resepsionis
+    dialogueText: Tapi selama gaji lembur tetap masuk, aman lah ya
+    nextNodeIndex: 7
+  - nodeID: CH3A_Receptionist_08
+    speakerName: Reno
+    dialogueText: Itu dia intinya, hahaha...
+    nextNodeIndex: 8
+  - nodeID: CH3A_Receptionist_09
+    speakerName: Resepsionis
+    dialogueText: Omong omong, apa benar area wahana baru yang dibangun bos sudah
+      selesai pak?
+    nextNodeIndex: 9
+  - nodeID: CH3A_Receptionist_10
+    speakerName: Reno
+    dialogueText: Harusnya sih iya, kemarin sudah ada rapat yang membahas itu
+    nextNodeIndex: 10
+  - nodeID: CH3A_Receptionist_11
+    speakerName: Resepsionis
+    dialogueText: Lalu tim mana yang akan mengambil alih proyek wahana itu?
+    nextNodeIndex: 11
+  - nodeID: CH3A_Receptionist_12
+    speakerName: Reno
+    dialogueText: Entahlah, sepertinya akan dibentuk tim baru
+    nextNodeIndex: 12
+  - nodeID: CH3A_Receptionist_13
+    speakerName: Resepsionis
+    dialogueText: Ohh.. Pantesan hari ini sudah ada karyawan baru
+    nextNodeIndex: 13
+  - nodeID: CH3A_Receptionist_14
+    speakerName: Reno
+    dialogueText: Karyawan baru?
+    nextNodeIndex: 14
+  - nodeID: CH3A_Receptionist_15
+    speakerName: Resepsionis
+    dialogueText: Iya, dia yang berambut merah itu.
+    nextNodeIndex: 15
+  - nodeID: CH3A_Receptionist_16
+    speakerName: Resepsionis
+    dialogueText: Sepertinya dia dari divisi Quality Control
+    nextNodeIndex: 16
+  - nodeID: CH3A_Receptionist_17
+    speakerName: Reno
+    dialogueText: Harusnya seprti itu, wahana baru butuh di cek kualitasnya sebelum
+      bisa dibuka
+    nextNodeIndex: 17
+  - nodeID: CH3A_Receptionist_18
+    speakerName: Reno
+    dialogueText: Oh iya, saya harus segera bekerja, sampai jumpa
+    nextNodeIndex: 18
+  - nodeID: CH3A_Receptionist_19
+    speakerName: Resepsionis
+    dialogueText: Kalau begitu selamat bekerja pak Reno
+    nextNodeIndex: 19

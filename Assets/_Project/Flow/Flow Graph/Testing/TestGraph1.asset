@@ -55,7 +55,7 @@ MonoBehaviour:
   nodeId: 14dc1a8a-916c-4d42-b156-b62e4b482243
   displayName: AudioNode
   description: 
-  editorPosition: {x: 2297.616, y: 438.75436}
+  editorPosition: {x: 2141.2246, y: 488.2449}
   nextNode: {fileID: 4503532918344607874}
   channel: 0
   action: 1
@@ -368,8 +368,7 @@ MonoBehaviour:
   nextNode: {fileID: 4574140491643581033}
   trueNode: {fileID: 4574140491643581033}
   falseNode: {fileID: 7047423082936074290}
-  trueText: True
-  falseText: False
+  branchData: {fileID: 0}
 --- !u!114 &2111653142131555206
 MonoBehaviour:
   m_ObjectHideFlags: 0

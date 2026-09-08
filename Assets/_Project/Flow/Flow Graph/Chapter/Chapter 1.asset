@@ -17,7 +17,45 @@ MonoBehaviour:
   description: Monolog untuk membuat nasi goreng
   editorPosition: {x: 3981.5264, y: 406.68423}
   nextNode: {fileID: 2019398644089646181}
-  dialogue: {fileID: 11400000, guid: 49de0efeedcd9a5419b1361d25e97bae, type: 2}
+  dialogue: {fileID: 11400000, guid: edfebbfdd27ca1f4c9066511aeb74704, type: 2}
+--- !u!114 &-7424955660143382266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: ba6f819d-9f6e-41dd-a8e6-5deea40b4ce3
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 290.625, y: 521.25006}
+  nextNode: {fileID: 7283412557604191253}
+  flowId: BathRoom
+  activate: 1
+--- !u!114 &-6940812097836159889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 673273e3-f687-4c96-a509-31f92680b52f
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: -1426.5625, y: 465.0625}
+  nextNode: {fileID: 3802777225265669721}
+  flowId: PlayerManagerActivable
+  activate: 1
 --- !u!114 &-6098710217043193416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,6 +94,25 @@ MonoBehaviour:
   nextNode: {fileID: -6098710217043193416}
   flowId: Switch_Dinning
   activate: 0
+--- !u!114 &-5341869987855726266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 20ccc3dd-ed3d-4a81-975a-cd62f897effd
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: -702.4375, y: 794}
+  nextNode: {fileID: 7482540516633211056}
+  flowId: Phone_Taken
+  activate: 1
 --- !u!114 &-5003703763975770123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,8 +128,8 @@ MonoBehaviour:
   nodeId: Wait_Phone_Taken
   displayName: Wait For Player Take Phone
   description: Menunggu pemain mengambil phone
-  editorPosition: {x: 2126.4731, y: 407.01184}
-  nextNode: {fileID: 6465592184100380171}
+  editorPosition: {x: 2012.0625, y: 414.87497}
+  nextNode: {fileID: 6453207737614006330}
   eventId: Phone_Taken
 --- !u!114 &-3944072731459267662
 MonoBehaviour:
@@ -108,9 +165,27 @@ MonoBehaviour:
   nodeId: e72449c1-78ef-4201-bad4-2faae4d41d1a
   displayName: Wait Door Closed
   description: Menuggu Pemain menutup pintu kamr barulah bisa berganti task
-  editorPosition: {x: 3108.0415, y: 410.5918}
-  nextNode: {fileID: 7292416735489866413}
+  editorPosition: {x: 2976.4375, y: 501}
+  nextNode: {fileID: 8986090356120275453}
   eventId: Door_Closed_After_Take_Phone
+--- !u!114 &-2634764082353590447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 449d8eaf-c68f-45e9-9852-f8f33d213745
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: -904.25, y: 439.68747}
+  nextNode: {fileID: -5341869987855726266}
+  flowId: CS_WakeUp
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +211,6 @@ MonoBehaviour:
   - {fileID: 2082255080416485074}
   - {fileID: 3889978313986585746}
   - {fileID: -2891607747333258737}
-  - {fileID: 7292416735489866413}
   - {fileID: 2724308202995261164}
   - {fileID: 1473546538671252850}
   - {fileID: 3509195051695851452}
@@ -148,6 +222,19 @@ MonoBehaviour:
   - {fileID: 2019398644089646181}
   - {fileID: 5737392912320492993}
   - {fileID: 47698871552310738}
+  - {fileID: -2634764082353590447}
+  - {fileID: 3439996287355624817}
+  - {fileID: 3802777225265669721}
+  - {fileID: -6940812097836159889}
+  - {fileID: 2577050171297272710}
+  - {fileID: 6453207737614006330}
+  - {fileID: 8986090356120275453}
+  - {fileID: -7424955660143382266}
+  - {fileID: 5463955953097287601}
+  - {fileID: 7182970271389909694}
+  - {fileID: 7482540516633211056}
+  - {fileID: 7283412557604191253}
+  - {fileID: -5341869987855726266}
 --- !u!114 &47698871552310738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +270,7 @@ MonoBehaviour:
   displayName: Activation Door House 2
   description: Setelah Phone diambil, node ini mengaktifkan pintu agar pemain sekarang
     bisa keluar dari kamar
-  editorPosition: {x: 2864, y: 550.3669}
+  editorPosition: {x: 2757.6875, y: 627.875}
   nextNode: {fileID: -2891607747333258737}
   flowId: Door_House2
   activate: 1
@@ -221,8 +308,8 @@ MonoBehaviour:
   nodeId: WakeUp_Checkpoint
   displayName: Wake Up Checkpoint
   description: \Checkpoint pertama dengan nama "Wake Up"
-  editorPosition: {x: 659.0532, y: 181.46158}
-  nextNode: {fileID: 3509195051695851452}
+  editorPosition: {x: -1705.625, y: 286.5625}
+  nextNode: {fileID: -6940812097836159889}
   checkpointId: CP_WakeUp
 --- !u!114 &2167709846528169808
 MonoBehaviour:
@@ -240,9 +327,28 @@ MonoBehaviour:
   displayName: Load Scene House
   description: Node ini menjadi awal dari start agar saat pemain menekan start, dia
     meload dcene House
-  editorPosition: {x: 356.5625, y: 301}
+  editorPosition: {x: -2019, y: 123.249985}
   nextNode: {fileID: 2082255080416485074}
   sceneName: House
+--- !u!114 &2577050171297272710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 89c34057-72db-4cc9-af11-ab6ee5c18b16
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 3370.7778, y: 205}
+  nextNode: {fileID: 8018680304042721277}
+  flowId: Door_Auto_Trigger_1
+  activate: 0
 --- !u!114 &2724308202995261164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,8 +384,27 @@ MonoBehaviour:
   nodeId: Start_Chapter1
   displayName: Start Chapter 1
   description: 
-  editorPosition: {x: -4.4375, y: 299}
+  editorPosition: {x: -2298.4375, y: 261}
   nextNode: {fileID: 2167709846528169808}
+--- !u!114 &3439996287355624817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: Activation Light
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: fb000442-3278-441e-b4c3-26cfd0afe470
+  displayName: Activation Light
+  description: 
+  editorPosition: {x: 3809.4844, y: 571.44635}
+  nextNode: {fileID: -8161394582647353365}
+  flowId: Lighting_House_Manager
+  activate: 0
 --- !u!114 &3509195051695851452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,10 +420,30 @@ MonoBehaviour:
   nodeId: a96be353-43f9-47d9-8196-610396aebff4
   displayName: Kitchen Light Activation
   description: Menonaktifkan lampu dapur
-  editorPosition: {x: 790.5799, y: 533.1184}
+  editorPosition: {x: 792, y: 533}
   nextNode: {fileID: -5921434932025177945}
   flowId: Switch_Kitchen
   activate: 0
+--- !u!114 &3802777225265669721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: f76c4822-d43c-4042-8278-391030bbb295
+  displayName: MoveNode
+  description: 
+  editorPosition: {x: -1207.4375, y: 652.74994}
+  nextNode: {fileID: -2634764082353590447}
+  flowId: SunHouse
+  position: {x: 0, y: 3, z: 0}
+  rotation: {x: 17.721, y: -65, z: 7.1870003}
 --- !u!114 &3889978313986585746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +463,25 @@ MonoBehaviour:
   nextNode: {fileID: 1473546538671252850}
   localizationKey: N_Phone_Taken
   duration: 5
+--- !u!114 &5463955953097287601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 9c323985-77d9-494c-837e-209b446be61d
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 51.875008, y: 674.3125}
+  nextNode: {fileID: -7424955660143382266}
+  flowId: CupBoard
+  activate: 1
 --- !u!114 &5737392912320492993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +500,25 @@ MonoBehaviour:
   editorPosition: {x: 4864.7515, y: 291.6568}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: 7f10337ede7aaaf4abe1b66156aa6dc2, type: 2}
+--- !u!114 &6453207737614006330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 8c5b3486-4ac1-49c1-ac2e-0b69132a8ae0
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 2265.375, y: 129.99998}
+  nextNode: {fileID: 6465592184100380171}
+  flowId: Door_Auto_Trigger_1
+  activate: 1
 --- !u!114 &6465592184100380171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,10 +534,10 @@ MonoBehaviour:
   nodeId: Destroy_Phone
   displayName: Destroy Phone Object From Scene
   description: Menghapus Phone setelah diambil
-  editorPosition: {x: 2376.3965, y: 306.88165}
+  editorPosition: {x: 2443.875, y: 279.37497}
   nextNode: {fileID: 3889978313986585746}
   flowId: Phone_Taken
---- !u!114 &7292416735489866413
+--- !u!114 &7182970271389909694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,15 +546,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
-  m_Name: Destroy Auto Close Door
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
-  nodeId: 7bafa22f-4b96-41bf-8cd8-aae2da15243a
-  displayName: Destroy Auto Close Door
-  description: Menghapus Trigger Auto Close Door di scene,
-  editorPosition: {x: 3364.4082, y: 309.63315}
-  nextNode: {fileID: 8018680304042721277}
-  flowId: Door_Auto_Trigger_1
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: cf636d3a-9185-4fe4-852e-62716c22693c
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: -175.74994, y: 540.0625}
+  nextNode: {fileID: 5463955953097287601}
+  flowId: Curtain
+  activate: 1
+--- !u!114 &7283412557604191253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 01696568-6d8b-4eec-b1a3-e32544beeda4
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 511.875, y: 663.6875}
+  nextNode: {fileID: 3509195051695851452}
+  flowId: RaishaSleep
+  activate: 1
+--- !u!114 &7482540516633211056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 9a1296c6-8b81-4853-b28f-ba12d5006f74
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: -437.81247, y: 665}
+  nextNode: {fileID: 7182970271389909694}
+  flowId: Laptop
+  activate: 1
 --- !u!114 &8018680304042721277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,5 +610,24 @@ MonoBehaviour:
   displayName: Wait Until Player Turn On
   description: Menunggu pemain menyalakan lampu dapur
   editorPosition: {x: 3614.8367, y: 407.7784}
-  nextNode: {fileID: -8161394582647353365}
+  nextNode: {fileID: 3439996287355624817}
   eventId: CH1_First_TurnOn_Kitchen_Light
+--- !u!114 &8986090356120275453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 05a4c610-8841-4ee6-98fe-d1eae6f26f83
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 3110.875, y: 307.875}
+  nextNode: {fileID: 2577050171297272710}
+  flowId: Door_House2
+  activate: 0

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH2_Breakfast1_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: CH2_Breakfast1_01
+    Value: Pagiii.
+  - Key: CH2_Breakfast1_02
+    Value: Pagi, Sayang. Udah bangun?
+  - Key: CH2_Breakfast1_03
+    Value: 'Eumm...
+
+'
+  - Key: CH2_Breakfast1_04
+    Value: Masih ngantuk.
+  - Key: CH2_Breakfast1_05
+    Value: Kan hari ini harus kerja.
+  - Key: CH2_Breakfast1_06
+    Value: Malas... pengennya tidur seharian.
+  - Key: CH2_Breakfast1_07
+    Value: Hahaha. Biar semangat, aku udah masakin nasi goreng pedas kesukaanmu,
+      lho.
+  - Key: CH2_Breakfast1_08
+    Value: Yuk, sarapan dulu. Habis itu siap-siap untuk bekerja.
+  - Key: CH2_Breakfast1_09
+    Value: Heumm... oke.

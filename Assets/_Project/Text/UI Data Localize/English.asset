@@ -25,3 +25,31 @@ MonoBehaviour:
     Value: Phone has been taken
   - Key: Make_Fried_Rice_Notification
     Value: Make Fried Rice
+  - Key: Group_Title
+    Value: University Alumni Group 2014/2015
+  - Key: Alert_Branch
+    Value: More options will be available in the full version.
+  - Key: CH1_Branch_T
+    Value: Attend the Reunion
+  - Key: CH1_Branch_F
+    Value: Ignore It
+  - Key: CH2_Breakfast1_T
+    Value: Sure.
+  - Key: CH2_Breakfast1_F
+    Value: Go to the reunion
+  - Key: HanaIntroBranch_T
+    Value: Say hello
+  - Key: HanaIntroBranch_F
+    Value: Ignore her
+  - Key: HanaHelp_T
+    Value: Pick up my daughter
+  - Key: HanaHelp_F
+    Value: Have dinner together
+  - Key: AlertCom_T
+    Value: Sit now
+  - Key: AlertCom_F
+    Value: Maybe later
+  - Key: ConflictCH4_T
+    Value: Honest
+  - Key: ConflictCH4_F
+    Value: Lie

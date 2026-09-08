@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: Q9_Jp
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: Q9
+    Value: "\u3069\u306E\u6570\u5024\u304C\u4E0D\u81EA\u7136\u3067\u3059\u304B\uFF1F"
+  - Key: Q9_A
+    Value: "\u30EC\u30D9\u30EB"
+  - Key: Q9_B
+    Value: HP
+  - Key: Q9_C
+    Value: "\u30A4\u30F3\u30D9\u30F3\u30C8\u30EA"
+  - Key: Q9_D
+    Value: "\u901F\u5EA6"

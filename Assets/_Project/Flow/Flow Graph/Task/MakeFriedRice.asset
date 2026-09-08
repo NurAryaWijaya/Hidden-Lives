@@ -34,7 +34,7 @@ MonoBehaviour:
   nodeId: 270b360f-d0c3-42bd-8377-0648eb53fb76
   displayName: Wait Until Player Take Fried Rice
   description: Menunggu pemain samapai mengambil nasi goreng dengan piring
-  editorPosition: {x: 13694.059, y: 968.0554}
+  editorPosition: {x: 13732.777, y: 968.55554}
   nextNode: {fileID: -7440574586940109826}
   eventId: Take_With_Plate
 --- !u!114 &-8555829835640714948
@@ -52,9 +52,29 @@ MonoBehaviour:
   nodeId: 55bb4cee-5c3a-48fa-b0e3-8db06e2b2366
   displayName: Destory Cobek
   description: Menghapus cobek dari dunia
-  editorPosition: {x: 7512, y: 607}
+  editorPosition: {x: 7793.3125, y: 417}
   nextNode: {fileID: -7319410878511566715}
   flowId: Cobek
+--- !u!114 &-8484268197981588811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: Move Player
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: 5801db6d-19bb-48a6-9879-3ca6ca1ad2a6
+  displayName: Move Player
+  description: Mengembalikan lokoasi pemain
+  editorPosition: {x: 7563.625, y: 248.875}
+  nextNode: {fileID: -8555829835640714948}
+  flowId: PlayerPrefab
+  position: {x: -6.18, y: 0, z: -3.4}
+  rotation: {x: 0, y: 210, z: 0}
 --- !u!114 &-8068000782563303803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,9 +108,9 @@ MonoBehaviour:
   nodeId: 30933e72-70ee-4a2e-bb80-5e9745eb4f5e
   displayName: NextGraphNode
   description: 
-  editorPosition: {x: 14045, y: 401.33334}
+  editorPosition: {x: 14101, y: 490.77777}
   nextNode: {fileID: 0}
-  nextGraph: {fileID: 11400000, guid: 0d42b135f00db0a418bdb652df28af3f, type: 2}
+  nextGraph: {fileID: 11400000, guid: 8691a0fb19301b74380eed8f27f40212, type: 2}
 --- !u!114 &-7319410878511566715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +285,7 @@ MonoBehaviour:
   editorPosition: {x: 13065.054, y: 974.7101}
   nextNode: {fileID: 2471005905609721354}
   flowId: Stove1
-  activate: 1
+  activate: 0
 --- !u!114 &-3337012277080359653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
   m_Name: MakeFriedRice
   m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
-  chapterIndex: 0
+  chapterIndex: 1
   graphId: Fried_Rice_Task_Graph
   displayName: FiredRiceTaskGraph
   description: Graph Task Membuat Nasi Goreng
@@ -366,7 +386,6 @@ MonoBehaviour:
   - {fileID: -1223400207578659409}
   - {fileID: -5689979775128584537}
   - {fileID: -5212070808069986067}
-  - {fileID: 374444725192268598}
   - {fileID: 5112918850757408644}
   - {fileID: -8555829835640714948}
   - {fileID: 276854473664532871}
@@ -401,6 +420,9 @@ MonoBehaviour:
   - {fileID: 2471005905609721354}
   - {fileID: -8685113063785912599}
   - {fileID: -7440574586940109826}
+  - {fileID: 5555832280822273830}
+  - {fileID: -8484268197981588811}
+  - {fileID: 6936062271527536501}
 --- !u!114 &276854473664532871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,25 +442,6 @@ MonoBehaviour:
   nextNode: {fileID: 9199911962749465781}
   flowId: Wok1
   activate: 1
---- !u!114 &374444725192268598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Cutscene(Prototype)
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: 067dac19-cece-4c5e-a44e-39cc8be76933
-  displayName: Cutscene(Prototype)
-  description: Ini Baru Prototype
-  editorPosition: {x: 7249, y: 500}
-  nextNode: {fileID: -8555829835640714948}
-  message: Memulai Cutscene Menumbuk
-  duration: 2
 --- !u!114 &513985438502517357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +532,7 @@ MonoBehaviour:
   nodeId: 09aa7fc4-769e-4786-ac86-ff9e01718fb1
   displayName: Plate Activation
   description: Mengaktifkan Piring
-  editorPosition: {x: 13388.814, y: 1100}
+  editorPosition: {x: 13394.111, y: 1076.8889}
   nextNode: {fileID: -8685113063785912599}
   flowId: Plate1
   activate: 1
@@ -678,7 +681,7 @@ MonoBehaviour:
   displayName: Cobek Held Destroy
   description: Menghapus Pegangan Cobek dari scene
   editorPosition: {x: 7010, y: 603}
-  nextNode: {fileID: 374444725192268598}
+  nextNode: {fileID: 5555832280822273830}
   flowId: Cobek_Held
 --- !u!114 &5257985325100390620
 MonoBehaviour:
@@ -718,6 +721,26 @@ MonoBehaviour:
   nextNode: {fileID: 3719740241201633188}
   flowId: Egg1
   activate: 0
+--- !u!114 &5555832280822273830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: Move Ployer
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: 3f7e3530-d24f-4a94-a195-6ce4ebd2ab37
+  displayName: Move Ployer
+  description: Memindahkan pemain agar tidak terlihtat
+  editorPosition: {x: 7017.041, y: 53}
+  nextNode: {fileID: 6936062271527536501}
+  flowId: PlayerPrefab
+  position: {x: 4.902, y: 0.013, z: -11.07}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &6190904462338594238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +779,26 @@ MonoBehaviour:
   nextNode: {fileID: -1223400207578659409}
   flowId: Oil1
   activate: 0
+--- !u!114 &6936062271527536501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f03edf222b45545889801230eb123a, type: 3}
+  m_Name: TimelineCutsceneBranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TimelineCutsceneBranchNode
+  nodeId: cea80480-0f50-49eb-85c7-9f1284b55976
+  displayName: TimelineCutsceneBranchNode
+  description: 
+  editorPosition: {x: 7219.3125, y: 247.87494}
+  nextNode: {fileID: 0}
+  flowId: CS_Pounding
+  trueNode: {fileID: -8484268197981588811}
+  falseNode: {fileID: -8484268197981588811}
 --- !u!114 &7072726501693957250
 MonoBehaviour:
   m_ObjectHideFlags: 0

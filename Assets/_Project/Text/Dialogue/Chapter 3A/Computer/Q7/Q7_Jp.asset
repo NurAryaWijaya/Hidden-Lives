@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: Q7_Jp
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: Q7
+    Value: "\u6700\u3082\u53EF\u80FD\u6027\u306E\u9AD8\u3044\u554F\u984C\u306F\u4F55\u3067\u3059\u304B\uFF1F"
+  - Key: Q7_A
+    Value: "\u79FB\u52D5\u30B7\u30B9\u30C6\u30E0\u306B\u554F\u984C\u304C\u3042\u308B"
+  - Key: Q7_B
+    Value: "\u30A4\u30F3\u30D9\u30F3\u30C8\u30EA\u30B7\u30B9\u30C6\u30E0\u306B\u554F\u984C\u304C\u3042\u308B"
+  - Key: Q7_C
+    Value: "\u30AA\u30FC\u30C7\u30A3\u30AA\u30B7\u30B9\u30C6\u30E0\u306B\u554F\u984C\u304C\u3042\u308B"
+  - Key: Q7_D
+    Value: "\u30BB\u30FC\u30D6\u30B7\u30B9\u30C6\u30E0\u306B\u554F\u984C\u304C\u3042\u308B"

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffcc08ff2fea8847b4217710d6db21a, type: 3}
+  m_Name: Curtain_Jp
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Dialogue.DialogueData
+  dialogueID: test_dialogue
+  startingNodeIndex: 0
+  nodes:
+  - nodeID: curtain_01
+    speakerName: Reno
+    dialogueText: "\u59BB\u306F\u7720\u3063\u3066\u3044\u308B\u3002"
+    nextNodeIndex: 1
+  - nodeID: curtain_02
+    speakerName: Reno
+    dialogueText: "\u30AB\u30FC\u30C6\u30F3\u306F\u5F8C\u3067\u958B\u3051\u3088\u3046\u3002"
+    nextNodeIndex: 2

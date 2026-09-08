@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH3A_HanaCafe_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: How have you been?
+  - Key: 2
+    Value: I'm good. How about you?
+  - Key: 3
+    Value: I'm good too.
+  - Key: 4
+    Value: Weren't you studying abroad?
+  - Key: 5
+    Value: I graduated a few years ago.
+  - Key: 6
+    Value: Oh, really? Time flies.
+  - Key: 7
+    Value: Yeah, it doesn't feel that long ago. Feels like I just said goodbye to
+      you yesterday.
+  - Key: 8
+    Value: You said you'd only be gone for a little while back then.
+  - Key: 9
+    Value: "Turns out, that \u201Clittle while\u201D was pretty long."
+  - Key: 10
+    Value: But you finally came back.
+  - Key: 11
+    Value: Yeah. Sometimes I still miss the atmosphere here.
+  - Key: 12
+    Value: Or maybe there's a certain memory that makes you miss this place?
+  - Key: 13
+    Value: Maybe there is. But not everything needs to be remembered, right?
+  - Key: 14
+    Value: Yeah, I guess you're right.
+  - Key: 15
+    Value: Two hours later
+  - Key: 16
+    Value: I think I should get going.
+  - Key: 17
+    Value: Got somewhere to be?
+  - Key: 18
+    Value: Yeah, it's my boss's new project. I need to meet the deadline.
+  - Key: 19
+    Value: Oh, the new amusement park project?
+  - Key: 20
+    Value: Yeah.
+  - Key: 21
+    Value: So you're the one handling that project.
+  - Key: 22
+    Value: When are you going to start checking out the site?
+  - Key: 23
+    Value: Tomorrow.
+  - Key: 24
+    Value: Tomorrow?? Isn't tomorrow the weekend?
+  - Key: 25
+    Value: Yeah... What can I do? The deadline's really tight.
+  - Key: 26
+    Value: If you need any help, just give me a call.
+  - Key: 27
+    Value: Okay...

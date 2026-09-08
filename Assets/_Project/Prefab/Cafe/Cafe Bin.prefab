@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4184963718632870298}
   - component: {fileID: 8887670275692812082}
   - component: {fileID: 8832499856498919259}
-  - component: {fileID: 7222066531963340576}
   m_Layer: 0
   m_Name: Cafe Bin
   m_TagString: Untagged
@@ -31,7 +30,8 @@ Transform:
   m_LocalPosition: {x: -4.780593, y: 0, z: -0.37930462}
   m_LocalScale: {x: -13.677279, y: -14.731433, z: -0.9116845}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2308966658348139854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 180}
 --- !u!33 &8887670275692812082
@@ -91,13 +91,45 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7222066531963340576
+--- !u!1 &3947488279086713707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2308966658348139854}
+  - component: {fileID: 5126287454384225568}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2308966658348139854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3947488279086713707}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000030908623, y: -0.7071068, z: -0.7071067, w: 0.000000030908616}
+  m_LocalPosition: {x: 0.012261438, y: -0.007842731, z: -0.2805356}
+  m_LocalScale: {x: -0.073113956, y: -1.0968709, z: -0.06788207}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4184963718632870298}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5126287454384225568
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2369880032918818251}
+  m_GameObject: {fileID: 3947488279086713707}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -110,5 +142,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.024522264, y: 0.024522262, z: 0.62807786}
-  m_Center: {x: 0.000000026542693, y: -0.00000038901737, z: -0.30403852}
+  m_Size: {x: 0.5314841, y: 1.1592913, z: 0.4786052}
+  m_Center: {x: 1, y: 1, z: 1}

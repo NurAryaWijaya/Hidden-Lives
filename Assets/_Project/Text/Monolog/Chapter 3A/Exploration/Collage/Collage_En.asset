@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffcc08ff2fea8847b4217710d6db21a, type: 3}
+  m_Name: Collage_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Dialogue.DialogueData
+  dialogueID: CollageMonolog
+  startingNodeIndex: 0
+  nodes:
+  - nodeID: Collage_01
+    speakerName: Reno
+    dialogueText: This is one of my coworker's desks.
+    nextNodeIndex: 1
+  - nodeID: Collage_02
+    speakerName: Reno
+    dialogueText: But he got caught up in a workplace scandal.
+    nextNodeIndex: 2
+  - nodeID: Collage_02
+    speakerName: Reno
+    dialogueText: He was having an affair with another coworker.
+    nextNodeIndex: 3
+  - nodeID: Collage_02
+    speakerName: Reno
+    dialogueText: So he got fired just like that.
+    nextNodeIndex: 4

@@ -32,6 +32,14 @@ public class PlayerInteractor : MonoBehaviour
     // Objek yang dilihat frame sebelumnya
     private Interactable previousLookTarget;
 
+    //Game state
+    private bool CanPlayerInteract()
+    {
+        return
+            GameStateManager.Instance.IsState(GameState.Exploration) ||
+            GameStateManager.Instance.IsState(GameState.OnComputer);
+    }
+
     private void Awake()
     {
         PlayerCarry = GetComponent<PlayerCarry>();
@@ -175,7 +183,7 @@ public class PlayerInteractor : MonoBehaviour
 
     private void HandleInput()
     {
-        if (!GameStateManager.Instance.IsState(GameState.Exploration))
+        if (!CanPlayerInteract())
         {
             if (inputHandler.DialogueNextPressed)
             {

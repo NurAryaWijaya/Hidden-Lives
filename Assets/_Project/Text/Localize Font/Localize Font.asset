@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationFontDatabase
   indonesian: {fileID: 11400000, guid: dddfe027739719c44a257a5052c7118b, type: 2}
   english: {fileID: 11400000, guid: dddfe027739719c44a257a5052c7118b, type: 2}
-  japanese: {fileID: 11400000, guid: 7b8e7c3843732da4a946f7eaf7ae98e8, type: 2}
+  japanese: {fileID: 11400000, guid: d13ad76c4c2c1a94aba7f2ab52fc6efa, type: 2}

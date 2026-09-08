@@ -1,0 +1,826 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9046848169887443604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: 0b456c50-1086-45de-87ac-887e64848a66
+  displayName: MoveNode
+  description: 
+  editorPosition: {x: 18306.592, y: 1000.4286}
+  nextNode: {fileID: -4703440718566313046}
+  flowId: SunOffice
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: -90, y: 90, z: 185}
+--- !u!114 &-7415740958134383436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: Cutscene ignored
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: d5f29d50-e2b2-40e2-80b2-2cb3a014db80
+  displayName: Cutscene ignored
+  description: 
+  editorPosition: {x: 16067.667, y: 1000.6666}
+  nextNode: {fileID: 6599719097994028400}
+  flowId: CS_HanaIgnoredIntro
+--- !u!114 &-7327524797170321799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb09179511b274f9b4def14bf156e6, type: 3}
+  m_Name: NextGraphNode
+  m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
+  nodeId: 577a4112-0d26-45ac-9c2c-ac0889b0ee6d
+  displayName: NextGraphNode
+  description: 
+  editorPosition: {x: 19839.12, y: 1790.42}
+  nextNode: {fileID: 0}
+  nextGraph: {fileID: 11400000, guid: d3b5b8f8d48400b41976671d1191180b, type: 2}
+--- !u!114 &-7045322425464898823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: Pickup
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: d63d0c25-dbb2-4203-a37f-41388abe0858
+  displayName: Pickup
+  description: 
+  editorPosition: {x: 19199.516, y: 921.24567}
+  nextNode: {fileID: -2825383826578829791}
+  flowId: CS_PickUpDaughter
+--- !u!114 &-6960521257010550733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: b8e29b91-41a4-482c-97a7-f98f9cc2df0a
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 16816.775, y: 1112}
+  nextNode: {fileID: -4113714853408696148}
+  flowId: SitDownIntereacable
+  activate: 1
+--- !u!114 &-6788935428969248802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 03121085-572d-453b-b6c3-454b690ed2dc
+  displayName: WaitEventNode
+  description: 
+  editorPosition: {x: 18091.926, y: 809.1111}
+  nextNode: {fileID: -9046848169887443604}
+  eventId: PlayerFinishQuestion
+--- !u!114 &-6128386059557394893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: 9f53291c-e516-4c64-bda5-7f5a88d45a5e
+  displayName: MoveNode
+  description: 
+  editorPosition: {x: 12683.625, y: 1154.75}
+  nextNode: {fileID: 145019564609903444}
+  flowId: SunOffice
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 40, y: 100, z: 0}
+--- !u!114 &-6123148771875126982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bb9546964aa3645aab8642c3850cd5, type: 3}
+  m_Name: BranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::BranchNode
+  nodeId: 73c29e33-c896-4bab-bc21-b37fad925020
+  displayName: BranchNode
+  description: 
+  editorPosition: {x: 15699.123, y: 892.2716}
+  nextNode: {fileID: 0}
+  trueNode: {fileID: 6436961021557222738}
+  falseNode: {fileID: -7415740958134383436}
+  branchData: {fileID: 11400000, guid: 088110be54cdda14b9595e5ec786b002, type: 2}
+--- !u!114 &-5821989084773605830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: e9d01755-9934-4826-9248-c85bd70a8646
+  displayName: MoveNode
+  description: 
+  editorPosition: {x: 16315.204, y: 634.3673}
+  nextNode: {fileID: -1133899672464201083}
+  flowId: PlayerPrefab
+  position: {x: -4.643, y: 0.060000062, z: -8.593}
+  rotation: {x: 0, y: 154.076, z: 0}
+--- !u!114 &-5486188374175755373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cc3141d5fc81a42b218b18012f5396, type: 3}
+  m_Name: CheckpointNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
+  nodeId: 70d66c00-952c-4fd6-8bf3-19a2f49c20d3
+  displayName: CheckpointNode
+  description: 
+  editorPosition: {x: 18891.246, y: 807.5917}
+  nextNode: {fileID: -7045322425464898823}
+  checkpointId: Cp_PickUpDaughter
+--- !u!114 &-5213048428032646831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: b66d3608-549e-485b-9759-dd1b68f94227
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 14174.375, y: 1159.375}
+  nextNode: {fileID: 5641541229653812787}
+  flowId: Manager
+  activate: 1
+--- !u!114 &-4703440718566313046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f03edf222b45545889801230eb123a, type: 3}
+  m_Name: TimelineCutsceneBranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TimelineCutsceneBranchNode
+  nodeId: e0a85bc0-31fd-475a-a67c-649ced95e756
+  displayName: TimelineCutsceneBranchNode
+  description: 
+  editorPosition: {x: 18587.834, y: 1053.661}
+  nextNode: {fileID: 0}
+  flowId: CS_HanaHelp
+  trueNode: {fileID: -5486188374175755373}
+  falseNode: {fileID: 7701906780933601085}
+--- !u!114 &-4119056757342622367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bb9546964aa3645aab8642c3850cd5, type: 3}
+  m_Name: BranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::BranchNode
+  nodeId: 75225c57-4104-4389-8eed-e5e169ff9ee6
+  displayName: BranchNode
+  description: 
+  editorPosition: {x: 16801, y: 697}
+  nextNode: {fileID: 0}
+  trueNode: {fileID: 8873974856778633029}
+  falseNode: {fileID: -1133899672464201083}
+  branchData: {fileID: 11400000, guid: e418666230f33d847a9bcf5711705915, type: 2}
+--- !u!114 &-4113714853408696148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 1e73cc59-29c7-42d2-837b-e9b5307f7e79
+  displayName: WaitEventNode
+  description: 
+  editorPosition: {x: 17043.225, y: 934.8367}
+  nextNode: {fileID: -4119056757342622367}
+  eventId: SitDownAlert
+--- !u!114 &-2825383826578829791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: c83dc3cf-103a-4c9a-ae4b-0a8d931fbea4
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 19476.66, y: 731.8616}
+  nextNode: {fileID: -969321170800890610}
+  sceneName: House
+--- !u!114 &-1958394683908417672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: c49124d5-5722-4921-bcea-bac846c214d4
+  displayName: TestFlowNode
+  description: 
+  editorPosition: {x: 17437.777, y: 642.44446}
+  nextNode: {fileID: 4283405389041595500}
+  message: pindah karakter
+  duration: 2
+--- !u!114 &-1133899672464201083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: 52418464-6dfb-4b7e-accb-f9fdc058ee0e
+  displayName: TestFlowNode
+  description: 
+  editorPosition: {x: 16562.959, y: 917.5918}
+  nextNode: {fileID: -6960521257010550733}
+  message: Branch Trigger Sit
+  duration: 1
+--- !u!114 &-969321170800890610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb09179511b274f9b4def14bf156e6, type: 3}
+  m_Name: NextGraphNode
+  m_EditorClassIdentifier: Assembly-CSharp::NextGraphNode
+  nodeId: 949dbba9-12cb-4736-b29c-c7d3b2ecc80b
+  displayName: NextGraphNode
+  description: 
+  editorPosition: {x: 19772.17, y: 590.7232}
+  nextNode: {fileID: 0}
+  nextGraph: {fileID: 11400000, guid: 13feb1c22920eb740a11c4267c405ba7, type: 2}
+--- !u!114 &-549475343667177267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 84a019ff-d3a4-4ffb-9afc-aa8688b9f8e6
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 12194.223, y: 1116}
+  nextNode: {fileID: 3470170549871632916}
+  flowId: Elevator_Open
+--- !u!114 &-255353281757671177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: DestroyNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: 4681929a-554a-4f53-981c-9ab556efd9df
+  displayName: DestroyNode
+  description: 
+  editorPosition: {x: 15157.444, y: 1067.8889}
+  nextNode: {fileID: 5117100585738886215}
+  flowId: OfficeBlock2
+--- !u!114 &-60205542337719426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 2f43aa55-7f40-4699-855a-aba36d49bb9a
+  displayName: WaitEventNode
+  description: 
+  editorPosition: {x: 14765.6875, y: 1088.875}
+  nextNode: {fileID: 3343297682661888055}
+  eventId: HanaIntroTriggered
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad9354639dd434b855fe02cec62db6, type: 3}
+  m_Name: Chapter 3A
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.FlowGraph
+  chapterIndex: 3
+  graphId: Chapter3A
+  displayName: Chapter3A
+  description: 
+  startNode: {fileID: 7819938760483298668}
+  nodes:
+  - {fileID: 7819938760483298668}
+  - {fileID: 2129975713570672480}
+  - {fileID: 145019564609903444}
+  - {fileID: 8605216689683559715}
+  - {fileID: -60205542337719426}
+  - {fileID: 3343297682661888055}
+  - {fileID: -255353281757671177}
+  - {fileID: -6123148771875126982}
+  - {fileID: 6436961021557222738}
+  - {fileID: -5821989084773605830}
+  - {fileID: -7415740958134383436}
+  - {fileID: 6599719097994028400}
+  - {fileID: 4283405389041595500}
+  - {fileID: -6960521257010550733}
+  - {fileID: -6788935428969248802}
+  - {fileID: -4703440718566313046}
+  - {fileID: 1130554095912566824}
+  - {fileID: -7045322425464898823}
+  - {fileID: -2825383826578829791}
+  - {fileID: 5432995201588397973}
+  - {fileID: 81878891831283428}
+  - {fileID: -1958394683908417672}
+  - {fileID: 5117100585738886215}
+  - {fileID: -4113714853408696148}
+  - {fileID: -4119056757342622367}
+  - {fileID: 8873974856778633029}
+  - {fileID: -1133899672464201083}
+  - {fileID: 7698428846010159064}
+  - {fileID: 2786511460257473741}
+  - {fileID: -5213048428032646831}
+  - {fileID: 5641541229653812787}
+  - {fileID: 2712992568691121468}
+  - {fileID: 2648715782272829100}
+  - {fileID: -7327524797170321799}
+  - {fileID: -6128386059557394893}
+  - {fileID: -9046848169887443604}
+  - {fileID: -969321170800890610}
+  - {fileID: -549475343667177267}
+  - {fileID: 3470170549871632916}
+  - {fileID: -5486188374175755373}
+  - {fileID: 7701906780933601085}
+--- !u!114 &81878891831283428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 613cbcca-d07a-421e-8253-d79e012b5b97
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 17775.518, y: 678.49384}
+  nextNode: {fileID: -6788935428969248802}
+  flowId: SitDownIntereacable
+  activate: 0
+--- !u!114 &145019564609903444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5b2b2f15accf842ad7b506d1929394, type: 3}
+  m_Name: DialogueFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueFlowNode
+  nodeId: 08f5aba3-106a-4425-986b-56d128c88f4a
+  displayName: DialogueFlowNode
+  description: 
+  editorPosition: {x: 12916, y: 989}
+  nextNode: {fileID: 2648715782272829100}
+  flowId: Receptionist_Dialogue1
+--- !u!114 &1130554095912566824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: Dinner
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 8cfaa4ed-df54-4645-beae-cff725eaab78
+  displayName: Dinner
+  description: 
+  editorPosition: {x: 19167.682, y: 1417.5896}
+  nextNode: {fileID: 5432995201588397973}
+  flowId: CS_AcceptedForDinning
+--- !u!114 &2129975713570672480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cc3141d5fc81a42b218b18012f5396, type: 3}
+  m_Name: CheckpointNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
+  nodeId: 7a92f5fa-af7a-4bdd-8a68-b2e4fcdd90cb
+  displayName: CheckpointNode
+  description: 
+  editorPosition: {x: 12004.667, y: 886.8889}
+  nextNode: {fileID: -549475343667177267}
+  checkpointId: CP_Chapter_3A
+--- !u!114 &2648715782272829100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 5a41ca46-231f-453b-a13d-41adf2001409
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 13184, y: 1177}
+  nextNode: {fileID: 2712992568691121468}
+  flowId: Soffa
+  activate: 1
+--- !u!114 &2712992568691121468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: e29943fd-cba1-4666-a774-df4cf4e48ad7
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 13501.25, y: 984.3125}
+  nextNode: {fileID: 2786511460257473741}
+  flowId: Boss
+  activate: 1
+--- !u!114 &2786511460257473741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 0a8fd907-23cc-40ce-87d0-838eada61279
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 13718.75, y: 1157.0625}
+  nextNode: {fileID: 7698428846010159064}
+  flowId: Loker
+  activate: 1
+--- !u!114 &3343297682661888055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: DestroyNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: bb9d3687-200d-46ce-b080-e2212f2d12bd
+  displayName: DestroyNode
+  description: 
+  editorPosition: {x: 14979.5625, y: 1286}
+  nextNode: {fileID: -255353281757671177}
+  flowId: HanaIntroTrigger
+--- !u!114 &3470170549871632916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
+  m_Name: TestFlowNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
+  nodeId: d24ead1b-1072-41e3-a83f-784d20a28f12
+  displayName: TestFlowNode
+  description: 
+  editorPosition: {x: 12442.667, y: 1368.4445}
+  nextNode: {fileID: -6128386059557394893}
+  message: tes cutscene
+  duration: 1
+--- !u!114 &4283405389041595500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: d3818150-96f3-42fc-a7c1-3d76e53678b9
+  displayName: MoveNode
+  description: 
+  editorPosition: {x: 17529.111, y: 845.55554}
+  nextNode: {fileID: 81878891831283428}
+  flowId: PlayerPrefab
+  position: {x: 3.791, y: 0.060000062, z: -0.083}
+  rotation: {x: 0, y: -90, z: 0}
+--- !u!114 &5117100585738886215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd8c2cfe019c73459574a6d87b8fa25, type: 3}
+  m_Name: MonologueNode
+  m_EditorClassIdentifier: Assembly-CSharp::MonologueNode
+  nodeId: fda54b21-99fb-4bd9-a47f-a6d4f4509baf
+  displayName: MonologueNode
+  description: 
+  editorPosition: {x: 15362.223, y: 772.6667}
+  nextNode: {fileID: -6123148771875126982}
+  dialogue: {fileID: 11400000, guid: 81dab9a0e98f06845bc21af77674ab76, type: 2}
+--- !u!114 &5432995201588397973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: 01f87e9b-2def-4439-ad5b-0304a464874d
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 19490.184, y: 1604.355}
+  nextNode: {fileID: -7327524797170321799}
+  sceneName: Cafe
+--- !u!114 &5641541229653812787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: e4721d71-aeb2-442d-b595-1ba0a6e39c7e
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 14260.889, y: 953.1111}
+  nextNode: {fileID: 8605216689683559715}
+  flowId: Meeting
+  activate: 1
+--- !u!114 &6436961021557222738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: Cutscene Say Hay
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 4c8df29f-cacb-4e6a-9c81-fd9036fea0f3
+  displayName: Cutscene Say Hay
+  description: 
+  editorPosition: {x: 16063.125, y: 796.25946}
+  nextNode: {fileID: -5821989084773605830}
+  flowId: CS_HanaSayHallo
+--- !u!114 &6599719097994028400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e96837f41240b42a50140cd980499d, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.MoveNode
+  nodeId: e1345546-3f75-4631-a14b-4ceb6349c4ec
+  displayName: MoveNode
+  description: 
+  editorPosition: {x: 16310.755, y: 1159.204}
+  nextNode: {fileID: -1133899672464201083}
+  flowId: PlayerPrefab
+  position: {x: -4.643, y: 0.060000062, z: -8.593}
+  rotation: {x: 0, y: 154.076, z: 0}
+--- !u!114 &7698428846010159064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: ecf19506-1c3b-4461-9a2c-f10159299883
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 13924.9375, y: 985.5625}
+  nextNode: {fileID: -5213048428032646831}
+  flowId: Collage
+  activate: 1
+--- !u!114 &7701906780933601085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cc3141d5fc81a42b218b18012f5396, type: 3}
+  m_Name: CheckpointNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
+  nodeId: 3c8c6802-ed57-4965-b0a2-4fd72eaaf7e0
+  displayName: CheckpointNode
+  description: 
+  editorPosition: {x: 18844.32, y: 1251.0907}
+  nextNode: {fileID: 1130554095912566824}
+  checkpointId: Cp_AcceptDInner
+--- !u!114 &7819938760483298668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546879df9ea4a8e4f81e82fdb035768e, type: 3}
+  m_Name: Start Chapter 2
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  nodeId: 10032e3c-2d83-4dda-bc9d-faae0a20f332
+  displayName: Start Chapter 2
+  description: Mulai Dari pemilihan main flow
+  editorPosition: {x: 11633.0625, y: 996.625}
+  nextNode: {fileID: 2129975713570672480}
+--- !u!114 &8605216689683559715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef670abeda89aa8449d15e44a3a241cb, type: 3}
+  m_Name: DestroyNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.DestroyNode
+  nodeId: 8d6a2631-589d-4aa6-a171-1558da931518
+  displayName: DestroyNode
+  description: 
+  editorPosition: {x: 14619.25, y: 827.6875}
+  nextNode: {fileID: -60205542337719426}
+  flowId: OfficeBlock1
+--- !u!114 &8873974856778633029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 1c6b3d45-5e55-495f-b4d6-032faa1e5d9d
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 17138.98, y: 545.6326}
+  nextNode: {fileID: -1958394683908417672}
+  flowId: StartCom
+  activate: 1

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffcc08ff2fea8847b4217710d6db21a, type: 3}
+  m_Name: Collage_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Dialogue.DialogueData
+  dialogueID: CollageMonolog
+  startingNodeIndex: 0
+  nodes:
+  - nodeID: Collage_01
+    speakerName: Reno
+    dialogueText: Ini adalah tempat duduk salah satu kolegaku.
+    nextNodeIndex: 1
+  - nodeID: Collage_02
+    speakerName: Reno
+    dialogueText: Namun dia terkena skandal kantor.
+    nextNodeIndex: 2
+  - nodeID: Collage_03
+    speakerName: Reno
+    dialogueText: Dia berselingkuh dengan rekan timnya sendiri.
+    nextNodeIndex: 3
+  - nodeID: Collage_04
+    speakerName: Reno
+    dialogueText: Sehingga dia dipecat begitu saja.
+    nextNodeIndex: 4

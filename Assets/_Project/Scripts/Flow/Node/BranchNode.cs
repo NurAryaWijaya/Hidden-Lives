@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Game.Flow;
+using Game.Localization;
 using UnityEngine;
 
 public class BranchNode : FlowNode
@@ -11,21 +12,27 @@ public class BranchNode : FlowNode
     [SerializeField]
     private FlowNode falseNode;
 
+    [Header("Localization")]
     [SerializeField]
-    private string trueText = "True";
-
-    [SerializeField]
-    private string falseText = "False";
+    private LocalizedBranchData branchData;
 
     public override int OutputCount => 2;
 
     public override void Enter()
     {
+        if (branchData == null)
+        {
+            Debug.LogWarning($"BranchNode '{name}' belum memiliki LocalizedBranchData.");
+            return;
+        }
+
         GameStateManager.Instance.SetState(GameState.Branch);
 
         BranchManager.Instance.BranchSelected += OnSelected;
 
-        BranchManager.Instance.Show(trueText, falseText);
+        BranchManager.Instance.Show(
+            branchData.TrueText,
+            branchData.FalseText);
     }
 
     private void OnSelected(bool result)
@@ -79,6 +86,3 @@ public class BranchNode : FlowNode
         };
     }
 }
-
-//Cara Memanggilnya
-//FlowEventManager.Instance.Raise("TaskCompleted, true");

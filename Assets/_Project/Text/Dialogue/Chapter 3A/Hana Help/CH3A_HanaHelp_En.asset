@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH3A_HanaHelp_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: CH3A_HanaHelp_01
+    Value: Reno...
+  - Key: CH3A_HanaHelp_02
+    Value: There's something wrong with my computer.
+  - Key: CH3A_HanaHelp_03
+    Value: Could you help me?
+  - Key: CH3A_HanaHelp_04
+    Value: Sure.
+  - Key: CH3A_HanaHelp_05
+    Value: Thanks for helping me today.
+  - Key: CH3A_HanaHelp_06
+    Value: No problem.
+  - Key: CH3A_HanaHelp_07
+    Value: How about I buy you dinner?
+  - Key: CH3A_HanaHelp_08
+    Value: You don't have to.
+  - Key: CH3A_HanaHelp_09
+    Value: Why not?
+  - Key: CH3A_HanaHelp_10
+    Value: "It\u2019s not like that. You needed help, so I helped."
+  - Key: CH3A_HanaHelp_11
+    Value: Come on... Or are you trying to avoid me?
+  - Key: CH3A_HanaHelp_12
+    Value: It's not like that...
+  - Key: CH3A_HanaHelp_13
+    Value: Then why?
+  - Key: CH3A_HanaHelp_14
+    Value: I have to pick up my daughter from my dad's place today.
+  - Key: CH3A_HanaHelp_15
+    Value: You have a daughter?
+  - Key: CH3A_HanaHelp_16
+    Value: Yeah.
+  - Key: CH3A_HanaHelp_17
+    Value: Oh... I guess family comes first.
+  - Key: CH3A_HanaHelp_18
+    Value: Maybe you can treat me another time.
+  - Key: CH3A_HanaHelp_19
+    Value: Okay. See you.
+  - Key: CH3A_HanaHelp_20
+    Value: Alright. You pick the place.
+  - Key: CH3A_HanaHelp_21
+    Value: Sounds good.

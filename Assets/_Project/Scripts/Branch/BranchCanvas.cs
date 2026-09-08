@@ -1,4 +1,6 @@
+using Game.Localization;
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,6 +35,9 @@ namespace Game.Flow
             Action onFalse)
         {
             root.SetActive(true);
+
+            trueLabel.font = LocalizationManager.Instance.CurrentFont;
+            falseLabel.font = LocalizationManager.Instance.CurrentFont;
 
             trueLabel.text = trueText;
             falseLabel.text = falseText;

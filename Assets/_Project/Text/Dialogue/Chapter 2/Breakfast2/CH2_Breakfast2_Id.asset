@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH2_Breakfast2_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: CH2_Breakfast2_01
+    Value: Bukannya hari ini Rara pulang ke rumah?
+  - Key: CH2_Breakfast2_02
+    Value: Benar, Sebenarnya dia betah menginap di rumah kakeknya
+  - Key: CH2_Breakfast2_03
+    Value: Tapi, libur sekolah sudah mau selesai
+  - Key: CH2_Breakfast2_04
+    Value: Selain itu, Aku juga kangen banget sama putriku itu
+  - Key: CH2_Breakfast2_05
+    Value: Aku juga, sepertinya semua orang menyukainya
+  - Key: CH2_Breakfast2_06
+    Value: karena dia anak yang manis
+  - Key: CH2_Breakfast2_07
+    Value: Oh iya, aku ga bisa jemput Rara hari ini
+  - Key: CH2_Breakfast2_08
+    Value: Banyak pekerjaan yang harus kuselesaikan hari ini
+  - Key: CH2_Breakfast2_09
+    Value: Apa kamu bisa jemput Rara nanti sore?
+  - Key: CH2_Breakfast2_Agree
+    Value: Baiklah aku akan menjemputnya

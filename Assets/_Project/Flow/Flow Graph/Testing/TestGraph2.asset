@@ -19,8 +19,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   trueNode: {fileID: 2233686405139286015}
   falseNode: {fileID: -3681267800977029959}
-  trueText: True
-  falseText: False
+  branchData: {fileID: 0}
 --- !u!114 &-3681267800977029959
 MonoBehaviour:
   m_ObjectHideFlags: 0
