@@ -15,9 +15,48 @@ MonoBehaviour:
   nodeId: e3825aba-0c28-4e6a-8bb4-35bcb638d605
   displayName: LoadSceneNode
   description: 
-  editorPosition: {x: 20084.611, y: 1096.2245}
-  nextNode: {fileID: 6063933726400786453}
+  editorPosition: {x: 19825, y: 866}
+  nextNode: {fileID: 2259613698389644446}
   sceneName: House
+--- !u!114 &-8096145291836516787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: ef6e4e9f-ae72-41c4-8943-d70b1dece508
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 19286, y: 793}
+  nextNode: {fileID: -5343558361384438874}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: fa58e9a06d78f31499bc55656e2b40f6, type: 3}
+  loop: 1
+--- !u!114 &-5343558361384438874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: c06ce909-b885-450e-93d5-5717745eca1f
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 19530, y: 1001}
+  nextNode: {fileID: -8503606924459870955}
+  flowId: CS_RenoHanaCafe
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,9 +76,32 @@ MonoBehaviour:
   startNode: {fileID: 2275646371098615823}
   nodes:
   - {fileID: 2275646371098615823}
-  - {fileID: 9187225497277670847}
   - {fileID: 6063933726400786453}
   - {fileID: -8503606924459870955}
+  - {fileID: -8096145291836516787}
+  - {fileID: -5343558361384438874}
+  - {fileID: 2259613698389644446}
+--- !u!114 &2259613698389644446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 8d5a6b78-8831-4332-bf0a-0ce6dac2ff52
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 20054, y: 1041}
+  nextNode: {fileID: 6063933726400786453}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &2275646371098615823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,8 +117,8 @@ MonoBehaviour:
   nodeId: 71eb6358-5b9d-41fe-b23f-0d4ca3137197
   displayName: StartNode
   description: 
-  editorPosition: {x: 19493.428, y: 1006.4082}
-  nextNode: {fileID: 9187225497277670847}
+  editorPosition: {x: 19052, y: 946}
+  nextNode: {fileID: -8096145291836516787}
 --- !u!114 &6063933726400786453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,21 +137,3 @@ MonoBehaviour:
   editorPosition: {x: 20418.592, y: 882.0204}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: 3457c77b86d68fd43839a5e279d6c930, type: 2}
---- !u!114 &9187225497277670847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
-  m_Name: CutsceneNode
-  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
-  nodeId: 704cb491-8a21-458f-b251-7f4ef3ca13ca
-  displayName: CutsceneNode
-  description: 
-  editorPosition: {x: 19817.877, y: 862.8889}
-  nextNode: {fileID: -8503606924459870955}
-  flowId: CS_RenoHanaCafe

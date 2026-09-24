@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH4_ConflictUp_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: Kami ngobrol cukup lama.
+  - Key: 2
+    Value: Teman yang mana?
+  - Key: 3
+    Value: Kenapa kamu tanya seperti itu?
+  - Key: 4
+    Value: Memangnya aku harus lapor setiap kali pergi?
+  - Key: 5
+    Value: Aku cuma tanya, Reno.
+  - Key: 6
+    Value: Dan aku sudah jawab.
+  - Key: 7
+    Value: Kamu akhir-akhir ini berubah.
+  - Key: 8
+    Value: Berubah bagaimana?
+  - Key: 9
+    Value: Susah diajak bicara. Pulang makin malam. Sekarang kalau ditanya malah
+      marah.
+  - Key: 10
+    Value: Aku capek, Raisha.
+  - Key: 11
+    Value: Capek?
+  - Key: 12
+    Value: Aku memintamu menjemput Rara, tapi apa yang terjadi?
+  - Key: 13
+    Value: Kamu tidak menjeputnya bukan?
+  - Key: 14
+    Value: Aku bahkan membatalkan janji ku dengan klien untuk bisa menjemputnya
+  - Key: 15
+    Value: Dan kamu?
+  - Key: 16
+    Value: Kamu malah asik dengan urusanmu sendiri?
+  - Key: 17
+    Value: Kamu bahkan tidak memerikanku kabar
+  - Key: 18
+    Value: Kamu tau, Rara menunggu sampai tengah malam?
+  - Key: 19
+    Value: Kalau capek, bukannya aku yang harusnya bilang begitu?
+  - Key: 20
+    Value: Kalau begitu ga usah diperpanjang.
+  - Key: 21
+    Value: Baik.
+  - Key: 22
+    Value: ...
+  - Key: 23
+    Value: Mulai sekarang aku juga nggak akan tanya apa-apa lagi.
+  - Key: 24
+    Value: Terserah kamu.
+  - Key: 25
+    Value: Iya. Terserah.
+  - Key: 26
+    Value: (Lebih baik aku pergi menemui Hana)

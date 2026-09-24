@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5590440922882691964
+--- !u!114 &-9207918873077902007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,16 +9,228 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Bohong
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: 52404de9-b7b7-42a6-8b4b-bfc50fdac59c
-  displayName: Bohong
+  m_Script: {fileID: 11500000, guid: 09cc3141d5fc81a42b218b18012f5396, type: 3}
+  m_Name: CheckpointNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
+  nodeId: 6c4416d8-7001-4d29-88b1-ba5dddf741af
+  displayName: CheckpointNode
   description: 
-  editorPosition: {x: 25337, y: 1407}
+  editorPosition: {x: 28300.25, y: 2499.5625}
+  nextNode: {fileID: 5019435865743723995}
+  checkpointId: Cp_Klimaks
+--- !u!114 &-9115803803613059403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: f2013704-67a9-49e5-adaa-5719efd1b9ae
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 26890, y: 2232}
+  nextNode: {fileID: 4746755544673038767}
+  flowId: Bumper Car
+  activate: 1
+--- !u!114 &-9063383076861588919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f03edf222b45545889801230eb123a, type: 3}
+  m_Name: TimelineCutsceneBranchNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TimelineCutsceneBranchNode
+  nodeId: 76b218fa-28fc-4db5-b696-43e11eb694fd
+  displayName: TimelineCutsceneBranchNode
+  description: 
+  editorPosition: {x: 28696.371, y: 2255.7283}
   nextNode: {fileID: 0}
-  message: Berbohong
-  duration: 1
+  flowId: Cs_Klimaks_4A
+  trueNode: {fileID: -6773597656836473006}
+  falseNode: {fileID: 2884238525707716578}
+--- !u!114 &-8605426149005871045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 61b8a5ba-2f58-4b3b-9d9f-9a5f3bdfb551
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 24727, y: 1472}
+  nextNode: {fileID: -5467233535216964016}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: f59014b5959a80f4aa1f004b4ff672dd, type: 3}
+  loop: 1
+--- !u!114 &-7068068791984585663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 8fc870b8-c901-47ac-89ff-f50dab7dc204
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 30805.965, y: 2150.2222}
+  nextNode: {fileID: 1267976981831712834}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
+--- !u!114 &-6904017707572814155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: ebd7f2b1-f8b3-4344-bfcd-bc2d493c3ec7
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 29807.195, y: 1840.0651}
+  nextNode: {fileID: -6175047259858016298}
+  flowId: Cs_Papa2
+--- !u!114 &-6773597656836473006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: c1e6bd0e-df0a-4f26-af27-4feb4dd67ef9
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 29068.777, y: 2099.4443}
+  nextNode: {fileID: 299719518765753274}
+  flowId: Cs_Papa1
+--- !u!114 &-6646273348353660008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 1a268b9a-21ff-4416-8b50-2881ba797208
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 30461, y: 1836}
+  nextNode: {fileID: -7068068791984585663}
+  flowId: Cs_Papa3
+--- !u!114 &-6541583041751912175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd8c2cfe019c73459574a6d87b8fa25, type: 3}
+  m_Name: MonologueNode
+  m_EditorClassIdentifier: Assembly-CSharp::MonologueNode
+  nodeId: f4ea62d4-1b1b-42ba-aecf-ff3d8f56e92d
+  displayName: MonologueNode
+  description: 
+  editorPosition: {x: 25947.24, y: 1756.1653}
+  nextNode: {fileID: -556580390883360490}
+  dialogue: {fileID: 11400000, guid: 377124cbc6738ff48a07509c2bd59985, type: 2}
+--- !u!114 &-6175047259858016298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: 4b831f57-5d45-4392-878e-47883a4151db
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 30122, y: 1999}
+  nextNode: {fileID: -6646273348353660008}
+  sceneName: Cemetry
+--- !u!114 &-6118548711800849995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 05fccff6-5d9a-43ed-9567-07dabc9a74de
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 25707.312, y: 1089.75}
+  nextNode: {fileID: 59614122355648959}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
+--- !u!114 &-5692370413098598351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 34cef0de-0bc6-4fa2-9608-b84976d6f21c
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 24565.812, y: 1677.75}
+  nextNode: {fileID: -8605426149005871045}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &-5467233535216964016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,8 +249,8 @@ MonoBehaviour:
   editorPosition: {x: 25043, y: 1308}
   nextNode: {fileID: 0}
   flowId: CS_Conflict4A
-  trueNode: {fileID: -3262522885902289604}
-  falseNode: {fileID: -5590440922882691964}
+  trueNode: {fileID: 423638734736222962}
+  falseNode: {fileID: 265037735835522350}
 --- !u!114 &-5320118190824040571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,8 +266,8 @@ MonoBehaviour:
   nodeId: 05a5671f-5f59-40c7-8fc0-e3733c35b0bc
   displayName: CheckpointNode
   description: 
-  editorPosition: {x: 22949.889, y: 1117.4445}
-  nextNode: {fileID: -2347381388137757423}
+  editorPosition: {x: 22829.496, y: 1526.5785}
+  nextNode: {fileID: -974215931639501342}
   checkpointId: Cp_Conflict
 --- !u!114 &-5001891877769443660
 MonoBehaviour:
@@ -72,9 +284,9 @@ MonoBehaviour:
   nodeId: 1d6ccca3-41fb-4360-afe6-8b193d5ab025
   displayName: StartNode
   description: 
-  editorPosition: {x: 22603.86, y: 1280.9165}
+  editorPosition: {x: 22610.45, y: 1282.1837}
   nextNode: {fileID: -5320118190824040571}
---- !u!114 &-3262522885902289604
+--- !u!114 &-2374638542035093228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,16 +295,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Jujur
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: 3efdb775-bd44-47e4-b9b7-ad88b8674088
-  displayName: Jujur
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: a147bc4c-b174-40e8-a366-85d19dd6d852
+  displayName: AudioNode
   description: 
-  editorPosition: {x: 25349, y: 1209}
-  nextNode: {fileID: 423638734736222962}
-  message: jujur
-  duration: 1
+  editorPosition: {x: 25471, y: 1415}
+  nextNode: {fileID: 6689352450453193094}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &-2347381388137757423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,9 +322,88 @@ MonoBehaviour:
   nodeId: 67c520b1-baa5-42b6-bb34-4149fc77d091
   displayName: CutsceneNode
   description: 
-  editorPosition: {x: 23258, y: 1310}
+  editorPosition: {x: 23668.775, y: 1407.4082}
   nextNode: {fileID: 799446416803034248}
   flowId: CS_WakeUp2
+--- !u!114 &-2173761393792090830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: fd7fd8f8-c51f-4280-8eaf-1d5175759169
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 25713.156, y: 1894}
+  nextNode: {fileID: -6541583041751912175}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: 69433b7ac7f217247899d0b82d1b9154, type: 3}
+  loop: 1
+--- !u!114 &-1557340617237674327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 18721381-bd27-49e0-bd69-54c8b3598727
+  displayName: WaitEventNode
+  description: 
+  editorPosition: {x: 26399.445, y: 1926.2223}
+  nextNode: {fileID: 3848611649784761012}
+  eventId: TriggeredToCsAP1
+--- !u!114 &-974215931639501342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 56ed4d07-9f32-4ca5-bb37-5d3228979dd0
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 23078, y: 1406}
+  nextNode: {fileID: 8819689579440646438}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: 99a923a072459bc43b20125ff5d183ab, type: 3}
+  loop: 1
+--- !u!114 &-556580390883360490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c778292a7fcffa44b1baa8b86f4e193, type: 3}
+  m_Name: NotificationNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.NotificationNode
+  nodeId: ca860452-8364-4670-a267-5efa2129b8f4
+  displayName: NotificationNode
+  description: 
+  editorPosition: {x: 26077, y: 1893.7778}
+  nextNode: {fileID: -1557340617237674327}
+  localizationKey: ExploreAM
+  duration: 3
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,9 +430,92 @@ MonoBehaviour:
   - {fileID: 2301215828667704748}
   - {fileID: 1210823874564099773}
   - {fileID: -5467233535216964016}
-  - {fileID: -3262522885902289604}
-  - {fileID: -5590440922882691964}
   - {fileID: 423638734736222962}
+  - {fileID: 59614122355648959}
+  - {fileID: 265037735835522350}
+  - {fileID: 6689352450453193094}
+  - {fileID: 3848611649784761012}
+  - {fileID: -1557340617237674327}
+  - {fileID: 6454245966018587294}
+  - {fileID: 4397055972566144971}
+  - {fileID: 4746755544673038767}
+  - {fileID: -9115803803613059403}
+  - {fileID: 5231564824734186143}
+  - {fileID: -6541583041751912175}
+  - {fileID: -556580390883360490}
+  - {fileID: -9207918873077902007}
+  - {fileID: -9063383076861588919}
+  - {fileID: 2884238525707716578}
+  - {fileID: 1395950879134393973}
+  - {fileID: -6773597656836473006}
+  - {fileID: 299719518765753274}
+  - {fileID: -6904017707572814155}
+  - {fileID: -6175047259858016298}
+  - {fileID: -6646273348353660008}
+  - {fileID: 1267976981831712834}
+  - {fileID: -974215931639501342}
+  - {fileID: -5692370413098598351}
+  - {fileID: -8605426149005871045}
+  - {fileID: -6118548711800849995}
+  - {fileID: -2374638542035093228}
+  - {fileID: -2173761393792090830}
+  - {fileID: 8693201039926375085}
+  - {fileID: 5019435865743723995}
+  - {fileID: 7809303951091067633}
+  - {fileID: -7068068791984585663}
+--- !u!114 &59614122355648959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6cecf5edda68943ba5a122a2d6f7f1, type: 3}
+  m_Name: EndNode
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  nodeId: 16bb59ac-b33e-4d21-8c0f-1e0f11a68d1c
+  displayName: EndNode
+  description: 
+  editorPosition: {x: 25979.562, y: 934.6875}
+  nextNode: {fileID: 0}
+--- !u!114 &265037735835522350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: a9099557-2208-4604-a577-0d48e43bbf8c
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 25222, y: 1523}
+  nextNode: {fileID: -2374638542035093228}
+  flowId: Cs_Conflict_Up
+--- !u!114 &299719518765753274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: 9b58679e-79cd-4052-b1ea-e3910a6e44e5
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 29427.666, y: 1987.5555}
+  nextNode: {fileID: -6904017707572814155}
+  sceneName: Cafe
 --- !u!114 &423638734736222962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,8 +531,8 @@ MonoBehaviour:
   nodeId: f7f7b084-ca8e-4ccb-b8f5-b2d9bf236bd6
   displayName: CutsceneNode
   description: 
-  editorPosition: {x: 25801, y: 1199}
-  nextNode: {fileID: 0}
+  editorPosition: {x: 25416.55, y: 1163.2041}
+  nextNode: {fileID: -6118548711800849995}
   flowId: E_Prevention
 --- !u!114 &799446416803034248
 MonoBehaviour:
@@ -173,7 +549,7 @@ MonoBehaviour:
   nodeId: fc0db86a-11b6-440e-bd8c-051bfdaa1db3
   displayName: Sun
   description: 
-  editorPosition: {x: 23665.98, y: 1235}
+  editorPosition: {x: 24047.408, y: 1324.3673}
   nextNode: {fileID: 1210823874564099773}
   flowId: SunHouse
   position: {x: 0, y: 3, z: 0}
@@ -193,10 +569,44 @@ MonoBehaviour:
   nodeId: 1f0d9999-3928-4daa-8de8-67e07cfe02d7
   displayName: ActivationNode
   description: 
-  editorPosition: {x: 24049.428, y: 1141.7959}
-  nextNode: {fileID: 8819689579440646438}
+  editorPosition: {x: 24413.611, y: 1195.6326}
+  nextNode: {fileID: 2301215828667704748}
   flowId: TriggerConflict
   activate: 1
+--- !u!114 &1267976981831712834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6cecf5edda68943ba5a122a2d6f7f1, type: 3}
+  m_Name: EndNode
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  nodeId: d9fa8933-d22c-414a-9e88-315a0241bc9c
+  displayName: EndNode
+  description: 
+  editorPosition: {x: 31096.666, y: 1987}
+  nextNode: {fileID: 0}
+--- !u!114 &1395950879134393973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6cecf5edda68943ba5a122a2d6f7f1, type: 3}
+  m_Name: EndNode
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  nodeId: 3bc41d2f-7d61-4052-aae1-3cb1c34cc91f
+  displayName: EndNode
+  description: 
+  editorPosition: {x: 29626.531, y: 2662.3877}
+  nextNode: {fileID: 0}
 --- !u!114 &2301215828667704748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,9 +622,199 @@ MonoBehaviour:
   nodeId: c1b44117-141a-4807-bdc5-a3e6cfbef5ee
   displayName: WaitEventNode
   description: 
-  editorPosition: {x: 24735.734, y: 1460.9796}
-  nextNode: {fileID: -5467233535216964016}
+  editorPosition: {x: 24331.84, y: 1483.1359}
+  nextNode: {fileID: -5692370413098598351}
   eventId: ConflictTriggered
+--- !u!114 &2884238525707716578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: Slap
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: 6c263ea2-4958-4fe2-826f-772fbe8db856
+  displayName: Slap
+  description: 
+  editorPosition: {x: 29087.348, y: 2393.6123}
+  nextNode: {fileID: 7809303951091067633}
+  flowId: Cs_InnocentVictim
+--- !u!114 &3848611649784761012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: d097c75e-f3f5-4f27-9241-baa84229d1f6
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 26693.184, y: 2019.6123}
+  nextNode: {fileID: -9115803803613059403}
+  flowId: Cs_AP1
+--- !u!114 &4397055972566144971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: 0a177d3a-ae33-4c17-bf5d-687c129360d3
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 28000.75, y: 2448.75}
+  nextNode: {fileID: -9207918873077902007}
+  sceneName: House
+--- !u!114 &4746755544673038767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b3caf12fd38854f99dca1dbcd08098, type: 3}
+  m_Name: WaitEventNode
+  m_EditorClassIdentifier: Assembly-CSharp::WaitEventNode
+  nodeId: 4d041e3e-90c9-4e75-b112-e091ec0e52cc
+  displayName: WaitEventNode
+  description: 
+  editorPosition: {x: 27102, y: 2056}
+  nextNode: {fileID: 5231564824734186143}
+  eventId: Aftermatch
+--- !u!114 &5019435865743723995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: e362c036-8be8-49c8-938d-ca2fb6dad1ce
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 28619.643, y: 2520.7532}
+  nextNode: {fileID: -9063383076861588919}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: f59014b5959a80f4aa1f004b4ff672dd, type: 3}
+  loop: 1
+--- !u!114 &5231564824734186143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e538e9be8a15b264ead04af31aca6c29, type: 3}
+  m_Name: ActivationNode
+  m_EditorClassIdentifier: Assembly-CSharp::ActivationNode
+  nodeId: 03e16116-6dea-4834-ac1d-574aab6989ab
+  displayName: ActivationNode
+  description: 
+  editorPosition: {x: 27393.367, y: 2215.1836}
+  nextNode: {fileID: 6454245966018587294}
+  flowId: Bumper Car
+  activate: 0
+--- !u!114 &6454245966018587294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: fc94a0b0-8ac4-44a7-99c2-4d707337040b
+  displayName: CutsceneNode
+  description: 
+  editorPosition: {x: 27679.756, y: 2070.5918}
+  nextNode: {fileID: 8693201039926375085}
+  flowId: Cs_AP2
+--- !u!114 &6689352450453193094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2827d5546d5c7b4aafa9da36896e438, type: 3}
+  m_Name: LoadSceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneNode
+  nodeId: 319ef47e-46f4-4e39-b228-9fccca8ba7c7
+  displayName: LoadSceneNode
+  description: 
+  editorPosition: {x: 25645, y: 1629}
+  nextNode: {fileID: -2173761393792090830}
+  sceneName: Amusement Park
+--- !u!114 &7809303951091067633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: ed125977-6146-43c9-8cd1-dd54dcec3d8b
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 29326.611, y: 2531.9795}
+  nextNode: {fileID: 1395950879134393973}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
+--- !u!114 &8693201039926375085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: fc9694cf-c933-4240-986f-3e1276f7d3f6
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 27879.688, y: 2234.375}
+  nextNode: {fileID: 4397055972566144971}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &8819689579440646438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +830,7 @@ MonoBehaviour:
   nodeId: b49513f8-a2b0-4d20-9b6d-ca5147075c80
   displayName: ActivationNode
   description: 
-  editorPosition: {x: 24392.469, y: 1289}
-  nextNode: {fileID: 2301215828667704748}
+  editorPosition: {x: 23339.98, y: 1315}
+  nextNode: {fileID: -2347381388137757423}
   flowId: PlayerManagerActivable
   activate: 1

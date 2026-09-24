@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH4_ConflictUp_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: We ended up talking for a while.
+  - Key: 2
+    Value: Who was it?
+  - Key: 3
+    Value: What's that supposed to mean?
+  - Key: 4
+    Value: Do I have to tell you every time I go out?
+  - Key: 5
+    Value: I was just asking, Reno.
+  - Key: 6
+    Value: And I answered you.
+  - Key: 7
+    Value: You've been acting different lately.
+  - Key: 8
+    Value: How so?
+  - Key: 9
+    Value: You're barely talking to me. You're coming home later and later. And now
+      you snap at me whenever I ask you anything.
+  - Key: 10
+    Value: I'm just tired, Raisha.
+  - Key: 11
+    Value: Tired?
+  - Key: 12
+    Value: I asked you to pick Rara up. And what happened?
+  - Key: 13
+    Value: You didn't even go get her, did you?
+  - Key: 14
+    Value: I had to cancel a meeting with a client just so I could go pick her up.
+  - Key: 15
+    Value: And you?
+  - Key: 16
+    Value: You were too busy dealing with your own stuff?
+  - Key: 17
+    Value: You couldn't even send me a text.
+  - Key: 18
+    Value: Do you know Rara waited for you until midnight?
+  - Key: 19
+    Value: If anyone has the right to say they're tired, shouldn't it be me?
+  - Key: 20
+    Value: Then let's not make this into a bigger thing.
+  - Key: 21
+    Value: Fine.
+  - Key: 22
+    Value: ...
+  - Key: 23
+    Value: From now on, I won't ask you anything.
+  - Key: 24
+    Value: Do whatever you want.
+  - Key: 25
+    Value: Yeah. I will.
+  - Key: 26
+    Value: (Maybe I should go see Hana.)

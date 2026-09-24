@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: CH4A_Klimaks_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: Two Months Later
+  - Key: 2
+    Value: You really think I don't know?
+  - Key: 3
+    Value: What?
+  - Key: 4
+    Value: About her. About everything you've been doing lately.
+  - Key: 5
+    Value: So you've been following me now?
+  - Key: 6
+    Value: I'm your wife, Reno! I just want to know why you've changed!
+  - Key: 7
+    Value: Because I'm tired! I'm tired of coming home and feeling like I'm always
+      the one who's wrong!
+  - Key: 8
+    Value: So that's why you cheated on me?
+  - Key: 9
+    Value: Don't make it sound like this is all my fault!
+  - Key: 10
+    Value: Then whose fault is it? I'm still here, Reno. I'm still trying to keep
+      this family together!
+  - Key: 11
+    Value: And I tried too! But you never really saw me!
+  - Key: 12
+    Value: At least I never betrayed you!
+  - Key: 13
+    Value: That's enough!
+  - Key: 14
+    Value: Why? Does the truth hurt? Because that's exactly what happened!
+  - Key: End1
+    Value: Innocent
+  - Key: End2
+    Value: Victim

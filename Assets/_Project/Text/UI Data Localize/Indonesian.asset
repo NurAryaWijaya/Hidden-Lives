@@ -18,7 +18,7 @@ MonoBehaviour:
   - Key: ui_load
     Value: Muat
   - Key: ui_setting
-    Value: Pengaturan
+    Value: Bahasa
   - Key: ui_exit
     Value: Keluar
   - Key: N_Phone_Taken
@@ -52,4 +52,12 @@ MonoBehaviour:
   - Key: ConflictCH4_T
     Value: Jujur
   - Key: ConflictCH4_F
-    Value: Berbohong
+    Value: Mengelak
+  - Key: ExploreAM
+    Value: Jelajahi sekitar
+  - Key: CH4Klimaks_T
+    Value: Tinggalkan Dia
+  - Key: CH4Klimaks_F
+    Value: Tampar Dia
+  - Key: ui_reset
+    Value: Mengatur Ulang

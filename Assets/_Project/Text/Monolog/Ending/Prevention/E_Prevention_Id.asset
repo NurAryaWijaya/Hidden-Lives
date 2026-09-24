@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: E_Prevention_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: Kami ngobrol cukup lama. Maaf, aku nggak sempat kasih kabar.
+  - Key: 2
+    Value: Aku sempat khawatir. Apalagi kemarin kamu juga nggak jemput Rara.
+  - Key: 3
+    Value: Iya... soal itu aku minta maaf. Aku benar-benar lalai.
+  - Key: 4
+    Value: Aku sampai batalin janji sama client buat jemput dia.
+  - Key: 5
+    Value: Aku tahu. Harusnya aku yang jemput.
+  - Key: 6
+    Value: Aku cuma kecewa, Reno. Bukan mau marah terus sama kamu.
+  - Key: 7
+    Value: Aku ngerti. Aku juga nggak mau bikin kamu merasa harus ngurus semuanya
+      sendiri.
+  - Key: 8
+    Value: Ya sudah. Lain kali kabarin aku, ya.
+  - Key: 9
+    Value: Iya. Aku janji.
+  - Key: 10
+    Value: Maaf kalau tadi aku terlalu emosi.
+  - Key: 11
+    Value: Nggak apa-apa. Aku juga salah.
+  - Key: 12
+    Value: Pencegahan

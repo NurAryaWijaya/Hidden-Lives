@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: End_WPC_Id
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: Halo?
+  - Key: 2
+    Value: Pak  Reno, saya minta maaf harus menyampaikan ini lewat telepon.
+  - Key: 3
+    Value: Ada apa, Bu?
+  - Key: 4
+    Value: Mengenai masalah yang melibatkan kamu dan Hana, perusahaan sudah melakukan
+      evaluasi.
+  - Key: 5
+    Value: ...
+  - Key: 6
+    Value: Setelah mempertimbangkan semuanya, mulai hari ini kamu kami berhentikan
+      dari pekerjaan.
+  - Key: 7
+    Value: Bu, tunggu. Saya bisa menjelaskan...
+  - Key: 8
+    Value: Keputusannya sudah final. Surat resminya akan kami kirimkan hari ini.
+  - Key: 9
+    Value: Hana..
+  - Key: 10
+    Value: (Tidak diangkat)
+  - Key: 11
+    Value: Mama, kita masih lama di sini?
+  - Key: 12
+    Value: Sebentar lagi.
+  - Key: 13
+    Value: Mama masih kangen sama Papa?
+  - Key: 14
+    Value: Iya.
+  - Key: 15
+    Value: Papa juga pasti kangen sama kita, kan?
+  - Key: 16
+    Value: Mungkin.
+  - Key: 17
+    Value: Kenapa Mama bilang "mungkin"?
+  - Key: 18
+    Value: Karena ada beberapa hal yang nggak akan pernah kita tahu.
+  - Key: 19
+    Value: Tapi Papa pernah janji mau ajak aku ke wahana baru itu...
+  - Key: 20
+    Value: Iya. Mama ingat
+  - Key: 21
+    Value: Kalau begitu, kapan Papa pulang?
+  - Key: 22
+    Value: ...
+  - Key: 23
+    Value: Kapan Papa
+  - Key: 24
+    Value: Pulang?

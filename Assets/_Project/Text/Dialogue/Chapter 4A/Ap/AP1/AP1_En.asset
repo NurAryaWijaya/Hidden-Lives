@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: AP1_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: I wonder where Hana is.
+  - Key: 2
+    Value: Reno???
+  - Key: 3
+    Value: What are you doing here?
+  - Key: 4
+    Value: I thought you might need some help.
+  - Key: 5
+    Value: So I came over.
+  - Key: 6
+    Value: Besides, it's the weekend. I can go wherever I want.
+  - Key: 7
+    Value: What about your wife?
+  - Key: 8
+    Value: You know?
+  - Key: 9
+    Value: ...
+  - Key: 10
+    Value: ...
+  - Key: 11
+    Value: Are you two fighting?
+  - Key: 12
+    Value: ...
+  - Key: 13
+    Value: Then, come on. Let's go on a few of these rides first.
+  - Key: 14
+    Value: Oh... You used to like this one, didn't you?
+  - Key: 15
+    Value: Come on...

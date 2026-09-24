@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7717114863550447112
+--- !u!114 &-9138678469315145737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,17 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: TestFlowNode
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: b7d57dcc-d8d0-4296-ae10-36f8830dc3f2
-  displayName: TestFlowNode
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 884e5a14-0320-4c01-8fba-28fb7c50aa57
+  displayName: AudioNode
   description: 
-  editorPosition: {x: 15531, y: 1163}
-  nextNode: {fileID: -5307069954422666702}
-  message: Branch Locked
-  duration: 1
---- !u!114 &-5307069954422666702
+  editorPosition: {x: 13775.837, y: 1085.2041}
+  nextNode: {fileID: 3499201066556002840}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: 99a923a072459bc43b20125ff5d183ab, type: 3}
+  loop: 1
+--- !u!114 &-6841843861608625994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,14 +30,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb6cecf5edda68943ba5a122a2d6f7f1, type: 3}
-  m_Name: EndNode
-  m_EditorClassIdentifier: Assembly-CSharp::EndNode
-  nodeId: 20b30adf-74fc-4d72-8914-14783e925c70
-  displayName: EndNode
+  m_Script: {fileID: 11500000, guid: 89d6aa55c742f054fb2af148ac92f6be, type: 3}
+  m_Name: CutsceneNode
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNode
+  nodeId: cde353b4-b2f1-426e-ab17-c8e4e2a9b0b2
+  displayName: CutsceneNode
   description: 
-  editorPosition: {x: 15899.111, y: 1248.8765}
-  nextNode: {fileID: 0}
+  editorPosition: {x: 15110, y: 1149}
+  nextNode: {fileID: 2230855856778360272}
+  flowId: CH2_Breakfast1
 --- !u!114 &-4260018392121424208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,31 +54,11 @@ MonoBehaviour:
   nodeId: 9ee8d86e-6c0b-4b17-b259-a082821cb6b2
   displayName: MoveNode
   description: 
-  editorPosition: {x: 14751.111, y: 907.5555}
-  nextNode: {fileID: -3216432358609537303}
+  editorPosition: {x: 14763, y: 927}
+  nextNode: {fileID: -6841843861608625994}
   flowId: PlayerPrefab
   position: {x: 4.902, y: 0.013, z: -11.07}
   rotation: {x: 0, y: 90, z: 0}
---- !u!114 &-3216432358609537303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9f03edf222b45545889801230eb123a, type: 3}
-  m_Name: TimelineCutsceneBranchNode
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TimelineCutsceneBranchNode
-  nodeId: 58e21387-d7b7-46da-952d-0ff8630468db
-  displayName: TimelineCutsceneBranchNode
-  description: Breakfaast 1
-  editorPosition: {x: 15099.697, y: 1027.5905}
-  nextNode: {fileID: 0}
-  flowId: CH2_Breakfast1
-  trueNode: {fileID: 2230855856778360272}
-  falseNode: {fileID: -7717114863550447112}
 --- !u!114 &-1545830519355446602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,15 +97,15 @@ MonoBehaviour:
   nodes:
   - {fileID: 7819938760483298668}
   - {fileID: 447609005480209069}
-  - {fileID: -3216432358609537303}
   - {fileID: -4260018392121424208}
-  - {fileID: -7717114863550447112}
-  - {fileID: -5307069954422666702}
   - {fileID: 2230855856778360272}
   - {fileID: 2100387473685489251}
   - {fileID: -1545830519355446602}
   - {fileID: 5131455382744017533}
   - {fileID: 3499201066556002840}
+  - {fileID: -6841843861608625994}
+  - {fileID: -9138678469315145737}
+  - {fileID: 4787108478165059058}
 --- !u!114 &447609005480209069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +140,7 @@ MonoBehaviour:
   nodeId: ffd126b2-0cb8-4e7f-b96b-14a16236f627
   displayName: LoadSceneNode
   description: 
-  editorPosition: {x: 16068.878, y: 831.95917}
+  editorPosition: {x: 16124.595, y: 798.33057}
   nextNode: {fileID: -1545830519355446602}
   sceneName: Office
 --- !u!114 &2230855856778360272
@@ -176,7 +159,7 @@ MonoBehaviour:
   displayName: CutsceneNode
   description: Cutscene langsung setuju
   editorPosition: {x: 15526.889, y: 947.4445}
-  nextNode: {fileID: 2100387473685489251}
+  nextNode: {fileID: 4787108478165059058}
   flowId: CH2_Breakfast_Agree
 --- !u!114 &3499201066556002840
 MonoBehaviour:
@@ -198,6 +181,27 @@ MonoBehaviour:
   flowId: SunHouse
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 17.721, y: -65, z: 7.1870003}
+--- !u!114 &4787108478165059058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 283c2201-ebea-4232-a324-40060a102d41
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 15828.694, y: 884.6949}
+  nextNode: {fileID: 2100387473685489251}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &5131455382744017533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,8 +217,8 @@ MonoBehaviour:
   nodeId: 113a3cdf-30c1-4c26-82b6-9d06307bdcba
   displayName: CheckpointNode
   description: 
-  editorPosition: {x: 13763, y: 934}
-  nextNode: {fileID: 3499201066556002840}
+  editorPosition: {x: 13523.3125, y: 887.4375}
+  nextNode: {fileID: -9138678469315145737}
   checkpointId: CH2_Breakfast
 --- !u!114 &7819938760483298668
 MonoBehaviour:
@@ -231,5 +235,5 @@ MonoBehaviour:
   nodeId: 10032e3c-2d83-4dda-bc9d-faae0a20f332
   displayName: Start Chapter 2
   description: Mulai Dari pemilihan main flow
-  editorPosition: {x: 13492, y: 1084}
+  editorPosition: {x: 13273.375, y: 1075}
   nextNode: {fileID: 5131455382744017533}

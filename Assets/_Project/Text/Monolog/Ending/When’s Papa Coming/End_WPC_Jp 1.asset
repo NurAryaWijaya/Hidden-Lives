@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: End_WPC_Jp 1
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: "\u4FFA\u3001\u884C\u304F\u3088\u3002\u4E00\u4EBA\u306B\u3055\u305B\u3066\u304F\u308C\u3002"
+  - Key: 2
+    Value: "\u4E00\u4EBA\u306B\uFF1F \u305D\u308C\u3068\u3082\u3001\u3042\u306E\u4EBA\u306E\u3068\u3053\u308D\u306B\u884C\u304F\u306E\uFF1F"
+  - Key: 3
+    Value: "\u3042\u306E\u4EBA\u306E\u8A71\u306F\u3084\u3081\u3066\u304F\u308C\u3002"
+  - Key: 4
+    Value: "\u306A\u3093\u3067\uFF1F \u305A\u3063\u3068\u3042\u306E\u4EBA\u3092\u63A2\u3057\u3066\u305F\u306E\u306F\u3001\u3042\u306A\u305F\u3058\u3083\u306A\u3044\u3002"
+  - Key: 5
+    Value: "\u5C11\u306A\u304F\u3068\u3082\u3001\u3042\u306E\u4EBA\u306F\u4FFA\u306E\u6C17\u6301\u3061\u3092\u5206\u304B\u308D\u3046\u3068\u3057\u3066\u304F\u308C\u308B\u3002"
+  - Key: 6
+    Value: "\u3044\u308D\u3044\u308D\u3068\u8003\u616E\u3057\u305F\u7D50\u679C\u3001\u4ECA\u65E5\u4ED8\u3051\u3067\u541B\u306B\u306F\u9000\u8077\u3057\u3066\u3082\u3089\u3046\u3053\u3068\u306B\u306A\u308A\u307E\u3057\u305F\u3002"
+  - Key: 7
+    Value: "\u2026\u2026"
+  - Key: 8
+    Value: "\u3067\u3082\u3001\u3042\u306E\u4EBA\u306B\u3082\u898B\u653E\u3055\u308C\u305F\u304B\u3089\u3063\u3066\u3001\u3053\u3053\u306B\u623B\u3063\u3066\u3053\u306A\u3044\u3067\u3002"
+  - Key: 9
+    Value: "\u623B\u3063\u3066\u3053\u306A\u3044\u3002"

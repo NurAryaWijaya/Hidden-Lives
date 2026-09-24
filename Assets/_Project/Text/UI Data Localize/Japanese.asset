@@ -18,7 +18,7 @@ MonoBehaviour:
   - Key: ui_load
     Value: "\u30ED\u30FC\u30C9"
   - Key: ui_setting
-    Value: "\u8A2D\u5B9A"
+    Value: "\u8A00\u8A9E"
   - Key: ui_exit
     Value: "\u7D42\u4E86"
   - Key: N_Phone_Taken
@@ -52,4 +52,12 @@ MonoBehaviour:
   - Key: ConflictCH4_T
     Value: "\u6B63\u76F4"
   - Key: ConflictCH4_F
-    Value: "\u5618"
+    Value: "\u306F\u3050\u3089\u304B\u3059"
+  - Key: ExploreAM
+    Value: "\u5468\u8FBA\u3092\u63A2\u7D22\u3059\u308B"
+  - Key: CH4Klimaks_T
+    Value: "\u5F7C\u5973\u3068\u5225\u308C\u308B"
+  - Key: CH4Klimaks_F
+    Value: "\u5F7C\u3092\u5E73\u624B\u6253\u3061\u3059\u308B"
+  - Key: ui_reset
+    Value: "\u30EA\u30BB\u30C3\u30C8"

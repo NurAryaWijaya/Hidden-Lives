@@ -38,30 +38,12 @@ public class TransitionManager : MonoBehaviour
     {
         isTransitioning = true;
 
-        // Pastikan mulai dari transparan
         fadeCanvas.alpha = 0f;
-
-        // ==============================
-        // FADE TO BLACK
-        // ==============================
 
         yield return Fade(0f, 1f);
 
-        // ==============================
-        // LAYAR SEKARANG HITAM
-        // ==============================
-
-        // TransitionManager TIDAK melakukan
-        // LoadScene atau memanggil script lain.
-        //
-        // Script / Flow / Node lain bebas
-        // melakukan apa pun di belakang layar.
 
         yield return new WaitForSeconds(blackDuration);
-
-        // ==============================
-        // FADE FROM BLACK
-        // ==============================
 
         yield return Fade(1f, 0f);
 

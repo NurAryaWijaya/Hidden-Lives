@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c49e862dc531140a76938cc94fa805, type: 3}
+  m_Name: AP2_En
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Localization.LocalizationDatabase
+  entries:
+  - Key: 1
+    Value: Turns out, it's still fun.
+  - Key: 2
+    Value: You used to be the most excited whenever we came somewhere like this.
+  - Key: 3
+    Value: But it feels kind of strange.
+  - Key: 4
+    Value: Why?
+  - Key: 5
+    Value: We can laugh together like we used to.
+  - Key: 6
+    Value: I almost forgot what that felt like.
+  - Key: 7
+    Value: If we could turn back time...
+  - Key: 8
+    Value: What would you do?
+  - Key: 9
+    Value: Maybe I wouldn't have let us go our separate ways so easily.
+  - Key: 10
+    Value: I've thought about that a lot too.
+  - Key: 11
+    Value: Do you regret it?
+  - Key: 12
+    Value: If I said I didn't regret it at all, I'd be lying.
+  - Key: 13
+    Value: But everything is different now.
+  - Key: 14
+    Value: We can't go back to how things were.
+  - Key: 15
+    Value: Then let's make a different future.
+  - Key: 16
+    Value: What do you mean?
+  - Key: 17
+    Value: I don't know...
+  - Key: 18
+    Value: But if there's something we left unfinished,
+  - Key: 19
+    Value: Maybe we can finish it now.
+  - Key: 20
+    Value: Are you sure?
+  - Key: 21
+    Value: I don't want to lose you a second time.
+  - Key: 22
+    Value: So please, don't leave again.
+  - Key: 23
+    Value: Okay...
+  - Key: 24
+    Value: So... do we start from here?
+  - Key: 25
+    Value: ...
+  - Key: 26
+    Value: Take it slow...
+  - Key: 27
+    Value: But let's not leave each other again.
+  - Key: 28
+    Value: Yeah. I promise...

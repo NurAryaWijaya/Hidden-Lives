@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8776968631871017533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 0d399148-c2b9-426a-b815-3c42994c29a8
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 18561, y: 1108}
+  nextNode: {fileID: 2920720955223067568}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: f59014b5959a80f4aa1f004b4ff672dd, type: 3}
+  loop: 1
 --- !u!114 &-8617513238171152144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,8 +36,8 @@ MonoBehaviour:
   nodeId: 2d2a12ad-bf03-4709-a276-6e121f11f4a0
   displayName: ActivationNode
   description: 
-  editorPosition: {x: 22406.688, y: 1153.875}
-  nextNode: {fileID: -4745089284577464155}
+  editorPosition: {x: 22407, y: 1155.5625}
+  nextNode: {fileID: -7714025108547456863}
   flowId: TriggerGameOver2
   activate: 0
 --- !u!114 &-8115035103023336960
@@ -37,6 +58,27 @@ MonoBehaviour:
   editorPosition: {x: 21752, y: 1269}
   nextNode: {fileID: 4263864672913195893}
   eventId: SuccessPass
+--- !u!114 &-7714025108547456863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: a32494af-7009-4bf3-9a3e-e39462f32424
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 22725.367, y: 1211.5509}
+  nextNode: {fileID: -4745089284577464155}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &-6670033480894441861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,8 +113,8 @@ MonoBehaviour:
   nodeId: a04e41c0-8795-49a8-bdfd-4bab5fda476d
   displayName: StartNode
   description: 
-  editorPosition: {x: 18573, y: 1103}
-  nextNode: {fileID: 2920720955223067568}
+  editorPosition: {x: 18325, y: 972}
+  nextNode: {fileID: -8776968631871017533}
 --- !u!114 &-4745089284577464155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +130,7 @@ MonoBehaviour:
   nodeId: 1223b9a7-3e45-46a3-8a05-6c3e3d007ac3
   displayName: NextGraphNode
   description: 
-  editorPosition: {x: 22804.312, y: 1044.75}
+  editorPosition: {x: 22998.836, y: 1045}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: 087b604408c183c46922b223ca5097e6, type: 2}
 --- !u!114 &-2228705272430649898
@@ -143,6 +185,8 @@ MonoBehaviour:
   - {fileID: -4745089284577464155}
   - {fileID: 5860053194891061129}
   - {fileID: -2228705272430649898}
+  - {fileID: -8776968631871017533}
+  - {fileID: -7714025108547456863}
 --- !u!114 &1765347828051026575
 MonoBehaviour:
   m_ObjectHideFlags: 0

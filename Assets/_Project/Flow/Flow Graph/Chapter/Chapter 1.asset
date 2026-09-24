@@ -109,7 +109,7 @@ MonoBehaviour:
   nodeId: 20ccc3dd-ed3d-4a81-975a-cd62f897effd
   displayName: ActivationNode
   description: 
-  editorPosition: {x: -702.4375, y: 794}
+  editorPosition: {x: -701.25006, y: 733.625}
   nextNode: {fileID: 7482540516633211056}
   flowId: Phone_Taken
   activate: 1
@@ -184,8 +184,29 @@ MonoBehaviour:
   displayName: CutsceneNode
   description: 
   editorPosition: {x: -904.25, y: 439.68747}
-  nextNode: {fileID: -5341869987855726266}
+  nextNode: {fileID: -448795011287788165}
   flowId: CS_WakeUp
+--- !u!114 &-448795011287788165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 80ae6817-63d4-4848-a3ce-76a37fa43d1b
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: -850, y: 870.5625}
+  nextNode: {fileID: -5341869987855726266}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: 69433b7ac7f217247899d0b82d1b9154, type: 3}
+  loop: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +256,7 @@ MonoBehaviour:
   - {fileID: 7482540516633211056}
   - {fileID: 7283412557604191253}
   - {fileID: -5341869987855726266}
+  - {fileID: -448795011287788165}
 --- !u!114 &47698871552310738
 MonoBehaviour:
   m_ObjectHideFlags: 0

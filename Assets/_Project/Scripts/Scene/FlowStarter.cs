@@ -1,3 +1,4 @@
+using Game.Audio;
 using Game.Flow;
 using Unity.VectorGraphics;
 using UnityEngine;
@@ -21,6 +22,12 @@ public class FlowStarter : MonoBehaviour
             Debug.LogWarning("Flow sudah berjalan.");
             return;
         }
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        AudioManager.Instance.StopMusic();
+        TransitionManager.Instance.PlayTransition();
 
         FlowManager.Instance.StartFlow(startGraph);
     }

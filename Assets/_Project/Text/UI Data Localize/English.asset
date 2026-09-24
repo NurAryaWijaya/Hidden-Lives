@@ -18,7 +18,7 @@ MonoBehaviour:
   - Key: ui_load
     Value: Load
   - Key: ui_setting
-    Value: Setting
+    Value: Language
   - Key: ui_exit
     Value: Exit
   - Key: N_Phone_Taken
@@ -52,4 +52,12 @@ MonoBehaviour:
   - Key: ConflictCH4_T
     Value: Honest
   - Key: ConflictCH4_F
-    Value: Lie
+    Value: Dodging
+  - Key: ExploreAM
+    Value: Explore the area
+  - Key: CH4Klimaks_T
+    Value: Leave Her
+  - Key: CH4Klimaks_F
+    Value: Slap Him
+  - Key: ui_reset
+    Value: Reset

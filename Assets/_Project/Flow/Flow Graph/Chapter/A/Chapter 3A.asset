@@ -15,7 +15,7 @@ MonoBehaviour:
   nodeId: 0b456c50-1086-45de-87ac-887e64848a66
   displayName: MoveNode
   description: 
-  editorPosition: {x: 18306.592, y: 1000.4286}
+  editorPosition: {x: 18123, y: 962}
   nextNode: {fileID: -4703440718566313046}
   flowId: SunOffice
   position: {x: 0, y: 0, z: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
   nodeId: 577a4112-0d26-45ac-9c2c-ac0889b0ee6d
   displayName: NextGraphNode
   description: 
-  editorPosition: {x: 19839.12, y: 1790.42}
+  editorPosition: {x: 20050.361, y: 1785.2268}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: d3b5b8f8d48400b41976671d1191180b, type: 2}
 --- !u!114 &-7045322425464898823
@@ -71,7 +71,7 @@ MonoBehaviour:
   nodeId: d63d0c25-dbb2-4203-a37f-41388abe0858
   displayName: Pickup
   description: 
-  editorPosition: {x: 19199.516, y: 921.24567}
+  editorPosition: {x: 18904.375, y: 856.68756}
   nextNode: {fileID: -2825383826578829791}
   flowId: CS_PickUpDaughter
 --- !u!114 &-6960521257010550733
@@ -108,7 +108,7 @@ MonoBehaviour:
   nodeId: 03121085-572d-453b-b6c3-454b690ed2dc
   displayName: WaitEventNode
   description: 
-  editorPosition: {x: 18091.926, y: 809.1111}
+  editorPosition: {x: 18052, y: 672}
   nextNode: {fileID: -9046848169887443604}
   eventId: PlayerFinishQuestion
 --- !u!114 &-6128386059557394893
@@ -171,24 +171,6 @@ MonoBehaviour:
   flowId: PlayerPrefab
   position: {x: -4.643, y: 0.060000062, z: -8.593}
   rotation: {x: 0, y: 154.076, z: 0}
---- !u!114 &-5486188374175755373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09cc3141d5fc81a42b218b18012f5396, type: 3}
-  m_Name: CheckpointNode
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.CheckpointNode
-  nodeId: 70d66c00-952c-4fd6-8bf3-19a2f49c20d3
-  displayName: CheckpointNode
-  description: 
-  editorPosition: {x: 18891.246, y: 807.5917}
-  nextNode: {fileID: -7045322425464898823}
-  checkpointId: Cp_PickUpDaughter
 --- !u!114 &-5213048428032646831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,10 +205,10 @@ MonoBehaviour:
   nodeId: e0a85bc0-31fd-475a-a67c-649ced95e756
   displayName: TimelineCutsceneBranchNode
   description: 
-  editorPosition: {x: 18587.834, y: 1053.661}
+  editorPosition: {x: 18598, y: 1012.68744}
   nextNode: {fileID: 0}
   flowId: CS_HanaHelp
-  trueNode: {fileID: -5486188374175755373}
+  trueNode: {fileID: -7045322425464898823}
   falseNode: {fileID: 7701906780933601085}
 --- !u!114 &-4119056757342622367
 MonoBehaviour:
@@ -281,9 +263,30 @@ MonoBehaviour:
   nodeId: c83dc3cf-103a-4c9a-ae4b-0a8d931fbea4
   displayName: LoadSceneNode
   description: 
-  editorPosition: {x: 19476.66, y: 731.8616}
+  editorPosition: {x: 19194.938, y: 708.31256}
   nextNode: {fileID: -969321170800890610}
   sceneName: House
+--- !u!114 &-2202722822341487687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 1c07fdb6-5617-42e3-9a07-4aa10da5011d
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 19453.793, y: 1562.6609}
+  nextNode: {fileID: 5432995201588397973}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 1
 --- !u!114 &-1958394683908417672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +340,7 @@ MonoBehaviour:
   nodeId: 949dbba9-12cb-4736-b29c-c7d3b2ecc80b
   displayName: NextGraphNode
   description: 
-  editorPosition: {x: 19772.17, y: 590.7232}
+  editorPosition: {x: 19495.438, y: 554.9375}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: 13feb1c22920eb740a11c4267c405ba7, type: 2}
 --- !u!114 &-549475343667177267
@@ -451,8 +454,9 @@ MonoBehaviour:
   - {fileID: -969321170800890610}
   - {fileID: -549475343667177267}
   - {fileID: 3470170549871632916}
-  - {fileID: -5486188374175755373}
   - {fileID: 7701906780933601085}
+  - {fileID: 1516588902266467340}
+  - {fileID: -2202722822341487687}
 --- !u!114 &81878891831283428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,7 +472,7 @@ MonoBehaviour:
   nodeId: 613cbcca-d07a-421e-8253-d79e012b5b97
   displayName: ActivationNode
   description: 
-  editorPosition: {x: 17775.518, y: 678.49384}
+  editorPosition: {x: 17762, y: 620}
   nextNode: {fileID: -6788935428969248802}
   flowId: SitDownIntereacable
   activate: 0
@@ -506,8 +510,29 @@ MonoBehaviour:
   displayName: Dinner
   description: 
   editorPosition: {x: 19167.682, y: 1417.5896}
-  nextNode: {fileID: 5432995201588397973}
+  nextNode: {fileID: -2202722822341487687}
   flowId: CS_AcceptedForDinning
+--- !u!114 &1516588902266467340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: 3b8d1f31-1ff1-4129-8016-036edf3d0e42
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 11899.225, y: 1008.2244}
+  nextNode: {fileID: -549475343667177267}
+  channel: 0
+  action: 0
+  clip: {fileID: 8300000, guid: fa58e9a06d78f31499bc55656e2b40f6, type: 3}
+  loop: 1
 --- !u!114 &2129975713570672480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,8 +548,8 @@ MonoBehaviour:
   nodeId: 7a92f5fa-af7a-4bdd-8a68-b2e4fcdd90cb
   displayName: CheckpointNode
   description: 
-  editorPosition: {x: 12004.667, y: 886.8889}
-  nextNode: {fileID: -549475343667177267}
+  editorPosition: {x: 11632.041, y: 851}
+  nextNode: {fileID: 1516588902266467340}
   checkpointId: CP_Chapter_3A
 --- !u!114 &2648715782272829100
 MonoBehaviour:
@@ -673,7 +698,7 @@ MonoBehaviour:
   nodeId: 01f87e9b-2def-4439-ad5b-0304a464874d
   displayName: LoadSceneNode
   description: 
-  editorPosition: {x: 19490.184, y: 1604.355}
+  editorPosition: {x: 19719.238, y: 1703.4532}
   nextNode: {fileID: -7327524797170321799}
   sceneName: Cafe
 --- !u!114 &5641541229653812787
@@ -767,7 +792,7 @@ MonoBehaviour:
   nodeId: 3c8c6802-ed57-4965-b0a2-4fd72eaaf7e0
   displayName: CheckpointNode
   description: 
-  editorPosition: {x: 18844.32, y: 1251.0907}
+  editorPosition: {x: 18892.938, y: 1258.3751}
   nextNode: {fileID: 1130554095912566824}
   checkpointId: Cp_AcceptDInner
 --- !u!114 &7819938760483298668
@@ -785,7 +810,7 @@ MonoBehaviour:
   nodeId: 10032e3c-2d83-4dda-bc9d-faae0a20f332
   displayName: Start Chapter 2
   description: Mulai Dari pemilihan main flow
-  editorPosition: {x: 11633.0625, y: 996.625}
+  editorPosition: {x: 11354, y: 969}
   nextNode: {fileID: 2129975713570672480}
 --- !u!114 &8605216689683559715
 MonoBehaviour:

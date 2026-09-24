@@ -13,6 +13,9 @@ public class PlayerInputHandler : MonoBehaviour
     // Dialogue
     public bool DialogueNextPressed { get; private set; }
 
+    // Pause
+    public bool PausePressed { get; private set; }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         MoveInput = context.ReadValue<Vector2>();
@@ -46,10 +49,19 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
 
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            PausePressed = true;
+        }
+    }
+
     public void ConsumeInput()
     {
         InteractPressed = false;
         DropPressed = false;
         DialogueNextPressed = false;
+        PausePressed = false;
     }
 }

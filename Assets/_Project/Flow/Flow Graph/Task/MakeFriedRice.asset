@@ -35,7 +35,7 @@ MonoBehaviour:
   displayName: Wait Until Player Take Fried Rice
   description: Menunggu pemain samapai mengambil nasi goreng dengan piring
   editorPosition: {x: 13732.777, y: 968.55554}
-  nextNode: {fileID: -7440574586940109826}
+  nextNode: {fileID: 7023448003964780190}
   eventId: Take_With_Plate
 --- !u!114 &-8555829835640714948
 MonoBehaviour:
@@ -108,7 +108,7 @@ MonoBehaviour:
   nodeId: 30933e72-70ee-4a2e-bb80-5e9745eb4f5e
   displayName: NextGraphNode
   description: 
-  editorPosition: {x: 14101, y: 490.77777}
+  editorPosition: {x: 14397.556, y: 638.22217}
   nextNode: {fileID: 0}
   nextGraph: {fileID: 11400000, guid: 8691a0fb19301b74380eed8f27f40212, type: 2}
 --- !u!114 &-7319410878511566715
@@ -133,25 +133,6 @@ MonoBehaviour:
   position: {x: -5.659, y: 0.991, z: -3.391}
   rotation: {x: 0, y: 0, z: 0}
   parent: {fileID: 0}
---- !u!114 &-7253503566355286920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3728d5fcb5083c74ca38b2a5509b9099, type: 3}
-  m_Name: Play Audio Cook(Prototype)
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.TestFlowNode
-  nodeId: 287f5388-e81c-496c-9a48-06b6c0e5a1fe
-  displayName: Play Audio Cook(Prototype)
-  description: 
-  editorPosition: {x: 4218.1113, y: 334.6667}
-  nextNode: {fileID: 2390458075732127263}
-  message: Play Audio
-  duration: 0.5
 --- !u!114 &-6849713339836580100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +377,6 @@ MonoBehaviour:
   - {fileID: -7319410878511566715}
   - {fileID: -5736914840282668154}
   - {fileID: 1805228118221190331}
-  - {fileID: -7253503566355286920}
   - {fileID: 6190904462338594238}
   - {fileID: -4631914391508793269}
   - {fileID: 3963126809707808288}
@@ -423,6 +403,7 @@ MonoBehaviour:
   - {fileID: 5555832280822273830}
   - {fileID: -8484268197981588811}
   - {fileID: 6936062271527536501}
+  - {fileID: 7023448003964780190}
 --- !u!114 &276854473664532871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,6 +780,27 @@ MonoBehaviour:
   flowId: CS_Pounding
   trueNode: {fileID: -8484268197981588811}
   falseNode: {fileID: -8484268197981588811}
+--- !u!114 &7023448003964780190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c556798b1f09d42b54415ee57fe297, type: 3}
+  m_Name: AudioNode
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Flow.AudioNode
+  nodeId: bfb803c3-2b0e-4156-ba6a-2d35cd5ad287
+  displayName: AudioNode
+  description: 
+  editorPosition: {x: 14053, y: 747.89197}
+  nextNode: {fileID: -7440574586940109826}
+  channel: 0
+  action: 1
+  clip: {fileID: 0}
+  loop: 0
 --- !u!114 &7072726501693957250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +892,7 @@ MonoBehaviour:
   displayName: Start Make Fired Rice
   description: Memulai Task Membuat Nasi goreng
   editorPosition: {x: 3895.111, y: 529.8889}
-  nextNode: {fileID: -7253503566355286920}
+  nextNode: {fileID: 2390458075732127263}
 --- !u!114 &9199911962749465781
 MonoBehaviour:
   m_ObjectHideFlags: 0

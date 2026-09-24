@@ -1,3 +1,4 @@
+using Game.Audio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,6 +26,8 @@ namespace Game.Flow
 
         public void LoadCheckpoint()
         {
+            AudioManager.Instance.StopMusic();
+            TransitionManager.Instance.PlayTransition();
             CheckpointManager.Instance.Load(checkpointId);
         }
     }
